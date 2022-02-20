@@ -98,7 +98,7 @@ class SH4MultiBootInstallation(Screen):
 
     def devpanel(self):
         try:
-            from Screens.HarddiskSetup import *
+            from Screens.HarddiskSetup import HarddiskSelection
             self.session.open(HarddiskSelection)
         except:
             self.session.open(MessageBox, _('You are not running a proper open source image. You must mount devices yourself.'), MessageBox.TYPE_INFO)
