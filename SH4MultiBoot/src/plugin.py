@@ -91,7 +91,7 @@ class SH4MultiBootInstallation(Screen):
 
     def mountmanager(self):
         try:
-            from Plugins.SystemPlugins.Vision.MountManager import *
+            from Plugins.SystemPlugins.Vision.MountManager import VISIONDevicesPanel
             self.session.open(VISIONDevicesPanel)
         except:
             self.session.open(MessageBox, _('You need to install vision-core plugin first.'), MessageBox.TYPE_INFO)
