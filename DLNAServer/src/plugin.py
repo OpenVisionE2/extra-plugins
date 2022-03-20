@@ -164,11 +164,11 @@ class DLNAServer(ConfigListScreen, Screen):
 	def keyOK(self):
 		self["information"].setText("")
 		currentItem = self.getCurrentDirItem()
-		if currentItem != None:
+		if currentItem is not None:
 			self.session.openWithCallback(self.cbChangeDirectory, SelectDirectoryWindow, currentItem.value)
 			return
 		currentItem = self.getCurrentTextItem()
-		if currentItem != None:
+		if currentItem is not None:
 			self.session.openWithCallback(self.cbChangeText, VirtualKeyBoard, title=_("DLNA Server Name"), text=currentItem.value)
 
 	def keyGreen(self):     # Start/Stop
@@ -243,14 +243,14 @@ class DLNAServer(ConfigListScreen, Screen):
 		if pathStr is None or pathStr.strip() == "":
 			return
 		currentItem = self.getCurrentDirItem()
-		if currentItem != None:
+		if currentItem is not None:
 			currentItem.value = pathStr
 
 	def cbChangeText(self, newStr):
 		if newStr is None or newStr.strip() == "":
 			return
 		currentItem = self.getCurrentTextItem()
-		if currentItem != None:
+		if currentItem is not None:
 			currentItem.value = newStr
 
 	def getCurrentTextItem(self):
@@ -321,19 +321,19 @@ class DLNAServer(ConfigListScreen, Screen):
 				origin += "%s=%s\n" % (key, value)
 			return origin
 		configString = configDataAppend(configString, "friendly_name", serverName)
-		if mediaDir != None and mediaDir.strip() != "":
+		if mediaDir is not None and mediaDir.strip() != "":
 			configString = configDataAppend(configString, "media_dir", "%s" % (mediaDir))
-		if videoDir != None and videoDir.strip() != "":
+		if videoDir is not None and videoDir.strip() != "":
 			configString = configDataAppend(configString, "media_dir", "V,%s" % (videoDir))
-		if audioDir != None and audioDir.strip() != "":
+		if audioDir is not None and audioDir.strip() != "":
 			configString = configDataAppend(configString, "media_dir", "A,%s" % (audioDir))
-		if pictureDir != None and pictureDir.strip() != "":
+		if pictureDir is not None and pictureDir.strip() != "":
 			configString = configDataAppend(configString, "media_dir", "P,%s" % (pictureDir))
-		if rootContainer != None and rootContainer.strip() != "":
+		if rootContainer is not None and rootContainer.strip() != "":
 			configString = configDataAppend(configString, "root_container", rootContainer)
-		if logDir != None and logDir.strip() != "":
+		if logDir is not None and logDir.strip() != "":
 			configString = configDataAppend(configString, "log_dir", logDir)
-		if logLevel != None and logLevel.strip() != "":
+		if logLevel is not None and logLevel.strip() != "":
 			configString = configDataAppend(configString, "log_level", "general,artwork,database,inotify,scanner,metadata,http,ssdp,tivo=%s" % (logLevel))
 		configString = configDataAppend(configString, "port", self.oldConfig.get("port"))
 		configString = configDataAppend(configString, "db_dir", self.oldConfig.get("db_dir"))

@@ -76,7 +76,7 @@ class MainMenuList(GUIComponent):
 
     def selectionChanged(self):
         for x in self.onSelChanged:
-            if x != None:
+            if x is not None:
                 x()
 
     def moveUp(self):
@@ -92,7 +92,7 @@ class MainMenuList(GUIComponent):
         self['list'].moveTo(self['list'].instance.pageUp)
 
     def moveTo(self, dir):
-        if self.instance != None:
+        if self.instance is not None:
             self.instance.moveSelection(dir)
 
     def showArrows(self):
@@ -168,7 +168,7 @@ class EpisodeList(GUIComponent):
             os_mkdir(self.imagedir)
 
     def applySkin(self, desktop, screen):
-        if self.skinAttributes != None:
+        if self.skinAttributes is not None:
             attribs = []
             for (attrib, value) in self.skinAttributes:
                 if attrib == "TileFont":
@@ -196,7 +196,7 @@ class EpisodeList(GUIComponent):
 
     def selectionChanged(self):
         for x in self.onSelChanged:
-            if x != None:
+            if x is not None:
                 x()
 
     def moveUp(self):
@@ -212,11 +212,11 @@ class EpisodeList(GUIComponent):
         self['list'].moveTo(self['list'].instance.pageUp)
 
     def setCurrentIndex(self, index):
-        if self.instance != None:
+        if self.instance is not None:
             self.instance.moveSelectionTo(index)
 
     def moveTo(self, dir):
-        if self.instance != None:
+        if self.instance is not None:
             self.instance.moveSelection(dir)
 
     def setItemsPerPage(self):
@@ -531,34 +531,34 @@ class RTMP:
         parameters[u"url"] = self.rtmp
         parameters[u"download_path"] = self.downloadFolder
 
-        if self.auth != None:
+        if self.auth is not None:
             parameters[u"auth"] = self.auth
 
-        if self.app != None:
+        if self.app is not None:
             parameters[u"app"] = self.app
 
-        if self.playPath != None:
+        if self.playPath is not None:
             parameters[u"playpath"] = self.playPath
 
-        if self.tcUrl != None:
+        if self.tcUrl is not None:
             parameters[u"tcUrl"] = self.tcUrl
 
-        if self.swfUrl != None:
+        if self.swfUrl is not None:
             parameters[u"swfUrl"] = self.swfUrl
 
-        if self.swfVfy != None:
+        if self.swfVfy is not None:
             parameters[u"swfVfy"] = self.swfVfy
 
-        if self.pageUrl != None:
+        if self.pageUrl is not None:
             parameters[u"pageUrl"] = self.pageUrl
 
-        if self.live != None and self.live is not False:
+        if self.live is not None and self.live is not False:
             parameters[u"live"] = u"true"
 
-        if self.socks != None:
+        if self.socks is not None:
             parameters[u"socks"] = self.socks
 
-        if self.port != None:
+        if self.port is not None:
             parameters[u"port"] = self.port
 
         return parameters
@@ -574,42 +574,42 @@ class RTMP:
 
         args = [u"--rtmp", u'"%s"' % self.rtmp, u"-o", u'"%s"' % self.downloadFolder]
 
-        if self.auth != None:
+        if self.auth is not None:
             args.append(u"--auth")
             args.append(u'"%s"' % self.auth)
 
-        if self.app != None:
+        if self.app is not None:
             args.append(u"--app")
             args.append(u'"%s"' % self.app)
 
-        if self.playPath != None:
+        if self.playPath is not None:
             args.append(u"--playpath")
             args.append(u'"%s"' % self.playPath)
 
-        if self.swfUrl != None:
+        if self.swfUrl is not None:
             args.append(u"--swfUrl")
             args.append(u'"%s"' % self.swfUrl)
 
-        if self.tcUrl != None:
+        if self.tcUrl is not None:
             args.append(u"--tcUrl")
             args.append(u'"%s"' % self.tcUrl)
 
-        if self.swfVfy != None:
+        if self.swfVfy is not None:
             args.append(u"--swfVfy")
             args.append(u'"%s"' % self.swfVfy)
 
-        if self.pageUrl != None:
+        if self.pageUrl is not None:
             args.append(u"--pageUrl")
             args.append(u'"%s"' % self.pageUrl)
 
-        if self.live != None and self.live is not False:
+        if self.live is not None and self.live is not False:
             args.append(u"--live")
 
-        if self.socks != None:
+        if self.socks is not None:
             args.append(u"--socks")
             args.append(u'"%s"' % self.socks)
 
-        if self.port != None:
+        if self.port is not None:
             args.append(u"--port")
             args.append(u'%d' % self.port)
 
@@ -636,32 +636,32 @@ class RTMP:
             except (Exception) as exception:
                 args = [u"%s" % self.rtmp]
 
-        if self.auth != None:
+        if self.auth is not None:
             args.append(u"auth=%s" % self.auth)
 
-        if self.app != None:
+        if self.app is not None:
             args.append(u"app=%s" % self.app)
 
-        if self.playPath != None:
+        if self.playPath is not None:
             args.append(u"playpath=%s" % self.playPath)
 
-        if self.swfUrl != None:
+        if self.swfUrl is not None:
             args.append(u"swfurl=%s" % self.swfUrl)
 
-        if self.tcUrl != None:
+        if self.tcUrl is not None:
             args.append(u"tcUrl=%s" % self.tcUrl)
 
-        if self.swfVfy != None:
+        if self.swfVfy is not None:
             args.append(u"swfurl=%s" % self.swfVfy)
             args.append(u"swfvfy=true")
 
-        if self.pageUrl != None:
+        if self.pageUrl is not None:
             args.append(u"pageurl=%s" % self.pageUrl)
 
-        if self.live != None and self.live is not False:
+        if self.live is not None and self.live is not False:
             args.append(u"live=true")
 
-        if self.socks != None:
+        if self.socks is not None:
             args.append(u"socks=%s" % self.socks)
 
         playURL = u' '.join(args)

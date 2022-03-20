@@ -399,7 +399,7 @@ class BookmarkEditWindow(ConfigListScreen, Screen):
         self.mSession = session
         self.mBookmarkManager = _bm
 
-        if _data != None:
+        if _data is not None:
             vbcfg.DEBUG("0x%x" % _data.mId)
 
         Screen.__init__(self, session)
@@ -452,7 +452,7 @@ class BookmarkEditWindow(ConfigListScreen, Screen):
         itemTitle = ""
         itemValue = ""
         selected = self.selectedItem()
-        if selected != None:
+        if selected is not None:
             itemValue = selected[1].value
             if strIsEmpty(itemValue):
                 itemValue = ""
@@ -461,9 +461,9 @@ class BookmarkEditWindow(ConfigListScreen, Screen):
         self.session.openWithCallback(self.cbVKeyWindow, VirtualKeyBoard, title=itemTitle, text=itemValue)
 
     def cbVKeyWindow(self, data=None):
-        if data != None:
+        if data is not None:
             selected = self.selectedItem()
-            if selected != None:
+            if selected is not None:
                 selected[1].setValue(data)
 
     def saveData(self):
@@ -920,7 +920,7 @@ class Browser(Screen):
         self.set_menu_item()
         vbcfg.LOG("Starting Browser")
 
-        if self.m_url != None:
+        if self.m_url is not None:
             self.keyMenu()
             if self.m_webapp:
                 self._cb_start_browser(self.m_url, 1, 'YOUTUBETV_OPENURL')
@@ -956,7 +956,7 @@ class Browser(Screen):
 
     def _cb_start_browser(self, data=None, mode=0, opcode='BROWSER_OPENURL'):
         if not vbcfg.g_main.check_browser():
-            if self.m_url != None:
+            if self.m_url is not None:
                 if vbcfg.g_service:
                     self.session.nav.playService(vbcfg.g_service)
             return
@@ -1019,7 +1019,7 @@ class Browser(Screen):
 
         vbcfg.LOG("Stop Browser")
         self.setTitle(_("BrowserMain"))
-        if self.m_url != None:
+        if self.m_url is not None:
             self.keyCancel()
             if vbcfg.g_service:
                 self.session.nav.playService(vbcfg.g_service)

@@ -309,7 +309,7 @@ def pluginAutoStart(reason, session=None, **kwargs):
 	# now = int(time())
 	if reason == 0:
 		print("[ABMCustomMixImporter][pluginAutoStart] AutoStart Enabled")
-		if session != None:
+		if session is not None:
 			_session = session
 			if scheduleTimer is None:
 				scheduleTimer = schedule(session)

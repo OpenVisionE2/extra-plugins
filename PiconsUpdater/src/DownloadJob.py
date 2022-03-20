@@ -54,7 +54,7 @@ class DownloadJob:
         self.__downloadFinished()
 
     def __downloadFinished(self, string=''):
-        if self.callbackFinished != None:
+        if self.callbackFinished is not None:
             callback = self.callbackFinished
             self.clean()
             callback(self)
@@ -64,10 +64,10 @@ class DownloadJob:
 
     def __downloadFailed(self, failureInstance=None, errorMessage=''):
         self.errorMessage = errorMessage
-        if errorMessage == '' and failureInstance != None:
+        if errorMessage == '' and failureInstance is not None:
             self.errorMessage = failureInstance.getErrorMessage()
         self.errorMessage = self.downloadUrl + ' - ' + self.errorMessage
-        if self.callbackFailed != None:
+        if self.callbackFailed is not None:
             callback = self.callbackFailed
             self.clean()
             callback(self)

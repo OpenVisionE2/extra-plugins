@@ -30,7 +30,7 @@ class JobProgressView(Screen):
 
     def cancel(self):
         printToConsole('######## CANCEL')
-        if self.onAbort != None:
+        if self.onAbort is not None:
             self.onAbort()
         self.close(False)
 

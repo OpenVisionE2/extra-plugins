@@ -65,11 +65,11 @@ class DeviceEventListener:
 					self.notifyCallbackFunctionList.remove(x)
 
 	def addCallback(self, func):
-		if func != None:
+		if func is not None:
 			self.notifyCallbackFunctionList.append(func)
 
 	def delCallback(self, func):
-		if func != None:
+		if func is not None:
 			self.notifyCallbackFunctionList.remove(func)
 
 	def close(self):
@@ -129,11 +129,11 @@ class TaskManager:
 		cbCloseFunc = self.taskList[self.taskIdx][2]
 
 		self.gTaskInstance = eConsoleAppContainer()
-		if cbDataFunc != None:
+		if cbDataFunc is not None:
 			self.gTaskInstance.dataAvail.append(cbDataFunc)
-		if cbCloseFunc != None:
+		if cbCloseFunc is not None:
 			self.gTaskInstance.appClosed.append(cbCloseFunc)
-		if self.cbSetStatusCB != None:
+		if self.cbSetStatusCB is not None:
 			self.cbSetStatusCB(self.taskIdx)
 
 		printInfoModemMgr("prepared command :%s" % (command))
@@ -291,16 +291,16 @@ class EditModemManual(ConfigListScreen, Screen):
 	def KeyText(self):
 		currentItemValue = ""
 		currentItem = self.getCurrentItem()
-		if currentItem != None:
+		if currentItem is not None:
 			currentItemValue = currentItem.value
 			if isEmpty(currentItemValue):
 				currentItemValue = ""
 		self.session.openWithCallback(self.cbKeyText, VirtualKeyBoard, title=("Please input here"), text=currentItemValue)
 
 	def cbKeyText(self, data=None):
-		if data != None:
+		if data is not None:
 			currentItem = self.getCurrentItem()
-			if currentItem != None:
+			if currentItem is not None:
 				currentItem.setValue(data)
 
 	def keyExit(self):
@@ -309,7 +309,7 @@ class EditModemManual(ConfigListScreen, Screen):
 	def keyRemove(self):
 		if self.isAdd:
 			return
-		if self.cbFuncClose != None:
+		if self.cbFuncClose is not None:
 			self.cbFuncClose(isRemove=True)
 		self.close()
 
@@ -317,14 +317,14 @@ class EditModemManual(ConfigListScreen, Screen):
 		self["VKeyIcon"].boolean = True
 		current = self["config"].getCurrent()
 		if hasattr(current[1], 'help_window'):
-			if current[1].help_window.instance != None:
+			if current[1].help_window.instance is not None:
 				current[1].help_window.instance.show()
 
 	def hideKeyboard(self):
 		self["VKeyIcon"].boolean = False
 		current = self["config"].getCurrent()
 		if hasattr(current[1], 'help_window'):
-			if current[1].help_window.instance != None:
+			if current[1].help_window.instance is not None:
 				current[1].help_window.instance.hide()
 
 	def keyOK(self):
@@ -342,7 +342,7 @@ class EditModemManual(ConfigListScreen, Screen):
 			self.session.openWithCallback(self.showKeyboard, MessageBox, message % ('APN'), MessageBox.TYPE_INFO)
 			return
 
-		if self.cbFuncClose != None:
+		if self.cbFuncClose is not None:
 			self.uid = self.configUserName.value
 			self.pwd = self.configPassword.value
 			self.pin = self.configPIN.value
@@ -424,7 +424,7 @@ class ModemManual(Screen):
 			self.apn = isEmpty(apn) and "" or apn
 			self.phone = isEmpty(phone) and "" or phone
 
-		if name != None:
+		if name is not None:
 			self["menulist"].list.append((name, {'region': region, 'carrier': name, 'apn': self.apn, 'user': self.uid, 'password': self.pwd, 'pin': self.pin, 'phone': self.phone}))
 			self["menulist"].setList(self["menulist"].list)
 			self["menulist"].moveToIndex(len(self["menulist"].list) - 1)
@@ -512,7 +512,7 @@ class ModemManual(Screen):
 		self.setAPNInfo()
 
 	def keyOK(self):
-		if self.cbFuncClose != None:
+		if self.cbFuncClose is not None:
 			config.plugins.gmodemmanager.apn.setValue(str(self.apn))
 			config.plugins.gmodemmanager.uid.setValue(str(self.uid))
 			config.plugins.gmodemmanager.pwd.setValue(str(self.pwd))

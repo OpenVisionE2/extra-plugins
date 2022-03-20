@@ -92,11 +92,11 @@ class TaskManager:
         cbCloseFunc = self.taskList[self.taskIdx][2]
 
         self.gTaskInstance = eConsoleAppContainer()
-        if cbDataFunc != None:
+        if cbDataFunc is not None:
             self.gTaskInstance.dataAvail.append(cbDataFunc)
-        if cbCloseFunc != None:
+        if cbCloseFunc is not None:
             self.gTaskInstance.appClosed.append(cbCloseFunc)
-        if self.cbSetStatusCB != None:
+        if self.cbSetStatusCB is not None:
             self.cbSetStatusCB(self.taskIdx)
 
         print("[BluetoothManager] Info >> prepared command : %s" % (command))
@@ -287,9 +287,9 @@ class BluetoothDevicesManager(Screen):
             self.taskManager.next()
         else:
             paired_devices = iBluetoothctl.get_paired_devices()
-            if paired_devices != None:
+            if paired_devices is not None:
                 for d in paired_devices:
-                    if d != None:
+                    if d is not None:
                         mac_address = d['mac_address']
                         name = d['name']
                         msg = _("Connection with:\n") + name + " (" + mac_address + ")"
@@ -334,9 +334,9 @@ class BluetoothDevicesManager(Screen):
                 self.showConnections()
             else:
                 paired_devices = iBluetoothctl.get_paired_devices()
-                if paired_devices != None:
+                if paired_devices is not None:
                     for d in paired_devices:
-                        if d != None:
+                        if d is not None:
                             mac_address = d['mac_address']
                             name = d['name']
                             try:
@@ -379,22 +379,22 @@ class BluetoothDevicesManager(Screen):
                 for i in range(0, 20):
                     time.sleep(0.5)
                     available_devices = iBluetoothctl.get_available_devices()
-                    if available_devices != None:
+                    if available_devices is not None:
                         for d in available_devices:
                             if selectedItem[1] in str(d):
                                 mac_address = d['mac_address']
                                 name = d['name']
-                    if mac_address != None:
+                    if mac_address is not None:
                         break
 
-                if mac_address != None:
+                if mac_address is not None:
                     iBluetoothctl.agent_noinputnooutput()
                     iBluetoothctl.default_agent()
                     ret = iBluetoothctl.pair(mac_address)
                     if config.btdevicesmanager.audioaddress.getValue() is "":
                         config.btdevicesmanager.audioaddress.setValue(mac_address)
                     if ret is False:
-                        if iBluetoothctl.passkey != None:
+                        if iBluetoothctl.passkey is not None:
                             self.cb_mac_address = mac_address
                             self.cb_name = name
                             msg = _("Please Enter Passkey: \n") + iBluetoothctl.passkey

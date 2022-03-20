@@ -101,7 +101,7 @@ class MergePiconJob:
             picon = add_reflection(picon)
         try:
             background.paste(picon, centerPoint, picon)
-            if self.fgPath != None:
+            if self.fgPath is not None:
                 foreground = Image.open(self.fgPath)
                 background.paste(foreground, None, foreground)
         except Exception as e:

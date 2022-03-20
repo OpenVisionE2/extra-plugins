@@ -55,7 +55,7 @@ class BouquetParser:
     def __getBouquetServices(self, bouquet):
         services = []
         Servicelist = eServiceCenter.getInstance().list(bouquet)
-        if Servicelist != None:
+        if Servicelist is not None:
             while True:
                 service = Servicelist.getNext()
                 if not service.valid():

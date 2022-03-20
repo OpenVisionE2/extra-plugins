@@ -47,9 +47,9 @@ class FPGAUpgradeCore():
         firmware, device = None, None
 
         def closefpga(fp, fd):
-            if fd != None:
+            if fd is not None:
                 os.close(fd)
-            if fp != None:
+            if fp is not None:
                 fp.close()
         try:
             size = os.path.getsize(self.firmwarefile)

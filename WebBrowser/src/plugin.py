@@ -176,7 +176,7 @@ class Player(Screen, InfoBarNotifications):
 
     def __seekableStatusChanged(self):
         service = self.session.nav.getCurrentService()
-        if service != None:
+        if service is not None:
             seek = service.seek()
             if seek is None or not seek.isCurrentlySeekable():
                 self.setSeekState(self.PLAYER_PLAYING)
@@ -213,7 +213,7 @@ class Player(Screen, InfoBarNotifications):
             return
 
         pauseable = service.pause()
-        if pauseable != None:
+        if pauseable is not None:
             if wantstate == self.PLAYER_PAUSED:
                 pauseable.pause()
                 self.state = self.PLAYER_PAUSED

@@ -55,12 +55,12 @@ class SSDPServerDiscovery(DatagramProtocol):
             return
 
         self.port = reactor.listenUDP(0, self, interface=iface)
-        if self.port != None:
+        if self.port is not None:
             print("Sending M-SEARCH...")
             self.port.write(MS, (SSDP_ADDR, SSDP_PORT))
 
     def stop_msearch(self):
-        if self.port != None:
+        if self.port is not None:
             self.port.stopListening()
 
     def datagramReceived(self, datagram, address):
@@ -156,9 +156,9 @@ class SATIPDiscovery:
         def getAttr(root, parent, tag, namespace):
             try:
                 pElem = findChild(root, parent, namespace)
-                if pElem != None:
+                if pElem is not None:
                     child = findChild(pElem, tag, namespace)
-                    if child != None:
+                    if child is not None:
                         return child.text
             except:
                 pass
@@ -168,9 +168,9 @@ class SATIPDiscovery:
         def getAttrN2(root, parent, tag, namespace_1, namespace_2):
             try:
                 pElem = findChild(root, parent, namespace_1)
-                if pElem != None:
+                if pElem is not None:
                     child = findChild(pElem, tag, namespace_2)
-                    if child != None:
+                    if child is not None:
                         return child.text
             except:
                 pass
@@ -479,7 +479,7 @@ class SATIPTuner(Screen, ConfigListScreen):
     def getCapability(self, uuid):
         capability = {'DVB-S': 0, 'DVB-C': 0, 'DVB-T': 0}
         data = satipdiscovery.getServerInfo(uuid, "X_SATIPCAP")
-        if data != None:
+        if data is not None:
             for x in data.split(','):
                 if x.upper().find("DVBS") != -1:
                     capability['DVB-S'] = int(x.split('-')[1])
@@ -720,11 +720,11 @@ class SATIPClient(Screen):
         self.session.openWithCallback(self.SATIPTunerCB, SATIPTuner, vtuner_idx, vtuner_uuid, vtuner_type, self.vtunerConfig)
 
     def SATIPTunerCB(self, data=None):
-        if data != None:
+        if data is not None:
             self.setConfig(data)
 
     def setConfig(self, data):
-        if data['uuid'] != None:
+        if data['uuid'] is not None:
             vtuner = self.vtunerConfig[int(data['idx'])]
             vtuner['vtuner_type'] = "satip_client"
             vtuner['ipaddr'] = data['ip']
