@@ -10655,7 +10655,7 @@ def LCD4linuxPIC(self, session):
 						if audio:
 							apicframes = audio.getall("APIC")
 							if len(apicframes) >= 1:
-								coverArtFile = file(MP3tmp, 'wb')
+								coverArtFile = open(MP3tmp, 'wb')
 								coverArtFile.write(apicframes[0].data)
 								coverArtFile.close()
 								L4logE("MP3-Inline-Cover")
@@ -10675,7 +10675,7 @@ def LCD4linuxPIC(self, session):
 						if audio:
 							apicframes = audio.pictures
 							if len(apicframes) >= 1:
-								coverArtFile = file(MP3tmp, 'wb')
+								coverArtFile = open(MP3tmp, 'wb')
 								coverArtFile.write(apicframes[0].data)
 								coverArtFile.close()
 				if os.path.isfile(MP3tmp):
@@ -10717,7 +10717,7 @@ def LCD4linuxPIC(self, session):
 				cover = "/tmp/.cover"
 			for coverfile in LCD4linux.MPCoverFile2.value.split(","):
 				covername = coverfile.split(".")[0].strip()
-				selection = coverfile.split(".")[1].strip() if coverfile.find('.') != -1 else "*"
+				selection = coverfile.split(".")[1].strip() if coverfile.find(".") != -1 else "*"
 				if selection == "*":
 					selection = "jpg,png"
 				selection = selection.split(",")
