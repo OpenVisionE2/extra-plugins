@@ -22,6 +22,7 @@ from Components.AVSwitch import AVSwitch
 from Components.ServiceEventTracker import ServiceEventTracker
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 from Components.Console import Console
+from . import _
 
 EXTENSIONS = {
         ".m4a": "music",

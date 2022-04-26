@@ -15,6 +15,7 @@ from Components.ActionMap import ActionMap
 from Components.config import config, ConfigSelection, getConfigListEntry, ConfigText, ConfigDirectory, ConfigYesNo, ConfigSubsection
 from Components.FileList import FileList
 from Components.Console import Console
+from . import _
 
 config.plugins.dlnaserver = ConfigSubsection()
 config.plugins.dlnaserver.autostart = ConfigYesNo(default=False)
