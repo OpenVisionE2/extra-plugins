@@ -108,7 +108,7 @@ from mutagen.flac import FLAC
 from .module import L4Lelement
 import six
 from six.moves.urllib.parse import urlencode, quote, urlparse, urlunparse
-from six.moves.urllib.request import urlopen, Request, urlretrieve, FancyURLopener
+from six.moves.urllib.request import urlopen, Request, urlretrieve
 from six.moves.BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 from six.moves.socketserver import ThreadingMixIn
 from six.moves import queue
@@ -9741,9 +9741,7 @@ class UpdateStatus(Screen):
 		L4log("Meteodownloadstart")
 		self.feedurl = six.ensure_str(LCD4linux.MeteoURL.value)
 		try:
-			opener = FancyURLopener({})
-			f = opener.open(self.feedurl)
-			wwwMeteo = six.ensure_str(f.read())
+			wwwMeteo = six.ensure_str(urlopen(self.feedurl, timeout=5).read())
 		except Exception as e:
 			L4log("Error download Meteo!")
 		rmFile(PICmeteo)
