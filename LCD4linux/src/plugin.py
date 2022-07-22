@@ -97,7 +97,7 @@ from Components.NimManager import nimmanager
 from Tools.BoundFunction import boundFunction
 from Tools.Directories import SCOPE_PLUGINS, SCOPE_CONFIG, SCOPE_FONTS, SCOPE_LIBDIR, SCOPE_SYSETC, resolveFilename
 from twisted.internet import reactor
-from twisted.web.client import getPage, HTTPClientFactory, downloadPage
+from twisted.web.client import getPage, downloadPage
 from xml.dom.minidom import parseString
 from xml.etree.cElementTree import parse as parseE
 from .myFileList import FileList as myFileList
@@ -108,7 +108,7 @@ from mutagen.flac import FLAC
 from .module import L4Lelement
 import six
 from six.moves.urllib.parse import urlencode, quote, urlparse, urlunparse
-from six.moves.urllib.request import urlopen, Request, urlretrieve, FancyURLopener
+from six.moves.urllib.request import urlopen, Request, urlretrieve
 from six.moves.BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 from six.moves.socketserver import ThreadingMixIn
 from six.moves import queue
@@ -7901,8 +7901,8 @@ class LCDdisplayConfig(ConfigListScreen, Screen):
 				LCD4linux.MPTextFile.value = dirdir
 			elif sel == LCD4linux.MPCoverFile:
 				LCD4linux.MPCoverFile.value = dirdir
-			elif sel == LCD4linux.MPCoverFile2:
-				LCD4linux.MPCoverFile2.value = dirdir
+#			elif sel == LCD4linux.MPCoverFile2:
+#				LCD4linux.MPCoverFile2.value = dirdir
 			elif sel == LCD4linux.BildFile:
 				LCD4linux.BildFile.value = dirdir
 			elif sel == LCD4linux.Bild2File:
@@ -9739,11 +9739,9 @@ class UpdateStatus(Screen):
 	def downloadMeteo(self):
 		global wwwMeteo
 		L4log("Meteodownloadstart")
-		self.feedurl = six.ensure_binary(LCD4linux.MeteoURL.value)
+		self.feedurl = six.ensure_str(LCD4linux.MeteoURL.value)
 		try:
-			opener = FancyURLopener({})
-			f = opener.open(self.feedurl)
-			wwwMeteo = six.ensure_str(f.read())
+			wwwMeteo = six.ensure_str(urlopen(self.feedurl, timeout=5).read())
 		except Exception as e:
 			L4log("Error download Meteo!")
 		rmFile(PICmeteo)
@@ -10338,14 +10336,6 @@ class myE2Timer(object):
 		return self.name, self.begin, self.end, self.disabled, self.justplay, self.ice_timer_id, self.service_ref, self.state
 
 
-class myHTTPClientFactory(HTTPClientFactory):
-	def __init__(self, url, method='GET', postdata=None, headers=None,
-	agent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)", timeout=0, cookies=None,
-	followRedirect=1, lastModified=None, etag=None):
-		HTTPClientFactory.__init__(self, url, method=method, postdata=postdata,
-		headers=headers, agent=agent, timeout=timeout, cookies=cookies, followRedirect=followRedirect)
-
-
 def url_parse(url, defaultPort=None):
 	parsed = urlparse(url)
 	scheme = parsed[0]
@@ -10360,13 +10350,6 @@ def url_parse(url, defaultPort=None):
 		host, port = host.split(':')
 		port = int(port)
 	return scheme, host, port, path
-
-
-def sendUrlCommand(url, contextFactory=None, timeout=60, *args, **kwargs):
-	scheme, host, port, path = url_parse(url)
-	factory = myHTTPClientFactory(url, *args, **kwargs)
-	reactor.connectTCP(host, port, factory, timeout=timeout)
-	return factory.deferred
 
 
 def getShowPicture(BildFile, idx):
@@ -10655,7 +10638,7 @@ def LCD4linuxPIC(self, session):
 						if audio:
 							apicframes = audio.getall("APIC")
 							if len(apicframes) >= 1:
-								coverArtFile = file(MP3tmp, 'wb')
+								coverArtFile = open(MP3tmp, 'wb')
 								coverArtFile.write(apicframes[0].data)
 								coverArtFile.close()
 								L4logE("MP3-Inline-Cover")
@@ -10675,7 +10658,7 @@ def LCD4linuxPIC(self, session):
 						if audio:
 							apicframes = audio.pictures
 							if len(apicframes) >= 1:
-								coverArtFile = file(MP3tmp, 'wb')
+								coverArtFile = open(MP3tmp, 'wb')
 								coverArtFile.write(apicframes[0].data)
 								coverArtFile.close()
 				if os.path.isfile(MP3tmp):
@@ -10715,8 +10698,16 @@ def LCD4linuxPIC(self, session):
 					L4log("Title Error", Title)
 			if cover == "" and os.path.isfile("/tmp/.cover"):
 				cover = "/tmp/.cover"
-			if cover == "" and os.path.isfile(LCD4linux.MPCoverFile2.value):
-				cover = LCD4linux.MPCoverFile2.value
+			for coverfile in LCD4linux.MPCoverFile2.value.split(","):
+				covername = coverfile.split(".")[0].strip()
+				selection = coverfile.split(".")[1].strip() if coverfile.find(".") != -1 else "*"
+				if selection == "*":
+					selection = "jpg,png"
+				selection = selection.split(",")
+				for extension in selection:
+					if cover == "" and os.path.isfile(covername + "." + extension):
+						cover = covername + "." + extension
+						break
 			if cover == "" and LCD4linux.MPCoverPiconFirst.value == True:
 				if WebRadioFSok == True and os.path.isfile(self.l4l_info.get("Logo", "")):
 					cover = self.l4l_info.get("Logo", "")
