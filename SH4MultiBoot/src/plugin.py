@@ -590,6 +590,8 @@ class SH4MultiBootImageInstall(Screen, ConfigListScreen):
                 message += "'"
                 if fileExists(pluginpath + '/ex_init.pyo'):
                     cmd1 = 'python ' + pluginpath + '/ex_init.pyo'
+                elif fileExists(pluginpath + '/ex_init.pyc'):
+                    cmd1 = 'python ' + pluginpath + '/ex_init.pyc'
                 else:
                     cmd1 = 'python ' + pluginpath + '/ex_init.py'
                 cmd = '%s %s %s %s %s %s' % (cmd1,

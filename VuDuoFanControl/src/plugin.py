@@ -10,7 +10,7 @@ from Components.ActionMap import ActionMap
 from Components.config import config, getConfigListEntry, ConfigInteger, ConfigSubsection, ConfigSelection
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import isPluginInstalled
 
 
 config.plugins.fansetups = ConfigSubsection()
@@ -176,7 +176,7 @@ def setfansetup(reason, **kwargs):
 
 def Plugins(**kwargs):
 	from os import path
-	if not path.exists(resolveFilename(SCOPE_PLUGINS, "Extensions/FanControl2/plugin.pyo")):
+	if not isPluginInstalled("FanControl2"):
 		return [PluginDescriptor(name=_("Vu Duo Fan Control"), description="check Fan Control settings", where=PluginDescriptor.WHERE_AUTOSTART, needsRestart=True, fnc=setfansetup),
 				PluginDescriptor(name=_("Vu Duo Fan Control"), description=_("Fan Control"), where=PluginDescriptor.WHERE_MENU, needsRestart=True, fnc=selSetup)]
 	return []
