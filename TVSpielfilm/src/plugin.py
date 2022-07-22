@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
+from __future__ import print_function
 from Components.config import config, configfile, ConfigDirectory, ConfigInteger, ConfigPassword, ConfigSelection, ConfigSubsection, ConfigText, getConfigListEntry, ConfigYesNo
 from Tools.Directories import fileExists
 from Plugins.Plugin import PluginDescriptor
