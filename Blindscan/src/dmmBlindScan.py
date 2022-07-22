@@ -82,7 +82,7 @@ class DmmBlindscanState(Screen):
 		self["post_action"] = Label()
 		self["progress"] = Label()
 		self["key_red"] = StaticText(_("Cancel"))
-		self["key_green"] = StaticText("Auto / Manual")
+		self["key_green"] = StaticText(_("Auto / Manual"))
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions"],
 		{
 			"ok": self.keyOk,
@@ -235,7 +235,6 @@ class SatelliteTransponderSearchSupport:
 					if parm.fec == eDVBFrontendParametersSatellite.FEC_None:
 						parm.fec = eDVBFrontendParametersSatellite.FEC_Auto
 						fec_inner = "Auto"
-					#parm.inversion = eDVBFrontendParametersSatellite.Inversion_Unknown
 					parm.inversion = eDVBFrontendParametersSatellite.Inversion_Off
 					parm.polarisation = d["polarization"]
 					parm.orbital_position = d["orbital_position"]

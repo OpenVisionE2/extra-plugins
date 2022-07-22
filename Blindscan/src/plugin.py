@@ -1706,7 +1706,7 @@ def BlindscanMain(session, close=None, **kwargs):
 			have_Support_Blindscan = True
 	except:
 		print("[Blindscan] Read /proc/bus/nim_sockets failed.")
-	if have_Support_Blindscan:
+	if have_Support_Blindscan or brand == "dreambox":
 		from . import dmmBlindScan
 		session.openWithCallback(boundFunction(BlindscanCallback, close), dmmBlindScan.DmmBlindscan)
 	else:
