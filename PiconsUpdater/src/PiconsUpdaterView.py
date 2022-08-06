@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function, absolute_import
 import os
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen

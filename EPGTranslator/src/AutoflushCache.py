@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Implement a keyed-cache with elements that can be timed-out
 # The time-out will be either the per-key or, if none given, a per-cache

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Skin data for screenwidth <= 1280
 # Only contains "class" data.  No instance data

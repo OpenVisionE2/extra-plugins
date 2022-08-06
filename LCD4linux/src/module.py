@@ -3,7 +3,6 @@
 # by joergm6 @ IHAD
 # for documentation look at IHAD Support Thread
 #
-from __future__ import print_function
 import os
 
 

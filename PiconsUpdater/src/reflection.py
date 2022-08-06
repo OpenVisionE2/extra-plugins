@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Main source from: https://github.com/jdriscoll/django-photologue/blob/master/photologue/utils/reflection.py
 

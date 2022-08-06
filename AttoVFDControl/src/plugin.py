@@ -1,4 +1,4 @@
-from __future__ import print_function
+# -*- coding: utf-8 -*-
 from . import _
 from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor

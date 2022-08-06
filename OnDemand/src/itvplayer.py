@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 """
 	ITV Player - Enigma2 Video Plugin
 	Copyright (C) 2013 mcquaim

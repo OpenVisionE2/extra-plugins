@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, configfile

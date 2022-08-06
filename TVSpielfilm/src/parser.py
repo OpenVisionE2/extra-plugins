@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 from six import ensure_str
 from re import sub, findall, S as RES, search
 from twisted.web.client import getPage

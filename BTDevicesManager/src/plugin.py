@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 #====================================================
 # Bluetooth Devices Manager - basic version
 # Version date - 20.11.2014

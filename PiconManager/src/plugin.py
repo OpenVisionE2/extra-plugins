@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #######################################################################
 # maintainer: einfall & schomi (schomi@vuplus-support.org)
@@ -15,7 +14,6 @@
 #  Thanks to vuplus-support.org for the webspace
 #######################################################################
 
-from __future__ import print_function
 from Screens.ChannelSelection import SimpleChannelSelection, service_types_tv, service_types_radio
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox

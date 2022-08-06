@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 #
 # Fan Setup Plugin for et9x00, et8000 and et10000
 # Coded by Dima73 (c) 2011

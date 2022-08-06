@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 """
 	Episode List GUI for OnDemand plugin.
 	Copyright (C) 2013 andyblac

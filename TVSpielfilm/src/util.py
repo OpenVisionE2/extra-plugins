@@ -1,6 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function, absolute_import
 from re import sub, findall, S as RES
 from Components.config import config
 from Components.ConditionalWidget import BlinkingWidget

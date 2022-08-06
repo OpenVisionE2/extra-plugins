@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # This is the full HTML5 Entity list from:
 #   https://dev.w3.org/html5/html-author/charref

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 from six.moves.urllib.request import urlopen
 from xml.etree import ElementTree as ET
 
