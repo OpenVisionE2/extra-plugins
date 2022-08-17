@@ -9,8 +9,7 @@ try:
 except:
     import _thread as thread
 from enigma import eTimer
-from urllib import urlretrieve
-import urllib
+from six.moves.urllib.request import URLopener, urlretrieve
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
@@ -361,7 +360,7 @@ class FPGAUpgrade(Screen):
     def onClickBlue(self):
         fname = ''
         header = ''
-        test_opener = urllib.URLopener()
+        test_opener = URLopener()
         try:
             test_opener.open(self.DOWNLOAD_URL)
         except:

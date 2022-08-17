@@ -2,8 +2,7 @@
 # for localized messages
 from . import _
 import os
-import urllib
-from urllib import urlretrieve
+from six.moves.urllib.request import URLopener, urlretrieve
 from Plugins.Plugin import PluginDescriptor
 from Components.config import config, getConfigListEntry, ConfigSelection
 from Components.ConfigList import ConfigListScreen
@@ -547,7 +546,7 @@ class FUFilebrowser(Screen):
         def doHook(blockNumber, blockSize, totalSize):
             if blockNumber * blockSize > totalSize and cbfunc is not None:
                 cbfunc(tar)
-        opener = urllib.URLopener()
+        opener = URLopener()
         try:
             opener.open(uri)
         except:
