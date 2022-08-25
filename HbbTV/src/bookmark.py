@@ -33,7 +33,10 @@ class CategoryData:
             self.mBookmarks[key].dump('      ')
 
 
-import ConfigParser
+try:
+	import ConfigParser
+except:
+	import configparser as ConfigParser
 
 
 class SimpleConfigParser:
