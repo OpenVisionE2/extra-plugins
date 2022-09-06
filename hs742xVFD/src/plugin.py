@@ -304,7 +304,7 @@ class VFDIcons:
 				disptype = config.plugins.vfdicon.displayshow.value
 		else:
 			disptype = config.plugins.vfdicon.stbshow.value
-			self.writeDate(disptype)
+		self.writeDate(disptype)
 
 	def gotRecordEvent(self, service, event):
 		if event in (iRecordableService.evEnd, iRecordableService.evStart, None):
