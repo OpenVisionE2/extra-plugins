@@ -389,45 +389,45 @@ class FirmwareUpgrade(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/MICOMUpgrade")
-        self.session = session
+		self.session = session
 
-	self["shortcuts"] = ActionMap(["ShortcutActions", "SetupActions"],
-		{
-			"ok": self.keyGreen,
-			"cancel": self.keyRed,
-			"red": self.keyRed,
-			"green": self.keyGreen,
-		}, -2)
+		self["shortcuts"] = ActionMap(["ShortcutActions", "SetupActions"],
+			{
+				"ok": self.keyGreen,
+				"cancel": self.keyRed,
+				"red": self.keyRed,
+				"green": self.keyGreen,
+			}, -2)
 
-	self.list = []
-	self.updateFilePath = ""
+		self.list = []
+		self.updateFilePath = ""
 
-	self.finishedExit = False
+		self.finishedExit = False
 
-	self.rebootLock = False
-	self.rebootMessage = ""
-	self.cbRebootCallCount = 0
+		self.rebootLock = False
+		self.rebootMessage = ""
+		self.cbRebootCallCount = 0
 
-	from Tools.StbHardware import getFPVersion
-	self.version = str(getFPVersion() or "N/A")
-	newversion = str("N/A")
+		from Tools.StbHardware import getFPVersion
+		self.version = str(getFPVersion() or "N/A")
+		newversion = str("N/A")
 
-	self["oldversion_label"] = Label(_("Current version:"))
-	self["newversion_label"] = Label(_("New version:"))
+		self["oldversion_label"] = Label(_("Current version:"))
+		self["newversion_label"] = Label(_("New version:"))
 
-	self["oldversion"] = Label(self.version)
-	self["newversion"] = Label(newversion)
+		self["oldversion"] = Label(self.version)
+		self["newversion"] = Label(newversion)
 
-	self["key_red"] = StaticText(_("Close"))
+		self["key_red"] = StaticText(_("Close"))
 
-	self.logmode = None
-	self.old_blue_clicked = 0
-	self.fileopenmode = False
-	self.upgrade_auto_run_timer = eTimer()
-	self.upgrade_auto_run_timer.callback.append(self.keyGreen)
+		self.logmode = None
+		self.old_blue_clicked = 0
+		self.fileopenmode = False
+		self.upgrade_auto_run_timer = eTimer()
+		self.upgrade_auto_run_timer.callback.append(self.keyGreen)
 
-	global fwlist
-	if fwlist is None:
+		global fwlist
+		if fwlist is None:
 			self["key_green"] = StaticText(" ")
 			self["status"] = StaticText(_("This plugin is supported only the INI-Series."))
 		else:

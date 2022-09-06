@@ -382,12 +382,12 @@ class VFDIcons:
 #		if (self.record == True and config.plugins.vfdicon.recredledon.value != 0):
 		if self.record == True:
 			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
-        		if self.standby == False:
+        	if self.standby == False:
 			if self.record == False and self.timeshift == False:
 				disptype = config.plugins.vfdicon.displayshow.value
 		else:
 			disptype = config.plugins.vfdicon.stbshow.value
-			self.writeDate(disptype)
+		self.writeDate(disptype)
 
 	def __evVideoSizeChanged(self):
 		if config.plugins.vfdicon.showicons.value != "none":

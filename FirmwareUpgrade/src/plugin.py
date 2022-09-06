@@ -689,37 +689,37 @@ class FirmwareUpgrade(Screen, ConfigListScreen):
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
-        self.session = session
+		self.session = session
 
-	self["shortcuts"] = ActionMap(["ShortcutActions", "SetupActions"],
-		{
-			"ok": self.keyGreen,
-			"cancel": self.keyRed,
-			"red": self.keyRed,
-			"green": self.keyGreen,
-			"blue": self.keyBlue,
-		}, -2)
+		self["shortcuts"] = ActionMap(["ShortcutActions", "SetupActions"],
+			{
+				"ok": self.keyGreen,
+				"cancel": self.keyRed,
+				"red": self.keyRed,
+				"green": self.keyGreen,
+				"blue": self.keyBlue,
+			}, -2)
 
-	self.list = []
-	self.updateFilePath = ""
+		self.list = []
+		self.updateFilePath = ""
 
-	self.finishedExit = False
+		self.finishedExit = False
 
-	self.rebootLock = False
-	self.rebootMessage = ""
-	self.cbRebootCallCount = 0
+		self.rebootLock = False
+		self.rebootMessage = ""
+		self.cbRebootCallCount = 0
 
-	ConfigListScreen.__init__(self, self.list, session=self.session)
-	self["key_red"] = StaticText(_("Close"))
+		ConfigListScreen.__init__(self, self.list, session=self.session)
+		self["key_red"] = StaticText(_("Close"))
 
-	self.logmode = None
-	self.old_blue_clicked = 0
-	self.fileopenmode = False
-	self.upgrade_auto_run_timer = eTimer()
-	self.upgrade_auto_run_timer.callback.append(self.keyGreen)
+		self.logmode = None
+		self.old_blue_clicked = 0
+		self.fileopenmode = False
+		self.upgrade_auto_run_timer = eTimer()
+		self.upgrade_auto_run_timer.callback.append(self.keyGreen)
 
-	global fwlist
-	if fwlist is None:
+		global fwlist
+		if fwlist is None:
 			self["key_green"] = StaticText(" ")
 			self["status"] = StaticText(_("Duo/Solo was not support."))
 		else:

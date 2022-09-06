@@ -401,7 +401,7 @@ class VFDIcons:
 				if (self.record == True or self.timeshift == True): # if recording or timeshifting, display a rotating disc
 					Console().ePopen("fp_control  -i 24 1")
 		if self.record == False and self.timeshift == False:
-            			if self.standby == False:
+            		if self.standby == False:
 				if config.plugins.vfdicon.showicons.value == "all":
 					Console().ePopen("fp_control  -i 24 0")
 				disptype = config.plugins.vfdicon.displayshow.value
