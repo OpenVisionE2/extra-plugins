@@ -16,7 +16,8 @@ from twisted.internet import reactor
 from twisted.internet.protocol import DatagramProtocol
 import glob
 import os
-import httplib
+from six.moves import http_client
+from six import PY2
 import copy
 
 
@@ -55,7 +56,7 @@ class SSDPServerDiscovery(DatagramProtocol):
         self.port = reactor.listenUDP(0, self, interface=iface)
         if self.port is not None:
             print("Sending M-SEARCH...")
-            self.port.write(MS, (SSDP_ADDR, SSDP_PORT))
+            self.port.write(MS if PY2 else bytes(MS, 'utf-8'), (SSDP_ADDR, SSDP_PORT))
 
     def stop_msearch(self):
         if self.port is not None:
@@ -134,6 +135,8 @@ class SATIPDiscovery:
 
     def dataParse(self, data):
         serverData = {}
+        if not PY2:
+			data = data.decode("UTF-8")
         for line in data.splitlines():
 #			print("[*] line : ", line)
             if line.find(':') != -1:
@@ -213,7 +216,7 @@ class SATIPDiscovery:
             #print("port2: " , port)
             #print("request : ", request)
 
-            conn = httplib.HTTPConnection(address, int(port))
+            conn = http_client.HTTPConnection(address, int(port))
             conn.request("GET", request)
             res = conn.getresponse()
         except Exception as ErrMsg:
@@ -340,7 +343,7 @@ class SATIPTuner(Screen, ConfigListScreen):
         self.list = []
         ConfigListScreen.__init__(self, self.list, session=self.session)
         self.satipconfig = ConfigSubsection()
-        self.satipconfig.server = None
+        # self.satipconfig.server = None
 
         if not self.discoveryEnd in satipdiscovery.updateCallback:
             satipdiscovery.updateCallback.append(self.discoveryEnd)
@@ -736,7 +739,9 @@ class SATIPClient(Screen):
 #			self.keyDisable()
 
     def sortVtunerConfig(self):
-        self.vtunerConfig.sort(reverse=True)
+        # FIXME What should be sorted here ???
+        if PY2:
+            self.vtunerConfig.sort(reverse=True)
 
     def saveConfig(self):
         data = ""
