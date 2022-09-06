@@ -607,21 +607,21 @@ class SATIPClient(Screen):
 		self["vtunerList"] = List(self.configList)
 
 		self["shortcuts"] = ActionMap(["SATIPCliActions"],
-		{
-			"ok": self.keySetup,
-			"cancel": self.keyCancel,
-			"red": self.keyCancel,
-			"green": self.KeySave,
-			"yellow": self.keySetup,
-			"blue": self.keyDisable,
-		}, -2)
+			{
+				"ok": self.keySetup,
+				"cancel": self.keyCancel,
+				"red": self.keyCancel,
+				"green": self.KeySave,
+				"yellow": self.keySetup,
+				"blue": self.keyDisable,
+			}, -2)
 
 		self.vtunerIndex = VTUNER_IDX_LIST
 		self.vtunerConfig = self.loadConfig()
 		self.sortVtunerConfig()
 		self.old_vtunerConfig = copy.deepcopy(self.vtunerConfig)
 		self.createSetup()
-    self.onShown.append(self.checkVTuner)
+		self.onShown.append(self.checkVTuner)
 
 	def checkVTuner(self):
 		if not VTUNER_IDX_LIST:

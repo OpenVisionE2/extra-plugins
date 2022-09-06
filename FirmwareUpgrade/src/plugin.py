@@ -453,31 +453,31 @@ class FUFilebrowser(Screen):
 
 	def __init__(self, session, parent, firmware):
 		Screen.__init__(self, session)
-    self.session = session
+		self.session = session
 
-	self["key_blue"] = StaticText(_("Download"))
-	self["status"] = StaticText(" ")
-	self["file_list"] = FileList("/", matchingPattern="^.*")
+		self["key_blue"] = StaticText(_("Download"))
+		self["status"] = StaticText(" ")
+		self["file_list"] = FileList("/", matchingPattern="^.*")
 
-	self["actions"] = ActionMap(["OkCancelActions", "ShortcutActions", "WizardActions", "ColorActions", ],
-                {
-			"ok": self.onClickOk,
-			"cancel": self.onClickCancel,
-			"blue": self.onClickBlue,
-			"up": self.onClickUp,
-			"down": self.onClickDown,
-			"left": self.onClickLeft,
-			"right": self.onClickRight,
-                }, -1)
+		self["actions"] = ActionMap(["OkCancelActions", "ShortcutActions", "WizardActions", "ColorActions", ],
+			{
+				"ok": self.onClickOk,
+				"cancel": self.onClickCancel,
+				"blue": self.onClickBlue,
+				"up": self.onClickUp,
+				"down": self.onClickDown,
+				"left": self.onClickLeft,
+				"right": self.onClickRight,
+			}, -1)
 
-	self.resetGUI()
-	self.firmware = firmware
+		self.resetGUI()
+		self.firmware = firmware
 
-	self.callback = None
-	self.timer_downloading = None
+		self.callback = None
+		self.timer_downloading = None
 
-	self.downloadLock = False
-	self.setTitle(firmware.upper() + " File Browser")
+		self.downloadLock = False
+		self.setTitle(firmware.upper() + " File Browser")
 
 	def resetGUI(self):
 		self["status"].setText("Press OK to select, Press Cancel to exit.\nPress BLUE to download the latest firmware.")

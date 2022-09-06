@@ -449,11 +449,7 @@ class BrowserLauncher(ConfigListScreen, Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/WebBrowser")
-<<<<<<< HEAD
 		self.session = session
-=======
-    self.session = session
->>>>>>> 7966611b078ab5d7dc8a657212541bcef2866731
 		self.list = []
 		ConfigListScreen.__init__(self, self.list)
 
@@ -464,10 +460,10 @@ class BrowserLauncher(ConfigListScreen, Screen):
 		self.browser_name = "arora"
 		self.conf_file = resolveFilename(SCOPE_PLUGINS, "Extensions/WebBrowser/settings.conf")
 		self["actions"] = ActionMap(["OkCancelActions", "ShortcutActions", "WizardActions", "ColorActions", "SetupActions", ],
-                {"red": self.keyCancel,
-			"green": self.keyGo,
-			"cancel": self.keyExit,
-                }, -2)
+		        {"red": self.keyCancel,
+				"green": self.keyGo,
+				"cancel": self.keyExit,
+		        }, -2)
 		self.info = Label(_("If you want to quit the Browser,\nPress RED -> EXIT."))
 		self["info"] = self.info
 		self["key_red"] = StaticText(_("Exit"))
