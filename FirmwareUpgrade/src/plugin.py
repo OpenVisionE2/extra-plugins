@@ -453,7 +453,7 @@ class FUFilebrowser(Screen):
 
 	def __init__(self, session, parent, firmware):
 		Screen.__init__(self, session)
-        self.session = session
+    self.session = session
 
 	self["key_blue"] = StaticText(_("Download"))
 	self["status"] = StaticText(" ")

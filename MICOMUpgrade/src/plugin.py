@@ -165,7 +165,7 @@ class Filebrowser(Screen):
 	def __init__(self, session, parent, firmware):
 		Screen.__init__(self, session)
 		self.skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/MICOMUpgrade")
-        self.session = session
+    self.session = session
 
 	self["key_blue"] = StaticText(_("Download the firmware (latest)"))
 	self["key_yellow"] = StaticText(_("Cancel"))
