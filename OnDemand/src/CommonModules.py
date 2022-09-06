@@ -135,7 +135,7 @@ class MainMenuList(GUIComponent):
 			pngthumb = self.picload.getData()
 			res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHABLEND, r1.x, r1.y, r1.w, r1.h, pngthumb))
 
- 		return res
+        		return res
 
 	def fillList(self, list):
 		self.totalitems = len(list)
@@ -297,7 +297,7 @@ class EpisodeList(GUIComponent):
 		pngthumb = self.picload.getData()
 		res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHABLEND, 0, self.l.getItemSize().height() - 2, self.l.getItemSize().width(), 2, pngthumb))
 
- 		return res
+       		return res
 
 	def fillEpisodeList(self, mediaList):
 		for x in mediaList:

@@ -216,9 +216,9 @@ def SH4MultiBootExtractJFFS(source, target, zipdelete):
         Console().ePopen('echo "[SH4MultiBoot] Extracting image file"')
         rc = Console().ePopen('unzip %s' % sourcefile)
         if zipdelete == "True":
-                rc = Console().ePopen('rm -f %s' % sourcefile)
+            rc = Console().ePopen('rm -f %s' % sourcefile)
         else:
-                Console().ePopen('echo "[SH4MultiBoot] Keep %s for next time"' % sourcefile)
+            Console().ePopen('echo "[SH4MultiBoot] Keep %s for next time"' % sourcefile)
         if os.path.exists('/media/sh4multiboot/SH4MultiBootUpload/enigma2'):
             os.chdir('enigma2')
             Console().ePopen('mv -f e2jffs2.img rootfs.bin')

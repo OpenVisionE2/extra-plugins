@@ -431,7 +431,7 @@ class VFDIcons:
 
 	def timerEvent(self):
 		self.showTimer() #update timer icon
- 		if self.standby == False:
+       		if self.standby == False:
 			if self.display == 'vfd':
 				self.showMute() #update mute icon
 				if config.plugins.vfdicon.showicons.value == "all":

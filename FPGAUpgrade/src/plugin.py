@@ -270,22 +270,22 @@ class FPGAUpgrade(Screen):
                 }, -1)
 		self.onLayoutFinish.append(self.doLayoutFinish)
 
-                self.ERROR_MSG = ''
-                self.ERROR_CODE = 0
-                self.SOURCELIST = self["file_list"]
-                self.STATUS_BAR = self["status"]
-                self.STATUS_BAR.setText(_(self.SOURCELIST.getCurrentDirectory()))
+        self.ERROR_MSG = ''
+        self.ERROR_CODE = 0
+        self.SOURCELIST = self["file_list"]
+        self.STATUS_BAR = self["status"]
+        self.STATUS_BAR.setText(_(self.SOURCELIST.getCurrentDirectory()))
 
-		self.DEVICE_LIST = '/dev/fpga_dp;/dev/dp;/dev/misc/dp;'
-		self.DOWNLOAD_TAR_PATH = '/tmp/'
-		self.DOWNLOAD_FILE_NAME = 'TS_PRO.dat'
-		self.DOWNLOAD_URL = ''
-		self.doLoadConf()
-		self.FPGA = FPGAUpgradeManager()
-		print(self.DEVICE_LIST)
-		print(self.DOWNLOAD_TAR_PATH)
-		print(self.DOWNLOAD_FILE_NAME)
-		print(self.DOWNLOAD_URL)
+	self.DEVICE_LIST = '/dev/fpga_dp;/dev/dp;/dev/misc/dp;'
+	self.DOWNLOAD_TAR_PATH = '/tmp/'
+	self.DOWNLOAD_FILE_NAME = 'TS_PRO.dat'
+	self.DOWNLOAD_URL = ''
+	self.doLoadConf()
+	self.FPGA = FPGAUpgradeManager()
+	print(self.DEVICE_LIST)
+	print(self.DOWNLOAD_TAR_PATH)
+	print(self.DOWNLOAD_FILE_NAME)
+	print(self.DOWNLOAD_URL)
 
 	def doLayoutFinish(self):
 		return
@@ -410,7 +410,7 @@ class FPGAUpgrade(Screen):
 
 
 def main(session, **kwargs):
-        session.open(FPGAUpgrade)
+    session.open(FPGAUpgrade)
 
 
 def Plugins(**kwargs):

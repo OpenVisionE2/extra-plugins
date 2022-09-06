@@ -747,14 +747,14 @@ class EPGFetcher(object):
                     if not desc:
                         desc = attrNewlines(evt.getExtendedDescription())
                     if desc and timer.description != desc and attrNewlines(timer.description) != desc:
-                            # print("[EPGFetcher] updateDescriptions from EPG description", servicename, "'" + timer.name + "':", "'" + timer.description + "' -> '" + desc + "'")
-                            timer.description = desc
-                            timer_updated = True
+                        # print("[EPGFetcher] updateDescriptions from EPG description", servicename, "'" + timer.name + "':", "'" + timer.description + "' -> '" + desc + "'")
+                        timer.description = desc
+                        timer_updated = True
                     eit = evt.getEventId()
                     if eit and timer.eit != eit:
-                            # print("[EPGFetcher] updateDescriptions from EPG eit", servicename, "'" + timer.name + "':", timer.eit, "->", eit)
-                            timer.eit = eit
-                            timer_updated = True
+                        # print("[EPGFetcher] updateDescriptions from EPG eit", servicename, "'" + timer.name + "':", timer.eit, "->", eit)
+                        timer.eit = eit
+                        timer_updated = True
                     if timer_updated:
                         self.addLog("Update timer details from EPG '" + timer.name + "'")
                     updated |= timer_updated
@@ -817,7 +817,7 @@ class EPGFetcher(object):
                 if action == "forget":
                     for timer in _session.nav.RecordTimer.timer_list:
                         if timer.ice_timer_id == ice_timer_id:
-                            # print("[IceTV] removing timer:", timer)
+                        # print("[IceTV] removing timer:", timer)
                             _session.nav.RecordTimer.removeEntry(timer)
                             break
                     else:
@@ -1198,13 +1198,13 @@ class IceTVUIBase:
         if hasattr(self, "_instructions"):
             self["instructions"] = Label(self._instructions)
         if title is not None:
-                self.setTitle(title)
+            self.setTitle(title)
         if description is not None:
-                self["description"] = Label(description)
+            self["description"] = Label(description)
         if self._banner is not None:
             self["banner"] = Label()
             if server is None:
-                    server = config.plugins.icetv.server.name.value
+                server = config.plugins.icetv.server.name.value
             self.setBanner(server)
 
     def setBanner(self, server):
@@ -1332,9 +1332,9 @@ class IceTVServerSetup(Screen, IceTVUIBase):
     def onLayoutFinished(self):
         curr_server_name = config.plugins.icetv.server.name.value
         try:
-                self["config"].moveToIndex(next(i for i, ent in enumerate(self["config"].list) if ent[1] == curr_server_name))
+            self["config"].moveToIndex(next(i for i, ent in enumerate(self["config"].list) if ent[1] == curr_server_name))
         except StopIteration:
-                pass
+            pass
 
     def selectionChanged(self):
         self.setBanner(self["config"].getCurrent()[1])
@@ -1573,9 +1573,9 @@ class IceTVRegionSetup(Screen, IceTVUIBase):
             curr_region_id = config.plugins.icetv.member.region_id.value
             curr_country_code = config.plugins.icetv.member.country.value
             try:
-                    self["config"].moveToIndex(next(i for i, ent in enumerate(rl) if ent[1] == curr_region_id and ent[2] == curr_country_code))
+                self["config"].moveToIndex(next(i for i, ent in enumerate(rl) if ent[1] == curr_region_id and ent[2] == curr_country_code))
             except StopIteration:
-                    pass
+                pass
             if rl:
                 self.have_region_list = True
         except (IOError, RuntimeError) as ex:

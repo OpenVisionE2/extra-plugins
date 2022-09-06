@@ -3577,7 +3577,7 @@ def writeLCD3(s, im, quality, SAVE=True):
 
 
 def isMediaDisplay(player):
- return player in ["sonos", "ymc", "blue"]
+    return player in ["sonos", "ymc", "blue"]
 
 
 def NextScreen(PRESS):

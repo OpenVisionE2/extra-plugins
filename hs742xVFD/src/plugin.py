@@ -299,7 +299,7 @@ class VFDIcons:
 						self.mp3Available = True
 
 	def timerEvent(self):
- 		if self.standby == False:
+        		if self.standby == False:
 			if self.record == False:
 				disptype = config.plugins.vfdicon.displayshow.value
 		else:

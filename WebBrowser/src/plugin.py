@@ -420,7 +420,7 @@ class PlayerService:
 			self.vk_conn = conn
 			self.session.openWithCallback(self.cbOpenKeyboard, VirtualKeyBoard, title=(_("Enter your input data")), text="")
 
-        def cbOpenKeyboard(self, data=None):
+    def cbOpenKeyboard(self, data=None):
 		print("virtual keyboard callback!!")
 		wb_unlock()
 		self.sendResponse(self.vk_conn, data)
@@ -449,7 +449,7 @@ class BrowserLauncher(ConfigListScreen, Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/WebBrowser")
-                self.session = session
+        self.session = session
 		self.list = []
 		ConfigListScreen.__init__(self, self.list)
 

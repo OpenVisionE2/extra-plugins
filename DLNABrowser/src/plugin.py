@@ -699,27 +699,27 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 		"""
 
 	def __init__(self, session):
-                self.session = session
-		Screen.__init__(self, session)
+        self.session = session
+	Screen.__init__(self, session)
 
-		self.menulist = []
-		self.oldConfig = {}
-		ConfigListScreen.__init__(self, self.menulist)
+	self.menulist = []
+	self.oldConfig = {}
+	ConfigListScreen.__init__(self, self.menulist)
 
-		global DLNA_CONFIG_CLIENT_CONFNAME
-		self.configFileName = DLNA_CONFIG_CLIENT_CONFNAME
-		self["actions"] = ActionMap(["OkCancelActions", "ShortcutActions", "WizardActions", "ColorActions", "SetupActions", ], {
+	global DLNA_CONFIG_CLIENT_CONFNAME
+	self.configFileName = DLNA_CONFIG_CLIENT_CONFNAME
+	self["actions"] = ActionMap(["OkCancelActions", "ShortcutActions", "WizardActions", "ColorActions", "SetupActions", ], {
 			"red": self.keyExit,
 			"green": self.keyOK,
 			"cancel": self.keyExit,
 			"ok": self.keyOK,
                 }, -2)
-		self["key_red"] = StaticText(_("Exit"))
-		self["key_green"] = StaticText(_("Save"))
-		self["key_yellow"] = StaticText(_(" "))
-		self["key_blue"] = StaticText(_(" "))
+	self["key_red"] = StaticText(_("Exit"))
+	self["key_green"] = StaticText(_("Save"))
+	self["key_yellow"] = StaticText(_(" "))
+	self["key_blue"] = StaticText(_(" "))
 
-		self.makeMenuList()
+	self.makeMenuList()
 
 	def keyExit(self):
 		config.plugins.dlnabrowser.autostart.save()

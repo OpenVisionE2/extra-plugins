@@ -228,7 +228,7 @@ class RCUSelect(Screen):
 
 
 def startConfig(session, **kwargs):
-        session.open(RCUSelect)
+    session.open(RCUSelect)
 
 
 def system(menuid):
