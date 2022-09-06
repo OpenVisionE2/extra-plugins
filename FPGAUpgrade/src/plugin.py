@@ -270,11 +270,11 @@ class FPGAUpgrade(Screen):
                 }, -1)
 		self.onLayoutFinish.append(self.doLayoutFinish)
 
-        self.ERROR_MSG = ''
-        self.ERROR_CODE = 0
-        self.SOURCELIST = self["file_list"]
-        self.STATUS_BAR = self["status"]
-        self.STATUS_BAR.setText(_(self.SOURCELIST.getCurrentDirectory()))
+    self.ERROR_MSG = ''
+    self.ERROR_CODE = 0
+    self.SOURCELIST = self["file_list"]
+    self.STATUS_BAR = self["status"]
+    self.STATUS_BAR.setText(_(self.SOURCELIST.getCurrentDirectory()))
 
 	self.DEVICE_LIST = '/dev/fpga_dp;/dev/dp;/dev/misc/dp;'
 	self.DOWNLOAD_TAR_PATH = '/tmp/'

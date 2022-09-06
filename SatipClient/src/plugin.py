@@ -621,7 +621,7 @@ class SATIPClient(Screen):
 		self.sortVtunerConfig()
 		self.old_vtunerConfig = copy.deepcopy(self.vtunerConfig)
 		self.createSetup()
-        self.onShown.append(self.checkVTuner)
+    self.onShown.append(self.checkVTuner)
 
 	def checkVTuner(self):
 		if not VTUNER_IDX_LIST:

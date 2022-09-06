@@ -135,7 +135,7 @@ class MainMenuList(GUIComponent):
 			pngthumb = self.picload.getData()
 			res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHABLEND, r1.x, r1.y, r1.w, r1.h, pngthumb))
 
-        		return res
+            		return res
 
 	def fillList(self, list):
 		self.totalitems = len(list)

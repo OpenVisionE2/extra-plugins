@@ -449,7 +449,11 @@ class BrowserLauncher(ConfigListScreen, Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/WebBrowser")
+<<<<<<< HEAD
 		self.session = session
+=======
+    self.session = session
+>>>>>>> 7966611b078ab5d7dc8a657212541bcef2866731
 		self.list = []
 		ConfigListScreen.__init__(self, self.list)
 
