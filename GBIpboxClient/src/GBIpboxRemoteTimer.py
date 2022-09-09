@@ -33,8 +33,8 @@ from xml.dom import minidom
 from time import localtime, time
 from bisect import insort
 
-import urllib
-import urllib2
+from six.moves.urllib.parse import urlencode
+from six.moves.urllib.request import urlopen
 import re
 import os
 
@@ -95,7 +95,7 @@ class GBIpboxRemoteTimer():
 		print("[GBIpboxRemoteTimer] get remote timer list")
 
 		try:
-			httprequest = urllib2.urlopen(baseurl + '/web/timerlist')
+			httprequest = urlopen(baseurl + '/web/timerlist')
 			xmldoc = minidom.parseString(httprequest.read())
 			timers = xmldoc.getElementsByTagName('e2timer')
 			for timer in timers:
@@ -232,7 +232,7 @@ class GBIpboxRemoteTimer():
 		print("[GBIpboxRemoteTimer] record ", str(entry))
 
 		entry.service_ref = ServiceReference(":".join(str(entry.service_ref).split(":")[:10]))
-		args = urllib.urlencode({
+		args = urlencode({
 				'sRef': str(entry.service_ref),
 				'begin': str(entry.begin),
 				'end': str(entry.end),
@@ -251,7 +251,7 @@ class GBIpboxRemoteTimer():
 		print("[GBIpboxRemoteTimer] web interface url: " + baseurl)
 
 		try:
-			httprequest = urllib2.urlopen(baseurl + '/web/timeradd?' + args)
+			httprequest = urlopen(baseurl + '/web/timeradd?' + args)
 			xmldoc = minidom.parseString(httprequest.read())
 			status = xmldoc.getElementsByTagName('e2simplexmlresult')[0]
 			success = getValueFromNode(status, 'e2state') == "True"
@@ -275,7 +275,7 @@ class GBIpboxRemoteTimer():
 
 		entry.service_ref = ServiceReference(":".join(str(entry.service_ref).split(":")[:10]))
 		try:
-			args = urllib.urlencode({
+			args = urlencode({
 					'sRef': str(entry.service_ref),
 					'begin': str(entry.begin),
 					'end': str(entry.end),
@@ -293,7 +293,7 @@ class GBIpboxRemoteTimer():
 				})
 
 			baseurl = self.getBaseUrl()
-			httprequest = urllib2.urlopen(baseurl + '/web/timerchange?' + args)
+			httprequest = urlopen(baseurl + '/web/timerchange?' + args)
 			xmldoc = minidom.parseString(httprequest.read())
 			status = xmldoc.getElementsByTagName('e2simplexmlresult')[0]
 			success = getValueFromNode(status, 'e2state') == "True"
@@ -316,7 +316,7 @@ class GBIpboxRemoteTimer():
 		print("[GBIpboxRemoteTimer] timer remove ", str(entry))
 
 		entry.service_ref = ServiceReference(":".join(str(entry.service_ref).split(":")[:10]))
-		args = urllib.urlencode({
+		args = urlencode({
 				'sRef': str(entry.service_ref),
 				'begin': str(entry.begin),
 				'end': str(entry.end)
@@ -324,7 +324,7 @@ class GBIpboxRemoteTimer():
 
 		baseurl = self.getBaseUrl()
 		try:
-			httprequest = urllib2.urlopen(baseurl + '/web/timerdelete?' + args)
+			httprequest = urlopen(baseurl + '/web/timerdelete?' + args)
 			httprequest.read()
 		except Exception as e:
 			print("[GBIpboxRemoteTimer]", e)

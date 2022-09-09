@@ -5,7 +5,6 @@ from . import _, PluginLanguageDomain
 # Python
 from time import mktime, strftime, time, localtime
 
-# import urllib2
 import os
 
 # enigma
@@ -32,15 +31,9 @@ from Plugins.Plugin import PluginDescriptor
 from .mixes import Mixes
 
 import sys
-pythonVer = 2
-if sys.version_info.major == 3:
-	pythonVer = 3
 
-if pythonVer == 3:
-	from urllib.request import urlopen, Request
-	from urllib.error import URLError, HTTPError
-else:
-	from urllib2 import urlopen, Request, HTTPError, URLError
+from six.moves.urllib.request import Request, urlopen
+from six.moves.urllib.error import URLError, HTTPError
 
 mixes = Mixes().read()
 choices = sorted([(mixes[x]["key"], mixes[x]["name"]) for x in mixes], key=lambda listItem: listItem[1])
@@ -163,7 +156,8 @@ class ABMCustomMixImporter(Screen):
 			self["action"].setText(_('Fetching from github'))
 			self["status"] = Label("1/1")
 		CustomMix = self.fetchURL()
-		if pythonVer == 3:
+		from six import PY3
+		if PY3:
 			try:
 				CustomMix = CustomMix.decode()
 			except:

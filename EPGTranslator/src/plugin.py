@@ -34,20 +34,16 @@ import traceback
 from .AutoflushCache import AutoflushCache
 from .HTML5Entities import name2codepoint
 
+from six.moves.urllib.parse import quote, unquote
+from six.moves.urllib.request import Request, urlopen
+
 # Imports and defs which are version-dependent
 #
 if sys.version_info[0] == 2:
-# Python2 version
-    from urllib import quote, unquote
-    from urllib2 import Request, urlopen
     def dec2utf8(n): return unichr(n).encode('utf-8')
 
 else:
-# Python3 version
-    from urllib.parse import quote, unquote
-    from urllib.request import Request, urlopen
 # No unichr in Py3. chr() returns a unicode string.
-#
     def dec2utf8(n): return chr(n)
 
 # Who we will pretend to be when calling translate.google.com

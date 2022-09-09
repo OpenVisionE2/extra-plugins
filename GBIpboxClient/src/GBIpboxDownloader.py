@@ -28,8 +28,8 @@ from .GBIpboxLocale import _
 from enigma import eEPGCache, eDVBDB
 
 from xml.dom import minidom
-import urllib
-import urllib2
+from six.moves.urllib.request import urlopen
+from six.moves.urllib.parse import quote, urlencode
 import re
 import os
 
@@ -83,7 +83,7 @@ class GBIpboxDownloader:
 		print("[GBIpboxClient] sync is done!")
 
 	def getSetting(self, baseurl, key):
-		httprequest = urllib2.urlopen(baseurl + '/web/settings')
+		httprequest = urlopen(baseurl + '/web/settings')
 		xmldoc = minidom.parseString(httprequest.read())
 		settings = xmldoc.getElementsByTagName('e2setting')
 		for setting in settings:
@@ -115,7 +115,7 @@ class GBIpboxDownloader:
 
 	def downloadParentalControlBouquets(self, baseurl):
 		bouquets = []
-		httprequest = urllib2.urlopen(baseurl + '/web/parentcontrollist')
+		httprequest = urlopen(baseurl + '/web/parentcontrollist')
 		xmldoc = minidom.parseString(httprequest.read())
 		services = xmldoc.getElementsByTagName('e2service')
 		for service in services:
@@ -129,7 +129,7 @@ class GBIpboxDownloader:
 
 	def downloadBouquets(self, baseurl, stype):
 		bouquets = []
-		httprequest = urllib2.urlopen(baseurl + '/web/bouquets?stype=' + stype)
+		httprequest = urlopen(baseurl + '/web/bouquets?stype=' + stype)
 		print("[GBIpboxClient] download bouquets from " + baseurl + '/web/bouquets?stype=' + stype)
 		xmldoc = minidom.parseString(httprequest.read())
 		services = xmldoc.getElementsByTagName('e2service')
@@ -139,7 +139,7 @@ class GBIpboxDownloader:
 			bouquet['name'] = getValueFromNode(service, 'e2servicename')
 			bouquet['services'] = []
 
-			httprequest = urllib2.urlopen(baseurl + '/web/getservices?' + urllib.urlencode({'sRef': bouquet['reference']}) + '&hidden=1')
+			httprequest = urlopen(baseurl + '/web/getservices?' + urlencode({'sRef': bouquet['reference']}) + '&hidden=1')
 			xmldoc2 = minidom.parseString(httprequest.read())
 			services2 = xmldoc2.getElementsByTagName('e2service')
 			for service2 in services2:
@@ -190,7 +190,7 @@ class GBIpboxDownloader:
 						url = streamingurl + "/" + service['reference']
 
 				if isDVB:
-					outfile.write("#SERVICE " + service['reference'] + urllib.quote(url) + ":" + service['name'] + "\n")
+					outfile.write("#SERVICE " + service['reference'] + quote(url) + ":" + service['name'] + "\n")
 				elif isStreaming:
 					outfile.write("#SERVICE " + service['reference'] + "\n")
 				else:
@@ -214,9 +214,9 @@ class GBIpboxDownloader:
 		print("[GBIpboxClient] remote EPG found at " + filename)
 
 		print("[GBIpboxClient] dump remote EPG to epg.dat")
-		httprequest = urllib2.urlopen(baseurl + '/web/saveepg')
+		httprequest = urlopen(baseurl + '/web/saveepg')
 
-		httprequest = urllib2.urlopen(baseurl + '/file?action=download&file=' + urllib.quote(filename))
+		httprequest = urlopen(baseurl + '/file?action=download&file=' + quote(filename))
 		data = httprequest.read()
 		if not data:
 			print("[GBIpboxClient] cannot download remote EPG. Skip EPG sync.")

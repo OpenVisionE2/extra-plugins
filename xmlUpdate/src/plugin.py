@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 # for localized messages
 from . import _
-import urllib2
+from six.moves.urllib.request import Request, urlopen
+from six.moves.urllib.error import URLError, HTTPError
 from Components.ActionMap import ActionMap
 from Components.config import config, ConfigSelection, getConfigListEntry
 from Components.ConfigList import ConfigListScreen
@@ -106,21 +107,19 @@ class xmlUpdate(ConfigListScreen, Screen):
 		try:
 			if self.DVBtype.value == "satellites":
 				if self.Satellitestype.value != "all":
-					req = urllib2.Request(self.url % self.Satellitestype.value)
+					req = Request(self.url % self.Satellitestype.value)
 				else:
-					req = urllib2.Request(self.url % self.DVBtype.value)
+					req = Request(self.url % self.DVBtype.value)
 			else:
-				req = urllib2.Request(self.url % self.DVBtype.value)
-			response = urllib2.urlopen(req)
+				req = Request(self.url % self.DVBtype.value)
+			response = urlopen(req)
 			print('[xmlUpdate][fetchURL] Response: %d' % response.getcode())
 			if int(response.getcode()) == 200:
 				return response.read()
-		except urllib2.HTTPError as err:
+		except HTTPError as err:
 			print('[xmlUpdate][fetchURL] ERROR:', err)
-		except urllib2.URLError as err:
+		except URLError as err:
 			print('[xmlUpdate][fetchURL] ERROR:', err.reason[0])
-		except urllib2 as err:
-			print('[xmlUpdate][fetchURL] ERROR:', err)
 		except:
 			import sys
 			print('[xmlUpdate][fetchURL] undefined error', sys.exc_info()[0])

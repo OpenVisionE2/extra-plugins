@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 import re
-import urllib2
+from six.moves.urllib.request import Request, urlopen
 
 
 def DownloadSetting(url):
     list = []
     try:
-        req = urllib2.Request(url)
+        req = Request(url)
         req.add_header('User-Agent', 'VAS')
-        response = urllib2.urlopen(req)
+        response = urlopen(req)
         link = response.read()
         response.close()
         xx = re.compile('<td><a href="(.+?)">(.+?)</a></td>.*?<td>(.+?)</td>', re.DOTALL).findall(link)
