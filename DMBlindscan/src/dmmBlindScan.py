@@ -17,6 +17,7 @@ from Components.About import about
 from Tools.Directories import fileExists
 from Tools.Transponder import ConvertToHumanReadable
 from Components.SystemInfo import BoxInfo
+from six import PY2
 
 XML_BLINDSCAN_DIR = "/tmp"
 
@@ -233,7 +234,10 @@ class SatelliteTransponderSearchSupport:
 					if not self.auto_scan:
 						self.parm.frequency += self.parm.symbol_rate
 				else:
-					sr_rounded = round(float(sr * 2L) / 1000) * 1000
+					if PY2:
+						sr_rounded = round(float(sr * 2L) / 1000) * 1000
+					else:
+						sr_rounded = round(float(sr * 2) / 1000) * 1000
 					sr_rounded /= 2
 					parm.symbol_rate = int(sr_rounded)
 					fstr += str(parm.symbol_rate / 1000)
@@ -259,10 +263,16 @@ class SatelliteTransponderSearchSupport:
 					if self.auto_scan:
 						print("LOCKED at", freq)
 					else:
-						print("LOCKED at", freq, "SEARCHED at", self.parm.frequency, "half bw", (135L * ((sr + 1000) / 1000) / 200), "half search range", (self.parm.symbol_rate / 2))
-						self.parm.frequency = freq
-						self.parm.frequency += (135L * ((sr + 999) / 1000) / 200)
-						self.parm.frequency += self.parm.symbol_rate / 2
+						if PY2:
+							print("LOCKED at", freq, "SEARCHED at", self.parm.frequency, "half bw", (135L * ((sr + 1000) / 1000) / 200), "half search range", (self.parm.symbol_rate / 2))
+							self.parm.frequency = freq
+							self.parm.frequency += (135L * ((sr + 999) / 1000) / 200)
+							self.parm.frequency += self.parm.symbol_rate / 2
+						else:
+							print("LOCKED at", freq, "SEARCHED at", self.parm.frequency, "half bw", (135 * ((sr + 1000) / 1000) / 200), "half search range", (self.parm.symbol_rate / 2))
+							self.parm.frequency = freq
+							self.parm.frequency += (135 * ((sr + 999) / 1000) / 200)
+							self.parm.frequency += self.parm.symbol_rate / 2
 
 					bm = state.getConstellationBitmap(5)
 					self.tp_found.append((fstr, bm))

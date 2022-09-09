@@ -136,7 +136,7 @@ class SATIPDiscovery:
     def dataParse(self, data):
         serverData = {}
         if not PY2:
-			data = data.decode("UTF-8")
+            data = data.decode("UTF-8")
         for line in data.splitlines():
 #			print("[*] line : ", line)
             if line.find(':') != -1:
