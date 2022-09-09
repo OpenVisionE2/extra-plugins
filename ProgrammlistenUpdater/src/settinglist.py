@@ -74,8 +74,8 @@ def InstallSettings(name, link, date):
         RemoveList = getRemoveList()
         if RemoveList:
             for file in RemoveList:
-               nFile = '/etc/enigma2/' + file
-               if os.path.isfile(nFile) and not nFile == '/etc/enigma2/lamedb':
+                nFile = '/etc/enigma2/' + file
+                if os.path.isfile(nFile) and not nFile == '/etc/enigma2/lamedb':
                     Console().ePopen('rm -rf %s' % nFile)
 
         Console().ePopen('rm -f /etc/enigma2/*.del')
