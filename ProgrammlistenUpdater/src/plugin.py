@@ -42,15 +42,15 @@ class Programmlisten_Updater(Screen, ConfigListScreen):
 
     skin = """
         <screen name="Programmlisten_Updater" position="center,center" size="710,500">
-            <ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-            <ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-            <ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-            <widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-            <widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-            <widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" transparent="1" />
+            <ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+            <ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+            <ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+            <widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+            <widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+            <widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff" transparent="1" />
             <widget name="MenuListSetting" position="25,70" size="660,315" itemHeight="45" scrollbarMode="showOnDemand" />
-            <widget name="description" position="25,420" size="660,60" font="Regular;22" halign="center" valign="center" />
-            <widget name="update" position="440,5" size="200,25" font="Regular;22" halign="center" valign="center" />
+            <widget name="description" position="25,420" size="660,60" font="Regular;22" horizontalAlignment="center" verticalAlignment="center" />
+            <widget name="update" position="440,5" size="200,25" font="Regular;22" horizontalAlignment="center" verticalAlignment="center" />
         </screen>
         """
 

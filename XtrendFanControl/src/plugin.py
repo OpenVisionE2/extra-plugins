@@ -81,24 +81,24 @@ class FanSetupScreen(Screen, ConfigListScreen):
 	skin = """
 		<screen position="center,center" size="550,335" >
 		<widget name="config" position="c-261,c-145" size="533,270" />
-		<ePixmap pixmap="buttons/green.png" position="c-240,e-45" zPosition="0" size="140,40" alphatest="on" />
-		<ePixmap pixmap="buttons/red.png" position="c-70,e-45" zPosition="0" size="140,40" alphatest="on" />
-		<widget name="ok" position="c-240,e-45" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="green" />
-		<widget name="cancel" position="c-70,e-45" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="red" />
+		<ePixmap pixmap="buttons/green.png" position="c-240,e-45" zPosition="0" size="140,40" alphaTest="on" />
+		<ePixmap pixmap="buttons/red.png" position="c-70,e-45" zPosition="0" size="140,40" alphaTest="on" />
+		<widget name="ok" position="c-240,e-45" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="green" />
+		<widget name="cancel" position="c-70,e-45" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="red" />
 		<ePixmap pixmap="div-h.png" position="c-275,e-110" zPosition="1" size="550,2" />
 		<ePixmap pixmap="div-h.png" position="c-275,e-48" zPosition="1" size="550,2" />
 		<widget name="powerstatus" position="c-259,e-105" size="160,20" font="Regular;19" zPosition="1" transparent="1" />
-		<widget name="daemon0" alphatest="on" pixmap="buttons/button_green_off.png" position="c-120,e-101" size="15,16" zPosition="10" transparent="1"/>
-		<widget name="daemon1" alphatest="on" pixmap="buttons/button_green.png" position="c-120,e-101" size="15,16" zPosition="10" transparent="1"/>
-		<ePixmap alphatest="on" pixmap="icons/clock.png" position="c+174,e-105" size="14,14" zPosition="1" />
-		<widget font="Regular;18" halign="left" position="c+194,e-105" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+		<widget name="daemon0" alphaTest="on" pixmap="buttons/button_green_off.png" position="c-120,e-101" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="daemon1" alphaTest="on" pixmap="buttons/button_green.png" position="c-120,e-101" size="15,16" zPosition="10" transparent="1"/>
+		<ePixmap alphaTest="on" pixmap="icons/clock.png" position="c+174,e-105" size="14,14" zPosition="1" />
+		<widget font="Regular;18" horizontalAlignment="left" position="c+194,e-105" render="Label" size="55,20" source="global.CurrentTime" transparent="1" verticalAlignment="center" zPosition="1">
 		<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget font="Regular;15" halign="left" position="c+248,e-106" render="Label" size="27,17" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+		<widget font="Regular;15" horizontalAlignment="left" position="c+248,e-106" render="Label" size="27,17" source="global.CurrentTime" transparent="1" verticalAlignment="center" zPosition="1">
 		<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget name="sysTemp" position="c-259,e-75" size="260,20" font="Regular;19" halign="left" zPosition="1" transparent="1" />
-		<widget name="hddTemp" position="c+0,e-75" size="260,20" font="Regular;19" halign="right" zPosition="1" transparent="1" />
+		<widget name="sysTemp" position="c-259,e-75" size="260,20" font="Regular;19" horizontalAlignment="left" zPosition="1" transparent="1" />
+		<widget name="hddTemp" position="c+0,e-75" size="260,20" font="Regular;19" horizontalAlignment="right" zPosition="1" transparent="1" />
 	</screen>
 	"""
 

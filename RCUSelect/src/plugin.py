@@ -19,11 +19,11 @@ class RCUSelect(Screen):
 	skin = """
 	<screen name="Menusimple" position="center,center" size="600,475" title="" >
 	<widget name="list" position="30,30" size="490,370" scrollbarMode="showOnDemand" />
-	<widget name="info" position="75,5" zPosition="4" size="330,340" font="Regular;18" foregroundColor="#ffffff" transparent="1" halign="left" valign="center" />
-	<ePixmap name="red"    position="20,425"   zPosition="2" size="140,40" pixmap="buttons/red.png" transparent="1" alphatest="on" />
-	<ePixmap name="green"  position="190,425" zPosition="2" size="140,40" pixmap="buttons/green.png" transparent="1" alphatest="on" />
-	<widget name="key_red" position="20,425" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
-	<widget name="key_green" position="190,425" size="140,40" valign="center" halign="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
+	<widget name="info" position="75,5" zPosition="4" size="330,340" font="Regular;18" foregroundColor="#ffffff" transparent="1" horizontalAlignment="left" verticalAlignment="center" />
+	<ePixmap name="red"    position="20,425"   zPosition="2" size="140,40" pixmap="buttons/red.png" transparent="1" alphaTest="on" />
+	<ePixmap name="green"  position="190,425" zPosition="2" size="140,40" pixmap="buttons/green.png" transparent="1" alphaTest="on" />
+	<widget name="key_red" position="20,425" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
+	<widget name="key_green" position="190,425" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4"  foregroundColor="white" font="Regular;20" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
 	</screen>"""
 
 	def __init__(self, session, args=0):

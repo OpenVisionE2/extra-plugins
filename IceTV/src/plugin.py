@@ -1214,8 +1214,8 @@ class IceTVUIBase:
 class IceTVMain(ChoiceBox):
     skin = """
 <screen name="IceTVMain" position="center,center" size="1060,350" zPosition="5">
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="202,0" size="172,100" alphatest="on" />
-    <widget name="text" position="540,0" size="520,350" font="Regular;22" valign="center" halign="center" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="202,0" size="172,100" alphaTest="on" />
+    <widget name="text" position="540,0" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
     <widget name="list" position="10,100" size="520,150" enableWrapAround="1" />
 </screen>"""
 
@@ -1297,14 +1297,14 @@ class IceTVServerSetup(Screen, IceTVUIBase):
 <screen name="IceTVServerSetup" position="center,center" size="1190,510" title="IceTV - Service selection" >
     <widget name="instructions" position="20,10" size="600,100" font="Regular;22" />
     <widget name="config" position="30,120" size="580,300" enableWrapAround="1" scrollbarMode="showAlways"/>
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphatest="on" />
-    <widget name="banner" position="630,105" size="520,350" font="Regular;22" valign="center" halign="center" />
-    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphatest="blend" />
-    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
-    <widget name="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_green" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_yellow" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="490,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphaTest="on" />
+    <widget name="banner" position="630,105" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
+    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphaTest="blend" />
+    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphaTest="blend" />
+    <widget name="key_red" position="40,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_green" position="190,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_yellow" position="340,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_blue" position="490,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
 </screen>"""
 
     _instructions = _("Please select the IceTV service that you wish to use.")
@@ -1360,8 +1360,8 @@ class IceTVUserTypeScreen(Screen, IceTVUIBase):
 <screen name="IceTVUserTypeScreen" position="center,center" size="1190,455" title="IceTV - Account selection" >
  <widget position="20,20" size="600,40" name="title" font="Regular;32" />
  <widget position="20,80" size="600,200" name="instructions" font="Regular;22" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphatest="on" />
-    <widget name="banner" position="630,105" size="520,350" font="Regular;22" valign="center" halign="center" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphaTest="on" />
+    <widget name="banner" position="630,105" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
  <widget position="20,300" size="600,100" name="menu" />
 </screen>
 """
@@ -1407,16 +1407,16 @@ class IceTVNewUserSetup(ConfigListScreen, Screen, IceTVUIBase):
     <widget name="instructions" position="20,10" size="600,125" font="Regular;22" />
     <widget name="config" position="20,145" size="600,125" />
 
-    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" halign="left" valign="top" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphatest="on" />
-    <widget name="banner" position="630,105" size="520,350" font="Regular;22" valign="center" halign="center" />
-    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphatest="blend" />
-    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
-    <ePixmap name="blue" position="470,e-28" size="15,16" pixmap="buttons/button_blue.png" alphatest="blend" />
-    <widget name="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_green" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_yellow" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="490,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
+    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" horizontalAlignment="left" verticalAlignment="top" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphaTest="on" />
+    <widget name="banner" position="630,105" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
+    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphaTest="blend" />
+    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphaTest="blend" />
+    <ePixmap name="blue" position="470,e-28" size="15,16" pixmap="buttons/button_blue.png" alphaTest="blend" />
+    <widget name="key_red" position="40,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_green" position="190,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_yellow" position="340,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_blue" position="490,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
 </screen>"""
 
     _instructions = _("Please enter your email address, which will be your login.\n"
@@ -1508,15 +1508,15 @@ class IceTVRegionSetup(Screen, IceTVUIBase):
     <widget name="config" position="30,120" size="580,300" enableWrapAround="1" scrollbarMode="showAlways"/>
     <widget name="error" position="30,120" size="580,300" font="Console; 16" zPosition="1" />
 
-    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" halign="left" valign="top" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphatest="on" />
-    <widget name="banner" position="630,105" size="520,350" font="Regular;22" valign="center" halign="center" />
-    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphatest="blend" />
-    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
-    <widget name="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_green" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_yellow" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="490,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
+    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" horizontalAlignment="left" verticalAlignment="top" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphaTest="on" />
+    <widget name="banner" position="630,105" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
+    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphaTest="blend" />
+    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphaTest="blend" />
+    <widget name="key_red" position="40,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_green" position="190,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_yellow" position="340,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_blue" position="490,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
 </screen>"""
 
     _instructions = _("Please select the region that most closely matches your physical location. "
@@ -1593,11 +1593,11 @@ class IceTVLogin(Screen, IceTVUIBase):
     <widget name="qrcode" position="342,90" size="256,256" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/de_qr_code.png" zPosition="1" />
     <widget name="message" position="20,360" size="950,250" font="Regular;22" />
 
-    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
-    <widget name="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_green" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_yellow" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="490,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
+    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphaTest="blend" />
+    <widget name="key_red" position="40,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_green" position="190,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_yellow" position="340,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_blue" position="490,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
 </screen>"""
 
     _instructions = _("Contacting IceTV server and setting up your receiver.")
@@ -1726,16 +1726,16 @@ class IceTVNeedPassword(ConfigListScreen, Screen, IceTVUIBase):
     <widget name="instructions" position="20,10" size="600,100" font="Regular;22" />
     <widget name="config" position="20,120" size="600,100" />
 
-    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" halign="left" valign="top" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphatest="on" />
-    <widget name="banner" position="630,105" size="520,350" font="Regular;22" valign="center" halign="center" />
-    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphatest="blend" />
-    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
-    <ePixmap name="blue" position="470,e-28" size="15,16" pixmap="buttons/button_blue.png" alphatest="blend" />
-    <widget name="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_green" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_yellow" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="490,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
+    <widget name="description" position="20,e-90" size="600,60" font="Regular;18" foregroundColor="grey" horizontalAlignment="left" verticalAlignment="top" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/IceTV/icetv_logo172x100.png" position="804,0" size="172,100" alphaTest="on" />
+    <widget name="banner" position="630,105" size="520,350" font="Regular;22" verticalAlignment="center" horizontalAlignment="center" />
+    <ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphaTest="blend" />
+    <ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphaTest="blend" />
+    <ePixmap name="blue" position="470,e-28" size="15,16" pixmap="buttons/button_blue.png" alphaTest="blend" />
+    <widget name="key_red" position="40,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_green" position="190,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_yellow" position="340,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
+    <widget name="key_blue" position="490,e-30" size="150,25" verticalAlignment="top" horizontalAlignment="left" font="Regular;20" />
 </screen>"""
 
     _instructions = _("The IceTV server has requested password for %s.")

@@ -58,7 +58,7 @@ class SatBlindscanState(Screen):
 			</convert>
 		</widget>
 		<eLabel	position="544,70" size="1,440" backgroundColor="grey"/>
-		<widget name="post_action" position="554,90" size="256,140" font="Regular;19" halign="center"/>
+		<widget name="post_action" position="554,90" size="256,140" font="Regular;19" horizontalAlignment="center"/>
 		<widget source="constellation" render="Canvas" position="554,254" size="256,256" correct_aspect="width" />
 	</screen>
 	"""
@@ -500,7 +500,7 @@ class DmmBlindscan(ConfigListScreen, Screen, TransponderSearchSupport, Satellite
 	<screen position="center,center" size="620,430" title="Satellite Blindscan">
 		<widget name="config" position="10,10" size="600,360" itemHeight="30" scrollbarMode="showOnDemand" />
 		<eLabel position="10,390" size="600,1" backgroundColor="grey"/>
-		<widget name="introduction" position="10,398" size="600,25" font="Regular;22" halign="center" />
+		<widget name="introduction" position="10,398" size="600,25" font="Regular;22" horizontalAlignment="center" />
 	</screen>
 	"""
 

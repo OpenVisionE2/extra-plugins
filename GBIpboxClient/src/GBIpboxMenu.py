@@ -61,8 +61,8 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 			<widget name="key_red"
 					position="0,360"
 					size="140,40"
-					valign="center"
-					halign="center"
+					verticalAlignment="center"
+					horizontalAlignment="center"
 					zPosition="5"
 					transparent="1"
 					foregroundColor="white"
@@ -71,8 +71,8 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 			<widget name="key_green"
 					position="140,360"
 					size="140,40"
-					valign="center"
-					halign="center"
+					verticalAlignment="center"
+					horizontalAlignment="center"
 					zPosition="5"
 					transparent="1"
 					foregroundColor="white"
@@ -81,8 +81,8 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 			<widget name="key_yellow"
 					position="280,360"
 					size="140,40"
-					valign="center"
-					halign="center"
+					verticalAlignment="center"
+					horizontalAlignment="center"
 					zPosition="5"
 					transparent="1"
 					foregroundColor="white"
@@ -91,8 +91,8 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 			<widget name="key_blue"
 					position="420,360"
 					size="140,40"
-					valign="center"
-					halign="center"
+					verticalAlignment="center"
+					horizontalAlignment="center"
 					zPosition="5"
 					transparent="1"
 					foregroundColor="white"
@@ -104,7 +104,7 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 					 size="140,40"
 					 zPosition="4"
 					 transparent="1"
-					 alphatest="on" />
+					 alphaTest="on" />
 
 			<ePixmap name="green"
 					 pixmap="buttons/green.png"
@@ -112,7 +112,7 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 					 size="140,40"
 					 zPosition="4"
 					 transparent="1"
-					 alphatest="on" />
+					 alphaTest="on" />
 
 			<ePixmap name="yellow"
 					 pixmap="buttons/yellow.png"
@@ -120,7 +120,7 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 					 size="140,40"
 					 zPosition="4"
 					 transparent="1"
-					 alphatest="on" />
+					 alphaTest="on" />
 
 			<ePixmap name="blue"
 					 pixmap="buttons/blue.png"
@@ -128,7 +128,7 @@ class GBIpboxMenu(Screen, ConfigListScreen):
 					 size="140,40"
 					 zPosition="4"
 					 transparent="1"
-					 alphatest="on" />
+					 alphaTest="on" />
 		</screen>"""
 
 	def __init__(self, session, timerinstance):

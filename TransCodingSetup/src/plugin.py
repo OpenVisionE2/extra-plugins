@@ -342,17 +342,17 @@ class TranscodingSetupInit:
 class TranscodingSetup(Screen, ConfigListScreen):
 	skin = """
 		<screen name="TranscodingSetup" position="center,center" size="600,450">
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<widget name="blue" pixmap="buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget name="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<widget name="blue" pixmap="buttons/blue.png" position="455,0" size="140,40" alphaTest="on" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget name="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 			<widget name="config" zPosition="2" position="25,70" size="560,300" scrollbarMode="showOnDemand" transparent="1" />
-			<widget name="description" position="20,370" size="540,60" font="Regular;20" halign="center" valign="center" />
-			<widget name="text" position="20,430" size="540,20" font="Regular;22" halign="center" valign="center" />
+			<widget name="description" position="20,370" size="540,60" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" />
+			<widget name="text" position="20,430" size="540,20" font="Regular;22" horizontalAlignment="center" verticalAlignment="center" />
 		</screen>
 		"""
 

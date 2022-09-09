@@ -115,11 +115,11 @@ class OnDemandScreenSetup(Screen, ConfigListScreen):
 class OnDemand_Screen(Screen, ConfigListScreen):
     skin = """
 		<screen position="e-203,0" size="203,e-0" backgroundColor="#ffffffff" flags="wfNoBorder" >
-			<widget name="arrowup" pixmaps="~/icons/top.png,~/icons/arrow-up.png" position="e-203,0" size="203,25" alphatest="on" />
+			<widget name="arrowup" pixmaps="~/icons/top.png,~/icons/arrow-up.png" position="e-203,0" size="203,25" alphaTest="on" />
 			<widget name="PlayerList" position="0,25" size="203,670" backgroundColor="#80000000" selectionPixmap="~/icons/selectbar.png" transparent="0" scrollbarMode="showNever" />
-			<widget name="arrowdown" pixmaps="~/icons/bottom.png,~/icons/arrow-down.png" position="e-203,e-37" size="203,37" alphatest="on" />
-			<ePixmap name="menu" position="e-203,e-30" zPosition="2" size="35,25" pixmap="buttons/key_menu.png" transparent="1" alphatest="on" />
-			<ePixmap name="info" position="e-45,e-30" zPosition="2" size="35,25" pixmap="buttons/key_info.png" transparent="1" alphatest="on" />
+			<widget name="arrowdown" pixmaps="~/icons/bottom.png,~/icons/arrow-down.png" position="e-203,e-37" size="203,37" alphaTest="on" />
+			<ePixmap name="menu" position="e-203,e-30" zPosition="2" size="35,25" pixmap="buttons/key_menu.png" transparent="1" alphaTest="on" />
+			<ePixmap name="info" position="e-45,e-30" zPosition="2" size="35,25" pixmap="buttons/key_info.png" transparent="1" alphaTest="on" />
 		</screen>"""
 
     def __init__(self, session):
@@ -194,9 +194,9 @@ class OnDemand_About(Screen):
     skin = """
 		<screen position="360,150" size="600,450" >
 			<widget name="about" position="10,10" size="580,430" font="Regular;15" />
-			<widget name="key_red" position="0,e-40" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
-			<ePixmap name="red" pixmap="buttons/red.png" position="0,e-40" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
-			<widget name="oealogo" position="e-200,e-135" size="200,135"  zPosition="4" transparent="1" alphatest="blend" />
+			<widget name="key_red" position="0,e-40" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
+			<ePixmap name="red" pixmap="buttons/red.png" position="0,e-40" size="140,40" zPosition="4" transparent="1" alphaTest="on"/>
+			<widget name="oealogo" position="e-200,e-135" size="200,135"  zPosition="4" transparent="1" alphaTest="blend" />
 		</screen>"""
 
     def __init__(self, session):

@@ -20,19 +20,19 @@ class PiconsUpdaterView(ConfigListScreen, Screen):
     skin = """
     <screen name="PiconsUpdater-Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#90000000">
     <eLabel name="new eLabel" position="40,40" zPosition="-2" size="1200,640" backgroundColor="#20000000" transparent="0" />
-    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="77,645" size="250,33" text="Cancel" transparent="1" />
-    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="375,645" size="250,33" text="Save" transparent="1" />
-    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" halign="left" position="682,645" size="250,33" text="Download Picons" transparent="1" />
+    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" horizontalAlignment="left" position="77,645" size="250,33" text="Cancel" transparent="1" />
+    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" horizontalAlignment="left" position="375,645" size="250,33" text="Save" transparent="1" />
+    <eLabel font="Regular; 20" foregroundColor="unffffff" backgroundColor="#20000000" horizontalAlignment="left" position="682,645" size="250,33" text="Download Picons" transparent="1" />
     <widget name="config" position="61,114" size="590,500" scrollbarMode="showOnDemand" transparent="1" />
-    <eLabel position="60,55" size="348,50" text="PiconsUpdater" font="Regular; 40" valign="center" transparent="1" backgroundColor="#20000000" />
-    <eLabel position="400,58" size="349,50" text="Setup" foregroundColor="unffffff" font="Regular; 30" valign="center" backgroundColor="#20000000" transparent="1" halign="left" />
+    <eLabel position="60,55" size="348,50" text="PiconsUpdater" font="Regular; 40" verticalAlignment="center" transparent="1" backgroundColor="#20000000" />
+    <eLabel position="400,58" size="349,50" text="Setup" foregroundColor="unffffff" font="Regular; 30" verticalAlignment="center" backgroundColor="#20000000" transparent="1" horizontalAlignment="left" />
     <eLabel position="60,640" size="5,40" backgroundColor="#e61700" />
     <eLabel position="360,640" size="5,40" backgroundColor="#61e500" />
     <eLabel position="665,640" size="5,40" backgroundColor="#e5dd00" />
-    <widget name="backgroundImage" position="719,210" size="500,300" zPosition="1" alphatest="blend" transparent="1" backgroundColor="transparent"/>
-    <widget name="previewImage" position="744,225" size="450,270" zPosition="1" alphatest="blend" transparent="1" backgroundColor="transparent"/>
-    <widget name="foregroundImage" position="719,210" size="500,300" zPosition="1" alphatest="blend" transparent="1" backgroundColor="transparent"/>
-    <eLabel text="coded by svox, idea by arn354" position="692,70" size="540,25" zPosition="1" font="Regular; 15" halign="right" valign="top" backgroundColor="#20000000" transparent="1" />
+    <widget name="backgroundImage" position="719,210" size="500,300" zPosition="1" alphaTest="blend" transparent="1" backgroundColor="transparent"/>
+    <widget name="previewImage" position="744,225" size="450,270" zPosition="1" alphaTest="blend" transparent="1" backgroundColor="transparent"/>
+    <widget name="foregroundImage" position="719,210" size="500,300" zPosition="1" alphaTest="blend" transparent="1" backgroundColor="transparent"/>
+    <eLabel text="coded by svox, idea by arn354" position="692,70" size="540,25" zPosition="1" font="Regular; 15" horizontalAlignment="right" verticalAlignment="top" backgroundColor="#20000000" transparent="1" />
     </screen>"""
 
     def __init__(self, session):

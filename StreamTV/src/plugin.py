@@ -28,11 +28,11 @@ PLUGIN_PATH = resolveFilename(SCOPE_PLUGINS, "Extensions/StreamTV")
 class StreamTVPlayer(Screen, InfoBarNotifications):
 	skin = """
 		<screen name="StreamTVPlayer" flags="wfNoBorder" position="0,570" size="1280,190" title="StreamTV Player" backgroundColor="#41000000" >
-			<ePixmap position="80,25" size="117,72" pixmap="%s/channel_background.png" zPosition="-1" transparent="1" alphatest="blend" />
+			<ePixmap position="80,25" size="117,72" pixmap="%s/channel_background.png" zPosition="-1" transparent="1" alphaTest="blend" />
 			<widget name="channel_icon" position="121,43" zPosition="10" size="35,35" backgroundColor="#41000000" />
-			<widget name="channel_name" position="250,20" size="650,40" font="Regular;36" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#41000000" />
-			<widget name="channel_uri" position="250,70" size="950,60" font="Regular;22" halign="left" valign="top" foregroundColor="#ffffff" backgroundColor="#41000000" />
-			<widget source="session.CurrentService" render="Label" position="805,20" size="300,40" font="Regular;30" halign="right" valign="center" foregroundColor="#f4df8d" backgroundColor="#41000000" transparent="1" >
+			<widget name="channel_name" position="250,20" size="650,40" font="Regular;36" horizontalAlignment="left" verticalAlignment="center" foregroundColor="#ffffff" backgroundColor="#41000000" />
+			<widget name="channel_uri" position="250,70" size="950,60" font="Regular;22" horizontalAlignment="left" verticalAlignment="top" foregroundColor="#ffffff" backgroundColor="#41000000" />
+			<widget source="session.CurrentService" render="Label" position="805,20" size="300,40" font="Regular;30" horizontalAlignment="right" verticalAlignment="center" foregroundColor="#f4df8d" backgroundColor="#41000000" transparent="1" >
 				<convert type="ServicePosition">Position</convert>
 			</widget>
 		</screen>

@@ -347,10 +347,10 @@ class FirmwareUpgradeManager:
 class UpgradeStatus(Screen):
     skin = """
 		<screen position="center,center" size="450,130" title=" ">
-			<widget name="name" position="10,0" size="430,20" font="Regular;18" halign="left" valign="bottom"/>
+			<widget name="name" position="10,0" size="430,20" font="Regular;18" horizontalAlignment="left" verticalAlignment="bottom"/>
 			<widget name="slider" position="10,25" size="430,30" borderWidth="2" borderColor="#cccccc"/>
-			<widget name="status" position="10,25" zPosition="1" size="430,30" font="Regular;18" halign="center" valign="center" foregroundColor="#9f1313" transparent="1"/>
-			<widget source="info" render="Label" position="10,70" zPosition="1" size="430,60" font="Regular;22" halign="center" valign="center" transparent="1"/>
+			<widget name="status" position="10,25" zPosition="1" size="430,30" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#9f1313" transparent="1"/>
+			<widget source="info" render="Label" position="10,70" zPosition="1" size="430,60" font="Regular;22" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		</screen>
 		"""
 
@@ -443,11 +443,11 @@ class UpgradeStatus(Screen):
 class FUFilebrowser(Screen):
     skin = """
 		<screen position="center,center" size="500,290" title="File Browser" >
-			<ePixmap pixmap="buttons/blue.png" position="5,10" size="140,40" alphatest="blend" />
-			<widget source="key_blue" render="Label" position="5,10" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1"/>
+			<ePixmap pixmap="buttons/blue.png" position="5,10" size="140,40" alphaTest="blend" />
+			<widget source="key_blue" render="Label" position="5,10" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1"/>
 
 			<widget name="file_list" position="0,70" size="495,160" scrollbarMode="showOnDemand" />
-			<widget source="status" render="Label" position="0,230" zPosition="1" size="495,70" font="Regular;18" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+			<widget source="status" render="Label" position="0,230" zPosition="1" size="495,70" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" transparent="1" />
                 </screen>
 		"""
 
@@ -676,14 +676,14 @@ class FUFilebrowser(Screen):
 class FirmwareUpgrade(Screen, ConfigListScreen):
     skin = """
 		<screen position="center,center" size="560,175" title="Firmware Upgrade" >
-			<ePixmap pixmap="buttons/red.png" position="110,10" size="140,40" alphatest="blend" />
-			<ePixmap pixmap="buttons/green.png" position="310,10" size="140,40" alphatest="blend" />
+			<ePixmap pixmap="buttons/red.png" position="110,10" size="140,40" alphaTest="blend" />
+			<ePixmap pixmap="buttons/green.png" position="310,10" size="140,40" alphaTest="blend" />
 
-			<widget source="key_red" render="Label" position="110,10" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="310,10" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="110,10" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="310,10" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
 
 			<widget name="config" zPosition="2" position="0,70" itemHeight="36" size="540,40" scrollbarMode="showOnDemand" transparent="1" />
-			<widget source="status" render="Label" position="0,100" zPosition="1" size="540,75" font="Regular;20" halign="center" valign="center" />
+			<widget source="status" render="Label" position="0,100" zPosition="1" size="540,75" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" />
                 </screen>
 		"""
 

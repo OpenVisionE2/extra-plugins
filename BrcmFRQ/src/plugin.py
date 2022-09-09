@@ -64,11 +64,11 @@ class BrcmFRQ(ConfigListScreen, Screen):
 			<widget name="key_green" position="200,e-50" size="180,40" backgroundColor="key_green" zPosition="2" font="Regular;20" foregroundColor="key_text" />
 			<widget name="key_yellow" position="390,e-50" size="180,40" backgroundColor="key_yellow" zPosition="2" font="Regular;20" foregroundColor="key_text" />
 			<widget name="config" itemHeight="30" position="10,40" size="980,555" backgroundColor="key_back" font="Regular;20" foregroundColor="key_text" />
-			<widget name="tempc" position="20,220" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" valign="center" halign="left" transparent="1" />
-			<widget name="voltc" position="20,300" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" valign="center" halign="left" transparent="1" />
-			<widget name="frqc" position="20,380" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" valign="center" halign="left" transparent="1" />
-			<eLabel name="" text="OK" position="580,e-50" size="180,40" font="Regular; 20" zPosition="2" valign="center" halign="center" backgroundColor="key_green" transparent="0" />
-			<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="780,e-50" size="1,1" transparent="1" zPosition="2" alphatest="on"/>
+			<widget name="tempc" position="20,220" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" verticalAlignment="center" horizontalAlignment="left" transparent="1" />
+			<widget name="voltc" position="20,300" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" verticalAlignment="center" horizontalAlignment="left" transparent="1" />
+			<widget name="frqc" position="20,380" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" verticalAlignment="center" horizontalAlignment="left" transparent="1" />
+			<eLabel name="" text="OK" position="580,e-50" size="180,40" font="Regular; 20" zPosition="2" verticalAlignment="center" horizontalAlignment="center" backgroundColor="key_green" transparent="0" />
+			<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="780,e-50" size="1,1" transparent="1" zPosition="2" alphaTest="on"/>
 		</screen>"""
         Screen.__init__(self, session)
         self.onClose.append(self.abort)

@@ -67,7 +67,7 @@ class GBIpboxWizard(Wizard):
 					 zPosition="0"
 					 size="15,16"
 					 transparent="1"
-					 alphatest="on" />
+					 alphaTest="on" />
 
 			<widget name="languagetext"
 					position="55,225"
@@ -79,42 +79,42 @@ class GBIpboxWizard(Wizard):
 					position="40,50"
 					zPosition="10"
 					size="110,174"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget name="rc"
 					pixmaps="rc0.png,rc1.png,rc2.png"
 					position="500,50"
 					zPosition="10"
 					size="154,500"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget name="arrowdown"
 					pixmap="arrowdown.png"
 					position="-100,-100"
 					zPosition="11"
 					size="37,70"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget name="arrowdown2"
 					pixmap="arrowdown.png"
 					position="-100,-100"
 					zPosition="11"
 					size="37,70"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget name="arrowup"
 					pixmap="arrowup.png"
 					position="-100,-100"
 					zPosition="11"
 					size="37,70"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget name="arrowup2"
 					pixmap="arrowup.png"
 					position="-100,-100"
 					zPosition="11"
 					size="37,70"
-					alphatest="on" />
+					alphaTest="on" />
 
 			<widget source="VKeyIcon"
 					render="Pixmap"
@@ -123,7 +123,7 @@ class GBIpboxWizard(Wizard):
 					zPosition="0"
 					size="35,25"
 					transparent="1"
-					alphatest="on" >
+					alphaTest="on" >
 
 				<convert type="ConditionalShowHide" />
 
@@ -135,7 +135,7 @@ class GBIpboxWizard(Wizard):
 					zPosition="1"
 					size="1,1"
 					transparent="1"
-					alphatest="on" />
+					alphaTest="on" />
 
 		</screen>"""
 

@@ -142,10 +142,10 @@ class FPGAUpgradeManager:
 class UpgradeStatus(Screen):
     skin = """
 		<screen position="center,center" size="450,100" title="FPGA Upgrade">
-			<widget name="name" position="10,0" size="430,20" font="Regular;18" halign="left" valign="bottom"/>
+			<widget name="name" position="10,0" size="430,20" font="Regular;18" horizontalAlignment="left" verticalAlignment="bottom"/>
 			<widget name="slider" position="10,25" size="430,30" backgroundColor="white"/>
-			<widget name="status" position="10,27" zPosition="1" size="430,30" font="Regular;18" halign="center" valign="center" foregroundColor="black" backgroundColor="white" transparent="1"/>
-			<widget source="info" render="Label" position="10,70" zPosition="1" size="430,30" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+			<widget name="status" position="10,27" zPosition="1" size="430,30" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" foregroundColor="black" backgroundColor="white" transparent="1"/>
+			<widget source="info" render="Label" position="10,70" zPosition="1" size="430,30" font="Regular;22" horizontalAlignment="center" verticalAlignment="center" backgroundColor="black" transparent="1"/>
 		</screen>
 		"""
 
@@ -230,15 +230,15 @@ class UpgradeStatus(Screen):
 class FPGAUpgrade(Screen):
     skin = """
 		<screen position="center,center" size="560,440" title="FPGA Upgrade" >
-			<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="280,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="420,0" size="140,40" alphatest="on" />
-			<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
-			<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
-			<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
-			<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
-			<widget source="status" render="Label" position="15,45" zPosition="1" size="540,40" font="Regular;18" halign="left" valign="center" transparent="1" />
+			<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="280,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="420,0" size="140,40" alphaTest="on" />
+			<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" transparent="1" />
+			<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" transparent="1" />
+			<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" transparent="1" />
+			<widget source="status" render="Label" position="15,45" zPosition="1" size="540,40" font="Regular;18" horizontalAlignment="left" verticalAlignment="center" transparent="1" />
 			<widget name="file_list" position="0,100" size="555,325" scrollbarMode="showOnDemand" />
                 </screen>
 		"""

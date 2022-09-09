@@ -129,40 +129,40 @@ def buildChannellist():
 class PiconManagerScreen(Screen, HelpableScreen):
 	skin = """
 	<screen name="PiconManager" title="PiconManager" position="center,center" size="1160,650">
-		<widget name="piconpath" position="20,10" size="690,60" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="piconpath2" position="200,10" size="500,60" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="piconspace" position="20,40" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" halign="left" />
-		<widget name="piconcount" position="20,70" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" halign="left" />
-		<widget name="picondownload" position="20,100" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" halign="left" />
-		<widget name="piconerror" position="20,130" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" halign="left" />
-		<widget name="piconslidername" position="20,160" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" halign="left" />
-		<widget name="selectedname" position="20,190" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="selected" position="180,190" size="200,40" noWrap="1" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="creatorname" position="20,220" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="creator" position="180,220" size="200,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="sizename" position="390,190" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="size" position="580,190" size="160,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="bitname" position="390,220" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="bit" position="580,220" size="160,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="spiconname" position="20,250" size="690,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="spicon" position="180,250" size="690,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
-		<widget name="altername" position="390,250" size="690,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" halign="left" />
-		<widget name="alter" position="580,250" size="690,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" halign="left" />
+		<widget name="piconpath" position="20,10" size="690,60" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="piconpath2" position="200,10" size="500,60" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="piconspace" position="20,40" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="piconcount" position="20,70" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="picondownload" position="20,100" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="piconerror" position="20,130" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="piconslidername" position="20,160" size="690,60" font="Regular;20" foregroundColor="#00fff000" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="selectedname" position="20,190" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="selected" position="180,190" size="200,40" noWrap="1" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="creatorname" position="20,220" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="creator" position="180,220" size="200,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="sizename" position="390,190" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="size" position="580,190" size="160,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="bitname" position="390,220" size="160,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="bit" position="580,220" size="160,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="spiconname" position="20,250" size="690,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="spicon" position="180,250" size="690,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="altername" position="390,250" size="690,40" font="Regular;20" foregroundColor="#00fba207" transparent="1" zPosition="1" horizontalAlignment="left" />
+		<widget name="alter" position="580,250" size="690,40" font="Regular;20" foregroundColor="#00f8f2e6" transparent="1" zPosition="1" horizontalAlignment="left" />
 		<widget name="piconslider" position="280,164" size="180,20" zPosition="2" transparent="0" />
-		<widget name="picon" position="738,10" size="400,240" zPosition="4" transparent="1" borderWidth="0" borderColor="#0000000" alphatest="blend" />
+		<widget name="picon" position="738,10" size="400,240" zPosition="4" transparent="1" borderWidth="0" borderColor="#0000000" alphaTest="blend" />
 		<widget name="list" position="10,300" size="1130,295" zPosition="1" foregroundColor="#00ffffff" foregroundColorSelected="#00fff000" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="key_red" position="42,615" size="300,25" transparent="1" font="Regular;20"/>
 		<widget name="key_green" position="285,615" size="300,25" transparent="1" font="Regular;20"/>
 		<widget name="key_yellow" position="451,615" size="300,25" transparent="1" font="Regular;20"/>
 		<widget name="key_blue" position="734,615" size="300,25" transparent="1" font="Regular;20"/>
-		<ePixmap position="10,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" transparent="1" alphatest="on"/>
-		<ePixmap position="257,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" transparent="1" alphatest="on"/>
-		<ePixmap position="421,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_yellow.png" transparent="1" alphatest="on"/>
-		<ePixmap position="701,615" size="263,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_blue.png" transparent="1" alphatest="on"/>
-		<ePixmap position="916,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_info.png" transparent="1" alphatest="on"/>
-		<ePixmap position="977,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_menu.png" transparent="1" alphatest="on"/>
-		<ePixmap position="1038,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_channel.png" transparent="1" alphatest="on"/>
-		<ePixmap position="1095,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_help.png" transparent="1" alphatest="on"/>
+		<ePixmap position="10,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="257,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="421,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="701,615" size="263,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_blue.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="916,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_info.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="977,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_menu.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="1038,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_channel.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="1095,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_help.png" transparent="1" alphaTest="on"/>
 	</screen>"""
 
 	def __init__(self, session):
@@ -732,12 +732,12 @@ class PiconManagerScreen(Screen, HelpableScreen):
 class PiconManagerFolderScreen(Screen):
 	skin = """
 		<screen position="center,center" size="650,400" title=" ">
-			<widget name="media" position="10,10" size="540,30" valign="top" font="Regular;22" />
+			<widget name="media" position="10,10" size="540,30" verticalAlignment="top" font="Regular;22" />
 			<widget name="folderlist" position="10,45" zPosition="1" size="540,300" scrollbarMode="showOnDemand"/>
-			<ePixmap position="10,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" alphatest="on" />
-			<ePixmap position="210,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" alphatest="on" />
-			<widget render="Label" source="key_red" position="40,372" size="100,20" valign="center" halign="left" zPosition="2" font="Regular;18" foregroundColor="white" />
-			<widget render="Label" source="key_green" position="240,372" size="70,20" valign="center" halign="left" zPosition="2" font="Regular;18" foregroundColor="white" />
+			<ePixmap position="10,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" alphaTest="on" />
+			<ePixmap position="210,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" alphaTest="on" />
+			<widget render="Label" source="key_red" position="40,372" size="100,20" verticalAlignment="center" horizontalAlignment="left" zPosition="2" font="Regular;18" foregroundColor="white" />
+			<widget render="Label" source="key_green" position="240,372" size="70,20" verticalAlignment="center" horizontalAlignment="left" zPosition="2" font="Regular;18" foregroundColor="white" />
 		</screen>
 		"""
 
@@ -809,10 +809,10 @@ class pm_conf(Screen, ConfigListScreen, HelpableScreen):
 	skin = """
 		<screen position="center,center" size="600,480" title="Select Color" >
 		<widget name="config" position="10,5" size="580,430" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="skin_default/buttons/red.png" position="10,440" size="140,40" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/green.png" position="155,440" size="140,40" alphatest="on" />
-		<widget name="key_red" position="10,443" zPosition="1" size="140,35" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
-		<widget name="key_green" position="155,443" zPosition="1" size="140,35" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="10,440" size="140,40" alphaTest="on" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="155,440" size="140,40" alphaTest="on" />
+		<widget name="key_red" position="10,443" zPosition="1" size="140,35" verticalAlignment="center" horizontalAlignment="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
+		<widget name="key_green" position="155,443" zPosition="1" size="140,35" verticalAlignment="center" horizontalAlignment="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
 		</screen>"""
 
 	def __init__(self, session):

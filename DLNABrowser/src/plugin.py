@@ -99,32 +99,32 @@ class DLNAFileList(FileList):
 class DLNAFileBrowser(Screen):
     skin = """
 		<screen name="DLNAFileBrowser" position="center,center" size="600,350" title="File Browser">
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 
-			<widget name="directory" position="10,45" size="600,40" valign="center" font="Regular;20" />
+			<widget name="directory" position="10,45" size="600,40" verticalAlignment="center" font="Regular;20" />
 			<widget name="filelist" position="0,100" zPosition="1" size="560,250" scrollbarMode="showOnDemand"/>
 		</screen>
 		<!--
 		<screen name="DLNAFileBrowser" position="center,90" size="1000,580" title="File Browser">
-			<ePixmap pixmap="buttons/red.png" position="55,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="555,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="805,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="55,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="555,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="805,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="55,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="555,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="805,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="55,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="555,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="805,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 
-			<widget name="directory" position="10,60" size="980,22" valign="center" font="Regular;22" />
+			<widget name="directory" position="10,60" size="980,22" verticalAlignment="center" font="Regular;22" />
 			<widget name="filelist" position="0,100" zPosition="1" size="1000,480" scrollbarMode="showOnDemand"/>
 		</screen>
 		-->
@@ -321,17 +321,17 @@ class DLNAStreamPlayer(Screen, InfoBarNotifications):
     skin = """
 		<screen name="DLNAStreamPlayer" flags="wfNoBorder" position="center,620" size="455,53" title="DLNAStreamPlayer" backgroundColor="transparent">
 			<ePixmap pixmap="~/icons/mp_wb_background.png" position="0,0" zPosition="-1" size="455,53" />
-			<ePixmap pixmap="~/icons/mp_wb_buttons.png" position="40,23" size="30,13" alphatest="on" />
+			<ePixmap pixmap="~/icons/mp_wb_buttons.png" position="40,23" size="30,13" alphaTest="on" />
 
 			<widget source="session.CurrentService" render="PositionGauge" position="80,25" size="220,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
 				<convert type="ServicePosition">Gauge</convert>
 			</widget>
 
-			<widget source="session.CurrentService" render="Label" position="310,20" size="50,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" >
+			<widget source="session.CurrentService" render="Label" position="310,20" size="50,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" >
 				<convert type="ServicePosition">Position</convert>
 			</widget>
-			<widget name="sidebar" position="362,20" size="10,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" />
-			<widget source="session.CurrentService" render="Label" position="374,20" size="50,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" >
+			<widget name="sidebar" position="362,20" size="10,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" />
+			<widget source="session.CurrentService" render="Label" position="374,20" size="50,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" >
 				<convert type="ServicePosition">Length</convert>
 			</widget>
 		</screen>
@@ -453,10 +453,10 @@ class DLNAImageViewer(Screen):
     skin = """
 		<screen position="0,0" size="%d,%d" flags="wfNoBorder">
 			<eLabel position="0,0" zPosition="0" size="%d,%d" backgroundColor="#00000000" />
-			<widget name="image" position="%d,%d" size="%d,%d" zPosition="1" alphatest="on" />
-			<widget name="status" position="%d,%d" size="20,20" zPosition="2" pixmap="icons/record.png" alphatest="on" />
-			<widget name="icon" position="%d,%d" size="20,20" zPosition="2" pixmap="icons/ico_mp_play.png"  alphatest="on" />
-			<widget source="message" render="Label" position="%d,%d" size="%d,25" font="Regular;20" halign="left" foregroundColor="#0038FF48" zPosition="2" noWrap="1" transparent="1" />
+			<widget name="image" position="%d,%d" size="%d,%d" zPosition="1" alphaTest="on" />
+			<widget name="status" position="%d,%d" size="20,20" zPosition="2" pixmap="icons/record.png" alphaTest="on" />
+			<widget name="icon" position="%d,%d" size="20,20" zPosition="2" pixmap="icons/ico_mp_play.png"  alphaTest="on" />
+			<widget source="message" render="Label" position="%d,%d" size="%d,25" font="Regular;20" horizontalAlignment="left" foregroundColor="#0038FF48" zPosition="2" noWrap="1" transparent="1" />
 		</screen>
 		""" % (w, h, w, h, s, s, w - (s * 2), h - (s * 2), s + 5, s + 2, s + 25, s + 2, s + 45, s, w - (s * 2) - 50)
 
@@ -684,15 +684,15 @@ def isRunning():
 class DLNAClientConfig(ConfigListScreen, Screen):
     skin = """
 		<screen position="center,center" size="600,350" title="Mini DLNA Luncher">
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 
 			<widget name="config" position="0,50" size="600,200" scrollbarMode="showOnDemand" />
 		</screen>
@@ -798,15 +798,15 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 class DLNADeviceBrowser(Screen):
     skin = """
 		<screen name="DLNADeviceBrowser" position="center,center" size="600,350" title="Device Browser">
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 
 			<widget name="devicelist" position="0,50" size="600,300" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand" />
 	        </screen>

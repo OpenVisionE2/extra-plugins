@@ -117,17 +117,17 @@ class Player(Screen, InfoBarNotifications):
     skin = """
 		<screen name="Player" flags="wfNoBorder" position="center,620" size="455,53" title="Webbrowser" backgroundColor="transparent">
 			<ePixmap pixmap="~/icons/mp_wb_background.png" position="0,0" zPosition="-1" size="455,53" />
-			<ePixmap pixmap="~/icons/mp_wb_buttons.png" position="40,23" size="30,13" alphatest="on" />
+			<ePixmap pixmap="~/icons/mp_wb_buttons.png" position="40,23" size="30,13" alphaTest="on" />
 
 			<widget source="session.CurrentService" render="PositionGauge" position="80,25" size="220,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
 				<convert type="ServicePosition">Gauge</convert>
 			</widget>
 
-			<widget source="session.CurrentService" render="Label" position="310,20" size="50,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" >
+			<widget source="session.CurrentService" render="Label" position="310,20" size="50,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" >
 				<convert type="ServicePosition">Position</convert>
 			</widget>
-			<widget name="sidebar" position="362,20" size="10,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" />
-			<widget source="session.CurrentService" render="Label" position="374,20" size="50,20" font="Regular;18" halign="center" valign="center" backgroundColor="#4e5a74" transparent="1" >
+			<widget name="sidebar" position="362,20" size="10,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" />
+			<widget source="session.CurrentService" render="Label" position="374,20" size="50,20" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#4e5a74" transparent="1" >
 				<convert type="ServicePosition">Length</convert>
 			</widget>
 		</screen>
@@ -436,13 +436,13 @@ class PlayerService:
 class BrowserLauncher(ConfigListScreen, Screen):
     skin = """
 		<screen name="BrowserLauncher" position="center,60" size="415,630" title="Web Browser">
-			<ePixmap pixmap="buttons/red.png" position="75,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="225,0" size="140,40" alphatest="on" />
-			<widget source="key_red" render="Label" position="75,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" transparent="1" />
-			<widget source="key_green" render="Label" position="225,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" transparent="1" />
+			<ePixmap pixmap="buttons/red.png" position="75,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="225,0" size="140,40" alphaTest="on" />
+			<widget source="key_red" render="Label" position="75,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" transparent="1" />
+			<widget source="key_green" render="Label" position="225,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" transparent="1" />
 			<widget name="config" position="0,50" size="409,100" scrollbarMode="showOnDemand" />
-			<ePixmap pixmap="~/icons/%s" position="50,155" size="309,435" alphatest="on" />
-			<widget name="info" position="50,588" size="309,50" font="Regular;18" halign="center" foregroundColor="blue" transparent="1" />
+			<ePixmap pixmap="~/icons/%s" position="50,155" size="309,435" alphaTest="on" />
+			<widget name="info" position="50,588" size="309,50" font="Regular;18" horizontalAlignment="center" foregroundColor="blue" transparent="1" />
 		</screen>
 		""" % model_rc
 

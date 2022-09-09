@@ -32,15 +32,15 @@ class TunerServer(Screen):
 	skin = """
 	<screen position="center,center" size="800,505" >
 		<widget name="lab1" position="10,4" size="780,400" font="Regular;20" transparent="0"/>
-		<widget name="lab2" position="10,400" size="300,30" font="Regular;20" valign="center" halign="right" transparent="0"/>
-		<widget name="labstop" position="320,400" size="260,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="320,400" size="260,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-		<ePixmap pixmap="buttons/red.png" position="95,450" size="140,40" alphatest="on"/>
-		<ePixmap pixmap="buttons/green.png" position="330,450" size="140,40" alphatest="on"/>
-		<ePixmap pixmap="buttons/yellow.png" position="565,450" size="140,40" alphatest="on" />
-		<widget name="key_red" position="95,450" zPosition="1" size="140,40" font="Regular;18" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="key_green" position="330,450" zPosition="1" size="140,40" font="Regular;18" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
-		<widget name="key_yellow" position="565,450" zPosition="1" size="140,40" font="Regular;18" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+		<widget name="lab2" position="10,400" size="300,30" font="Regular;20" verticalAlignment="center" horizontalAlignment="right" transparent="0"/>
+		<widget name="labstop" position="320,400" size="260,30" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="red"/>
+		<widget name="labrun" position="320,400" size="260,30" zPosition="1" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="green"/>
+		<ePixmap pixmap="buttons/red.png" position="95,450" size="140,40" alphaTest="on"/>
+		<ePixmap pixmap="buttons/green.png" position="330,450" size="140,40" alphaTest="on"/>
+		<ePixmap pixmap="buttons/yellow.png" position="565,450" size="140,40" alphaTest="on" />
+		<widget name="key_red" position="95,450" zPosition="1" size="140,40" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" transparent="1"/>
+		<widget name="key_green" position="330,450" zPosition="1" size="140,40" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget name="key_yellow" position="565,450" zPosition="1" size="140,40" font="Regular;18" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" transparent="1" />
 	</screen>"""
 
 	def __init__(self, session):

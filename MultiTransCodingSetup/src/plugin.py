@@ -49,16 +49,16 @@ else:
 class TranscodingSetup(Screen, ConfigListScreen):
 	skin = """
 		<screen name="TranscodingSetup" position="center,center" size="900,500">
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
 			<widget name="config" zPosition="2" position="25,50" size="860,300" scrollbarMode="showOnDemand" transparent="1" />
-			<widget name="description" position="20,200" size="840,70" font="Regular;17" halign="center" valign="center" />
-			<widget name="HelpTextHeader1" position="10,300" size="880,22" font="Regular;19" halign="center" valign="center" foregroundColor="#ff0000"/>
-			<widget name="HelpText1" position="10,330" size="880,110" font="Regular;16" halign="center" valign="center" foregroundColor="#ffffff"/>
-			<widget name="HelpTextHeader2" position="10,440" size="880,22" font="Regular;19" halign="center" valign="center" foregroundColor="#ff0000"/>
-			<widget name="HelpText2" position="10,470" size="880,20" font="Regular;16" halign="center" valign="center" foregroundColor="#ffffff"/>
+			<widget name="description" position="20,200" size="840,70" font="Regular;17" horizontalAlignment="center" verticalAlignment="center" />
+			<widget name="HelpTextHeader1" position="10,300" size="880,22" font="Regular;19" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ff0000"/>
+			<widget name="HelpText1" position="10,330" size="880,110" font="Regular;16" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff"/>
+			<widget name="HelpTextHeader2" position="10,440" size="880,22" font="Regular;19" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ff0000"/>
+			<widget name="HelpText2" position="10,470" size="880,20" font="Regular;16" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff"/>
 		</screen>
 		"""
 

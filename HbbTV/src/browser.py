@@ -129,11 +129,11 @@ class BrowserPositionSetting:
 class BrowserPositionWindow(Screen, ConfigListScreen):
     skin = """
 		<screen position="0,0" size="%d,%d" title="Browser Position Setup" backgroundColor="#27d8dee2" >
-			<ePixmap pixmap="buttons/red.png" position="%d,%d" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="%d,%d" size="140,40" alphatest="on" />"
+			<ePixmap pixmap="buttons/red.png" position="%d,%d" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="%d,%d" size="140,40" alphaTest="on" />"
 
-			<widget source="key_red" render="Label" position="%d,%d" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="%d,%d" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="%d,%d" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="%d,%d" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
 
 			<widget name="config" zPosition="2" position="%d,%d" size="500,200" scrollbarMode="showOnDemand" foregroundColor="#1c1c1c" transparent="1" />
 		</screen>
@@ -248,14 +248,14 @@ class BrowserPositionWindow(Screen, ConfigListScreen):
 class BrowserPreferenceWindow(ConfigListScreen, Screen):
     skin = """
 		<screen position="center,120" size="600,350" title="Preference">
-			<widget name="url" position="5,0" size="590,100" valign="center" font="Regular;20" />
+			<widget name="url" position="5,0" size="590,100" verticalAlignment="center" font="Regular;20" />
 			<widget name="config" position="0,100" size="600,200" scrollbarMode="showOnDemand" />
 
-			<ePixmap pixmap="buttons/red.png" position="310,310" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="150,310" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="310,310" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="150,310" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="310,310" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="150,310" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="310,310" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="150,310" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
 		</screen>
 		"""
 
@@ -378,13 +378,13 @@ class BookmarkEditWindow(ConfigListScreen, Screen):
 		<screen position="center,center" size="600,140" title="Bookmark Edit">
 			<widget name="config" position="0,0" size="600,100" scrollbarMode="showOnDemand" />
 
-			<ePixmap pixmap="buttons/red.png" position="310,100" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="150,100" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="310,100" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="150,100" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="310,100" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="150,100" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="310,100" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="150,100" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
 
-			<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="0,100" zPosition="10" size="35,25" transparent="1" alphatest="on">
+			<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="0,100" zPosition="10" size="35,25" transparent="1" alphaTest="on">
 				<convert type="ConditionalShowHide" />
 			</widget>
 
@@ -542,18 +542,18 @@ class BrowserBookmarkWindow(Screen):
 		<screen name="BrowserBookmarkWindow" position="center,120" size="600,400" title="Bookmark" >
 			<widget name="bookmarklist" position="0,0" size="600,200" zPosition="10" scrollbarMode="showOnDemand" />
 
-			<ePixmap pixmap="buttons/key_0.png" position="556,330" size="35,30" alphatest="on" />
-			<widget source="key_0" render="Label" position="258,330" zPosition="1" size="300,30" font="Regular;20" halign="right" valign="center"/>
+			<ePixmap pixmap="buttons/key_0.png" position="556,330" size="35,30" alphaTest="on" />
+			<widget source="key_0" render="Label" position="258,330" zPosition="1" size="300,30" font="Regular;20" horizontalAlignment="right" verticalAlignment="center"/>
 
-			<ePixmap pixmap="buttons/red.png" position="5,360" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,360" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,360" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="450,360" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,360" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,360" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,360" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="450,360" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="5,360" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,360" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,360" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="450,360" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="5,360" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,360" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,360" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="450,360" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 		</screen>
 		"""
 
@@ -727,15 +727,15 @@ class BrowserHelpWindow(Screen, HelpableScreen):
     MODE_GLOBAL, MODE_KEYBOARD, MODE_MOUSE = 1, 2, 3
     skin = """
 		<screen name="BrowserHelpWindow" position="center,center" size="600,40" title="Browser Help" >
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="450,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="450,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_blue" render="Label" position="450,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_blue" render="Label" position="450,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 		</screen>
 		"""
 
@@ -853,13 +853,13 @@ class Browser(Screen):
     HEIGHT = int(size.height())
     skin = """
 		<screen name="OperaBrowser" position="0,0" size="%(width)d,%(height)d" backgroundColor="transparent" flags="wfNoBorder" title="Opera Browser">
-			<widget name="topArea" zPosition="-1" position="0,0" size="1280,60" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" />
-			<widget name="menuitemFile" position="30,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
-			<widget name="menuitemTool" position="180,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
-			<widget name="menuitemHelp" position="330,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
+			<widget name="topArea" zPosition="-1" position="0,0" size="1280,60" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="#000000" />
+			<widget name="menuitemFile" position="30,20" size="150,30" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
+			<widget name="menuitemTool" position="180,20" size="150,30" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
+			<widget name="menuitemHelp" position="330,20" size="150,30" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500" />
 			<widget name="menulist" position="50,60" size="200,150" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand" />
 			<widget name="submenulist" position="252,60" size="200,150" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand" />
-			<widget name="bottomArea" position="0,%(bottom_pos_y)d" size="%(bottom_size_x)d,80" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" />
+			<widget name="bottomArea" position="0,%(bottom_pos_y)d" size="%(bottom_size_x)d,80" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" backgroundColor="#000000" />
 		</screen>
 		""" % {'width': WIDTH,
                     'height': HEIGHT,

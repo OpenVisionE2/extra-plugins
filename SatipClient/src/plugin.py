@@ -303,15 +303,15 @@ SATIP_CONF_CHANGED = False
 class SATIPTuner(Screen, ConfigListScreen):
     skin = """
 		<screen position="center,center" size="590,370">
-			<ePixmap pixmap="buttons/red.png" position="40,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="230,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="420,0" size="140,40" alphatest="on" />
-			<widget source="key_red" render="Label" position="40,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_green" render="Label" position="230,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget source="key_yellow" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<ePixmap pixmap="buttons/red.png" position="40,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="230,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="420,0" size="140,40" alphaTest="on" />
+			<widget source="key_red" render="Label" position="40,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_green" render="Label" position="230,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget source="key_yellow" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
 			<widget name="config" zPosition="2" position="20,60" size="550,50" scrollbarMode="showOnDemand" transparent="1" />
-			<widget source="description" render="Label" position="20,170" size="550,210" font="Regular;20" halign="left" valign="center" />
-			<widget source="choices" render="Label" position="20,120" size="550,40" font="Regular;18" halign="left" valign="center" />
+			<widget source="description" render="Label" position="20,170" size="550,210" font="Regular;20" horizontalAlignment="left" verticalAlignment="center" />
+			<widget source="choices" render="Label" position="20,120" size="550,40" font="Regular;18" horizontalAlignment="left" verticalAlignment="center" />
 		</screen>
 	"""
 
@@ -559,15 +559,15 @@ SATIP_CONFFILE = "/etc/vtuner.conf"
 class SATIPClient(Screen):
     skin = """
 		<screen position="center,center" size="590,370">
-			<ePixmap pixmap="buttons/red.png" position="20,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="160,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="300,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="440,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="20,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="160,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="300,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="440,0" size="140,40" alphaTest="on" />
 
-			<widget source="key_red" render="Label" position="20,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="#9f1313" transparent="1" />
-			<widget source="key_green" render="Label" position="160,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="#1f771f" transparent="1" />
-			<widget source="key_yellow" render="Label" position="300,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="#a08500" transparent="1" />
-			<widget source="key_blue" render="Label" position="440,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="#18188b" transparent="1" />
+			<widget source="key_red" render="Label" position="20,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff" backgroundColor="#9f1313" transparent="1" />
+			<widget source="key_green" render="Label" position="160,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff" backgroundColor="#1f771f" transparent="1" />
+			<widget source="key_yellow" render="Label" position="300,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff" backgroundColor="#a08500" transparent="1" />
+			<widget source="key_blue" render="Label" position="440,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="#ffffff" backgroundColor="#18188b" transparent="1" />
 
 			<widget source="vtunerList" render="Listbox" position="30,60" size="540,272" scrollbarMode="showOnDemand">
 				<convert type="TemplatedMultiContent">
@@ -587,7 +587,7 @@ class SATIPClient(Screen):
 				}
 				</convert>
 			</widget>
-			<widget source="description" render="Label" position="0,340" size="590,30" font="Regular;20" halign="center" valign="center" />
+			<widget source="description" render="Label" position="0,340" size="590,30" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" />
 		</screen>
 	"""
 

@@ -69,7 +69,7 @@ class OpenUgSetupScreen(Screen):
         self.skin = """
 				<screen position="center,center" size="400,320" title="">
 					<widget name="menu" position="10,10"   size="e-20,180" scrollbarMode="showOnDemand" />
-					<widget name="info" position="10,e-125" size="e-20,150" halign="center" font="Regular;22" />
+					<widget name="info" position="10,e-125" size="e-20,150" horizontalAlignment="center" font="Regular;22" />
 				</screen>"""
         self.session = session
         Screen.__init__(self, session)

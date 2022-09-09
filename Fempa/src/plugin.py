@@ -26,7 +26,7 @@ class fempa(Screen):
 
 	skin = """
 		<screen flags="wfNoBorder" position="0,0" size=\"""" + str(wsize) + "," + str(hsize) + """\" title="Fem Pa" >
-		<ePixmap alphatest="on" pixmap="~/main.png" position="0,0" size=\"""" + str(wsize) + "," + str(hsize) + """\"  zPosition="-2"/>
+		<ePixmap alphaTest="on" pixmap="~/main.png" position="0,0" size=\"""" + str(wsize) + "," + str(hsize) + """\"  zPosition="-2"/>
 		<widget name="myMenu" position="310,310" size=\"""" + str((wsize / 2) - 30) + "," + str(hsize - 350) + """\" scrollbarMode="showOnDemand"/>
 		</screen>"""
 

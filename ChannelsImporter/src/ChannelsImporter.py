@@ -29,7 +29,7 @@ class ChannelsImporter(Screen):
 	skin = """
 	<screen position="0,0" size="1280,35" backgroundColor="transpBlack" flags="wfNoBorder" >
 		<widget name="action" position="5,3" size="435,25" font="Regular;22" backgroundColor="transpBlack" borderWidth="3" borderColor="black"/>
-		<widget name="status" position="465,5" size="435,25" font="Regular;22" halign="center" backgroundColor="transpBlack" borderWidth="2" borderColor="black"/>
+		<widget name="status" position="465,5" size="435,25" font="Regular;22" horizontalAlignment="center" backgroundColor="transpBlack" borderWidth="2" borderColor="black"/>
 	</screen>"""
 
 	def __init__(self, session):

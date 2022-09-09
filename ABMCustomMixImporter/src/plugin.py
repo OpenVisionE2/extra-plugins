@@ -57,17 +57,17 @@ config.plugins.abmImporter.leadTime = ConfigSelection(default="5", choices=[("1"
 class ABMCustomMixImporterScreen(Setup):
 	skin = """
 		<screen position="340,70" size="600,620">
-			<widget source="key_red" render="Label" position="0,0" size="140,40" valign="center" halign="center" zPosition="4" foregroundColor="white" backgroundColor="#9f1313" font="Regular;18" transparent="1"/>
-			<widget source="key_green" render="Label" position="150,0" size="140,40" valign="center" halign="center" zPosition="4" foregroundColor="white" backgroundColor="#1f771f" font="Regular;18" transparent="1"/>
-			<widget source="key_yellow" render="Label" position="300,0" size="140,40" valign="center" halign="center" zPosition="4" foregroundColor="white" backgroundColor="#a08500" font="Regular;18" transparent="1"/>
-			<widget source="key_blue" render="Label" position="450,0" size="140,40" valign="center" halign="center" zPosition="4" foregroundColor="white" backgroundColor="#a08500" font="Regular;18" transparent="1"/>
-			<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,550" zPosition="1" size="541,720" transparent="1" alphatest="on"/>
-			<ePixmap name="red" position="0,0" zPosition="2" size="140,40" pixmap="buttons/red.png" transparent="1" alphatest="on"/>
-			<ePixmap name="green" position="150,0" zPosition="2" size="140,40" pixmap="buttons/green.png" transparent="1" alphatest="on"/>
-			<ePixmap name="yellow" position="300,0" zPosition="2" size="140,40" pixmap="buttons/yellow.png" transparent="1" alphatest="on"/>
-			<ePixmap name="blue" position="450,0" zPosition="2" size="140,40" pixmap="buttons/blue.png" transparent="1" alphatest="on"/>
+			<widget source="key_red" render="Label" position="0,0" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4" foregroundColor="white" backgroundColor="#9f1313" font="Regular;18" transparent="1"/>
+			<widget source="key_green" render="Label" position="150,0" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4" foregroundColor="white" backgroundColor="#1f771f" font="Regular;18" transparent="1"/>
+			<widget source="key_yellow" render="Label" position="300,0" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4" foregroundColor="white" backgroundColor="#a08500" font="Regular;18" transparent="1"/>
+			<widget source="key_blue" render="Label" position="450,0" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="4" foregroundColor="white" backgroundColor="#a08500" font="Regular;18" transparent="1"/>
+			<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,550" zPosition="1" size="541,720" transparent="1" alphaTest="on"/>
+			<ePixmap name="red" position="0,0" zPosition="2" size="140,40" pixmap="buttons/red.png" transparent="1" alphaTest="on"/>
+			<ePixmap name="green" position="150,0" zPosition="2" size="140,40" pixmap="buttons/green.png" transparent="1" alphaTest="on"/>
+			<ePixmap name="yellow" position="300,0" zPosition="2" size="140,40" pixmap="buttons/yellow.png" transparent="1" alphaTest="on"/>
+			<ePixmap name="blue" position="450,0" zPosition="2" size="140,40" pixmap="buttons/blue.png" transparent="1" alphaTest="on"/>
 			<widget name="config" position="10,50" size="580,350" scrollbarMode="showOnDemand"/>
-			<widget name="description" position="50,385" size="500,80" font="Regular;18" halign="center" valign="top" transparent="0" zPosition="1"/>
+			<widget name="description" position="50,385" size="500,80" font="Regular;18" horizontalAlignment="center" verticalAlignment="top" transparent="0" zPosition="1"/>
 		</screen>"""
 
 	def __init__(self, session, setup, plugin=None, PluginLanguageDomain=None):
@@ -142,7 +142,7 @@ class ABMCustomMixImporter(Screen):
 	skin = """
 	<screen position="0,0" size="1280,35" backgroundColor="transpBlack" flags="wfNoBorder" >
 		<widget name="action" position="5,3" size="435,25" font="Regular;22" backgroundColor="transpBlack" borderWidth="3" borderColor="black"/>
-		<widget name="status" position="465,5" size="435,25" font="Regular;22" halign="center" backgroundColor="transpBlack" borderWidth="2" borderColor="black"/>
+		<widget name="status" position="465,5" size="435,25" font="Regular;22" horizontalAlignment="center" backgroundColor="transpBlack" borderWidth="2" borderColor="black"/>
 	</screen>"""
 
 	def __init__(self, session):

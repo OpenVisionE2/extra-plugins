@@ -489,11 +489,11 @@ class shoutGenresThumb(StreamsThumbCommon):
 
         self.skin = """
 				<screen position="0,0" size="e,e" flags="wfNoBorder" >
-					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" halign="center" valign="center" transparent="0" zPosition="5" />
+					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" horizontalAlignment="center" verticalAlignment="center" transparent="0" zPosition="5" />
 					<widget source="Title" render="Label" position="20,0" size="e,50" font="Regular;32" />
 					<widget name="list" position="0,50" size="e,e-50" scrollbarMode="showOnDemand" transparent="1" />
-					<ePixmap pixmap="ViX-Common/buttons/green.png" position="800,10" size="40,40" transparent="1" alphatest="on" />
-					<widget source="key_green" render="Label" position="810,0" zPosition="1" size="200,40" font="Regular;20" valign="center" halign="center" transparent="1" />
+					<ePixmap pixmap="ViX-Common/buttons/green.png" position="800,10" size="40,40" transparent="1" alphaTest="on" />
+					<widget source="key_green" render="Label" position="810,0" zPosition="1" size="200,40" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" transparent="1" />
 				</screen>"""
 
         self["key_green"] = StaticText(_("Add to Favorites"))
@@ -725,11 +725,11 @@ class FavoritesThumb(StreamsThumbCommon):
 
         self.skin = """
 				<screen position="0,0" size="e,e" flags="wfNoBorder" >
-					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" halign="center" valign="center" transparent="0" zPosition="5" />
+					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" horizontalAlignment="center" verticalAlignment="center" transparent="0" zPosition="5" />
 					<widget source="Title" render="Label" position="20,0" size="e,50" font="Regular;32" />
 					<widget name="list" position="0,50" size="e,e-50" scrollbarMode="showOnDemand" transparent="1" />
-					<ePixmap pixmap="ViX-Common/buttons/yellow.png" position="800,10" size="40,40" transparent="1" alphatest="on" />
-					<widget source="key_yellow" render="Label" position="810,0" zPosition="1" size="250,40" font="Regular;20" valign="center" halign="center" transparent="1" />
+					<ePixmap pixmap="ViX-Common/buttons/yellow.png" position="800,10" size="40,40" transparent="1" alphaTest="on" />
+					<widget source="key_yellow" render="Label" position="810,0" zPosition="1" size="250,40" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" transparent="1" />
 				</screen>"""
 
         self["key_yellow"] = StaticText(_("Delete from Favorites"))
@@ -913,11 +913,11 @@ class tuneinGenresThumb(StreamsThumbCommon):
 
         self.skin = """
 				<screen position="0,0" size="e,e" flags="wfNoBorder" >
-					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" halign="center" valign="center" transparent="0" zPosition="5" />
+					<widget name="lab1" position="0,0" size="e,e" font="Regular;24" horizontalAlignment="center" verticalAlignment="center" transparent="0" zPosition="5" />
 					<widget source="Title" render="Label" position="20,0" size="e,50" font="Regular;32" />
 					<widget name="list" position="0,50" size="e,e-50" scrollbarMode="showOnDemand" transparent="1" />
-					<ePixmap pixmap="ViX-Common/buttons/green.png" position="800,10" size="40,40" transparent="1" alphatest="on" />
-					<widget source="key_green" render="Label" position="810,0" zPosition="1" size="200,40" font="Regular;20" valign="center" halign="center" transparent="1" />
+					<ePixmap pixmap="ViX-Common/buttons/green.png" position="800,10" size="40,40" transparent="1" alphaTest="on" />
+					<widget source="key_green" render="Label" position="810,0" zPosition="1" size="200,40" font="Regular;20" verticalAlignment="center" horizontalAlignment="center" transparent="1" />
 				</screen>"""
 
         self["key_green"] = StaticText(_("Add to Favorites"))

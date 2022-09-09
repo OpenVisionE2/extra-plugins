@@ -397,11 +397,11 @@ class LCNScannerPlugin(Screen, ConfigListScreen, LCNBuildHelper):
 		<screen position="center,center" size="560,400" title="LCN Scanner">
 			<widget name="config" position="5,5" size="550,350" scrollbarMode="showOnDemand" zPosition="1"/>
 
-			<widget name="key_red" position="0,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
-			<widget name="key_green" position="140,360" size="140,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
+			<widget name="key_red" position="0,360" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
+			<widget name="key_green" position="140,360" size="140,40" verticalAlignment="center" horizontalAlignment="center" zPosition="5" transparent="1" foregroundColor="white" font="Regular;18"/>
 
-			<ePixmap name="red" pixmap="buttons/red.png" position="0,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
-			<ePixmap name="green" pixmap="buttons/green.png" position="140,360" size="140,40" zPosition="4" transparent="1" alphatest="on"/>
+			<ePixmap name="red" pixmap="buttons/red.png" position="0,360" size="140,40" zPosition="4" transparent="1" alphaTest="on"/>
+			<ePixmap name="green" pixmap="buttons/green.png" position="140,360" size="140,40" zPosition="4" transparent="1" alphaTest="on"/>
 		</screen>"""
 
 	def __init__(self, session):

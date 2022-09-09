@@ -167,18 +167,18 @@ class BluetoothDevicesManagerSetup(ConfigListScreen, Screen):
 class BluetoothDevicesManager(Screen):
     skin = """
 		<screen name="BluetoothDevicesManager" position="center,center" size="600,450" >
-			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
-			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
+			<ePixmap pixmap="buttons/red.png" position="5,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/green.png" position="155,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/yellow.png" position="305,0" size="140,40" alphaTest="on" />
+			<ePixmap pixmap="buttons/blue.png" position="455,0" size="140,40" alphaTest="on" />
 
-			<widget name="key_red" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
-			<widget name="key_green" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
-			<widget name="key_yellow" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
-			<widget name="key_blue" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+			<widget name="key_red" position="5,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget name="key_green" position="155,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+			<widget name="key_yellow" position="305,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+			<widget name="key_blue" position="455,0" zPosition="1" size="140,40" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 
 			<widget name="devicelist" position="0,50" size="600,300" foregroundColor="#ffffff" zPosition="10" scrollbarMode="showOnDemand" transparent="1"/>
-			<widget name="ConnStatus" position="0,330" size="600,150" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+			<widget name="ConnStatus" position="0,330" size="600,150" zPosition="1" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
 	        </screen>
 		"""
 
