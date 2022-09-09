@@ -287,7 +287,7 @@ class StreamsThumb(StreamsThumbCommon):
         showID = self["list"].l.getCurrentSelection()[4]
         showName = self["list"].l.getCurrentSelection()[1]
 
-        if self.cmd <> "episode":
+        if self.cmd != "episode":
             self.session.open(StreamsThumb, "episode", showName, showID)
         else:
             fileUrl = self.findPlayUrl(showID)

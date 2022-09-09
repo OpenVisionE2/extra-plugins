@@ -95,7 +95,7 @@ class FPUpgradeCore():
         try:
             size = os.path.getsize(self.firmwarefile)
             if size == 0:
-                raise Exception, 'data_size is zero'
+                raise Exception('data_size is zero')
             #print('[FPUpgradeCore] data_size :',size)
 
             for xx in range(3):
@@ -108,7 +108,7 @@ class FPUpgradeCore():
 
                 rc = fcntl.ioctl(device, 0, size)
                 if rc < 0:
-                    raise Exception, 'fail to set size : %d' % (rc)
+                    raise Exception('fail to set size : %d' % (rc))
                 #print('[FPUpgradeCore] set size >> [ok]')
                 self.status = STATUS_PREPARED
 
@@ -124,13 +124,13 @@ class FPUpgradeCore():
                 if rc == 0:
                     break
                 if xx == 2:
-                    raise Exception, 'fail to upgrade : %d' % (rc)
+                    raise Exception('fail to upgrade : %d' % (rc))
                 self.errmsg = 'fail to upgrade, retry..'
                 self.status = STATUS_RETRY_UPGRADE
                 closefp(firmware, device)
             #print('[FPUpgradeCore] upgrade done.')
             if self.callcount < 20:
-                raise Exception, 'wrong fpga file.'
+                raise Exception('wrong fpga file.')
         except Exception as msg:
             self.errmsg = msg
             print('[FPUpgradeCore] ERROR >>', msg)
@@ -171,7 +171,7 @@ class FPGAUpgradeCore():
         try:
             size = os.path.getsize(self.firmwarefile)
             if size == 0:
-                raise Exception, 'data_size is zero'
+                raise Exception('data_size is zero')
             #print('[FPGAUpgradeCore] data_size :',size)
 
             firmware = open(self.firmwarefile, 'rb')
@@ -180,12 +180,12 @@ class FPGAUpgradeCore():
 
             rc = fcntl.ioctl(device, 0, size)
             if rc < 0:
-                raise Exception, 'fail to set size : %d' % (rc)
+                raise Exception('fail to set size : %d' % (rc))
             #print('[FPGAUpgradeCore] set size >> [ok]')
 
             rc = fcntl.ioctl(device, 2, 5)
             if rc < 0:
-                raise Exception, 'fail to set programming mode : %d' % (rc)
+                raise Exception('fail to set programming mode : %d' % (rc))
             #print('[FPGAUpgradeCore] programming mode >> [ok]')
             self.status = STATUS_PREPARED
 
@@ -199,10 +199,10 @@ class FPGAUpgradeCore():
             self.status = STATUS_PROGRAMMING
             rc = fcntl.ioctl(device, 1, 0)
             if rc < 0:
-                raise Exception, 'fail to programming : %d' % (rc)
+                raise Exception('fail to programming : %d' % (rc))
             #print('[FPGAUpgradeCore] upgrade done.')
             if self.callcount < 20:
-                raise Exception, 'wrong fpga file.'
+                raise Exception('wrong fpga file.')
         except Exception as msg:
             self.errmsg = msg
             print('[FPGAUpgradeCore] ERROR >>', msg)
@@ -248,7 +248,7 @@ class VFDCtrlUpgradeCore():
             max_size = 1024 * 16
             size = max_size #os.path.getsize(self.firmwarefile)
             if size == 0:
-                raise Exception, 'data_size is zero'
+                raise Exception('data_size is zero')
             #print('[VFDCtrlUpgradeCore] data_size :',size)
 
             for xx in range(3):
@@ -261,7 +261,7 @@ class VFDCtrlUpgradeCore():
 
                 rc = fcntl.ioctl(device, 0, size)
                 if rc < 0:
-                    raise Exception, 'fail to set size : %d' % (rc)
+                    raise Exception('fail to set size : %d' % (rc))
                 #print('[VFDCtrlUpgradeCore] set size >> [ok]')
                 self.status = STATUS_PREPARED
 
@@ -279,12 +279,12 @@ class VFDCtrlUpgradeCore():
                 if rc == 0:
                     break
                 if rc < 0 or xx == 2:
-                    raise Exception, 'fail to upgrade : %d' % (rc)
+                    raise Exception('fail to upgrade : %d' % (rc))
                 self.errmsg = 'fail to upgrade, retry..'
                 self.status = STATUS_RETRY_UPGRADE
             #print('[VFDCtrlUpgradeCore] upgrade done.')
             if self.callcount < 20:
-                raise Exception, 'wrong fpga file.'
+                raise Exception('wrong fpga file.')
         except Exception as msg:
             self.errmsg = msg
             print('[VFDCtrlUpgradeCore] ERROR >>', msg)

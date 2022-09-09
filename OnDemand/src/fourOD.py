@@ -427,7 +427,7 @@ class StreamsThumb(StreamsThumbCommon):
                 # If call is from Outside UK then stream URL might need to be altered.
                 if isUK == 1:
                     print(__plugin__, __version__, "GetStreamInfo: notUK user: streamURI: ", streamURI, " streamURI[:10]: ", streamURI[:10])
-                    if streamURI[:10] <> "rtmpe://ll":
+                    if streamURI[:10] != "rtmpe://ll":
                         streamURI = ""
                         continue
 

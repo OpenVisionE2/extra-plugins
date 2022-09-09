@@ -51,7 +51,7 @@ class FPGAUpgradeCore():
         try:
             size = os.path.getsize(self.firmwarefile)
             if size == 0:
-                raise Exception, 'data_size is zero'
+                raise Exception('data_size is zero')
             #print('[FPGAUpgradeCore] data_size :',size)
 
             firmware = open(self.firmwarefile, 'rb')
@@ -60,12 +60,12 @@ class FPGAUpgradeCore():
 
             rc = fcntl.ioctl(device, 0, size)
             if rc < 0:
-                raise Exception, 'fail to set size : %d' % (rc)
+                raise Exception('fail to set size : %d' % (rc))
             #print('[FPGAUpgradeCore] set size >> [ok]')
 
             rc = fcntl.ioctl(device, 2, 5)
             if rc < 0:
-                raise Exception, 'fail to set programming mode : %d' % (rc)
+                raise Exception('fail to set programming mode : %d' % (rc))
             #print('[FPGAUpgradeCore] programming mode >> [ok]')
             self.status = STATUS_PREPARED
 
@@ -79,10 +79,10 @@ class FPGAUpgradeCore():
             self.status = STATUS_PROGRAMMING
             rc = fcntl.ioctl(device, 1, 0)
             if rc < 0:
-                raise Exception, 'fail to programming : %d' % (rc)
+                raise Exception('fail to programming : %d' % (rc))
             #print('[FPGAUpgradeCore] upgrade done.')
             if self.callcount < 100:
-                raise Exception, 'wrong fpga file.'
+                raise Exception('wrong fpga file.')
         except Exception as msg:
             self.errmsg = msg
             print('[FPGAUpgradeCore] ERROR >>', msg)
