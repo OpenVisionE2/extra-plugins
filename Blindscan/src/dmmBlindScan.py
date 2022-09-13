@@ -497,7 +497,7 @@ class SatelliteTransponderSearchSupport:
 			stop = max(s1, s2)
 
 			if self.auto_scan: # hack for driver based blindscan... extend search range +/- 50Mhz
-				freq_limits = list(map(lambda x: x * 1000, self.freq_limits))
+				freq_limits = list([x * 1000 for x in self.freq_limits])
 				start -= 50000
 				stop += 50000
 				if start < freq_limits[0]:
