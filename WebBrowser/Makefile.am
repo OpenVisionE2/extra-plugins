@@ -1,1 +1,0 @@
-SUBDIRS = meta keymap icons src po

@@ -339,13 +339,6 @@ VuDuoFanControl/src/Makefile
 VuDuoFanControl/meta/Makefile
 VuDuoFanControl/po/Makefile
 
-WebBrowser/Makefile
-WebBrowser/src/Makefile
-WebBrowser/meta/Makefile
-WebBrowser/keymap/Makefile
-WebBrowser/icons/Makefile
-WebBrowser/po/Makefile
-
 WetekAudio/Makefile
 WetekAudio/src/Makefile
 
