@@ -8,7 +8,7 @@ from Components.Task import Task, Job, job_manager, Condition
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.TaskView import JobView
-from Tools.Downloader import downloadWithProgress
+from Tools.Downloader import DownloadWithProgress
 from Tools.LoadPixmap import LoadPixmap
 from Tools.Directories import SCOPE_PLUGINS
 from six.moves.urllib.request import Request, urlopen
@@ -254,7 +254,7 @@ class ImageDownloadTask(Task):
 
     def run(self, callback):
         self.callback = callback
-        self.download = downloadWithProgress(self.url, self.path)
+        self.download = DownloadWithProgress(self.url, self.path)
         self.download.addProgress(self.download_progress)
         self.download.start().addCallback(self.download_finished).addErrback(self.download_failed)
         print('[SH4MultiBoot-Download] Downloading', self.url, 'to', self.path)
