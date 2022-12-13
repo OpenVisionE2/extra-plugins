@@ -30,7 +30,7 @@ config.plugins.VFD_ini.ClockLevel2 = ConfigSlider(default=4, limits=(1, 10))
 
 MyRecLed = False
 use_oled = False
-if BoxInfo.getItem("model") in ("gbtrio4k", "viper4k") or BoxInfo.getItem("platform") == "octagonhisil":
+if BoxInfo.getItem("model") in ("gbtrio4k", "viper4k") or BoxInfo.getItem("platform") in ("octagonhisil", "octagonhisilnew"):
 	use_oled = True
 
 
