@@ -539,7 +539,7 @@ class VFDIcons:
         if not self.mount or self.dir != dir:
             if not self.mount:
                 self.dir = dir
-#				print "[UFSVFD] SetMount", dir
+#				print("[UFSVFD] SetMount", dir)
                 self.mount = self.FindMountDir(dir)
             if not self.mount:
                 self.mount = self.FindMountDir('/autofs/sdc1')

@@ -380,6 +380,10 @@ fs9000VFD/Makefile
 fs9000VFD/src/Makefile
 fs9000VFD/meta/Makefile
 
+hchsxx00VFD/Makefile
+hchsxx00VFD/src/Makefile
+hchsxx00VFD/meta/Makefile
+
 hs742xVFD/Makefile
 hs742xVFD/src/Makefile
 hs742xVFD/meta/Makefile
