@@ -57,6 +57,9 @@ AC_DEFINE_UNQUOTED(STBPLATFORM,"$STBPLATFORM",[stb platform])
 AC_CONFIG_FILES([
 Makefile
 
+AmlFRQ/Makefile
+AmlFRQ/src/Makefile
+
 AttoVFDControl/Makefile
 AttoVFDControl/src/Makefile
 AttoVFDControl/meta/Makefile
