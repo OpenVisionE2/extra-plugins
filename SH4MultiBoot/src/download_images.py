@@ -41,7 +41,7 @@ class SH4MultiChooseOnLineImage(Screen):
         mypath = mypath + 'Extensions/SH4MultiBoot/images/'
         mypixmap = mypath + 'openatv.png'
         png = LoadPixmap(mypixmap)
-        name = _('OpenATV')
+        name = _('ATV')
         desc = _('Download latest ATV images')
         idx = 'openatv'
         res = (name,
