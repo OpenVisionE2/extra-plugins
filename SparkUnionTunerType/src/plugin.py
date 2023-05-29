@@ -7,11 +7,12 @@ from Components.config import getConfigListEntry, ConfigSelection
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Plugins.Plugin import PluginDescriptor
-from os import path as os_path
+from os.path import isfile
 import fileinput
 
-option = 'options spark7162 UnionTunerType='
-filename = '/etc/modprobe.d/_spark7162.conf'
+option = 'options spark7162-fe UnionTunerType='
+filename = '/etc/modprobe.d/_spark7162.conf' # modules-conf.conf
+#filename = '/etc/modules-load.d/_spark7162.conf' # modules.conf
 
 
 class UnionTunerType(Screen, ConfigListScreen):
@@ -20,13 +21,13 @@ class UnionTunerType(Screen, ConfigListScreen):
         self.session = session
         Screen.__init__(self, self.session)
         self.skinName = ['Setup']
-        self.setTitle(_('Spark7162 select tuner mode'))
+        self.setTitle(_('spark7162 select tuner mode'))
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {'cancel': self.cancel,
          'ok': self.ok,
          'green': self.ok,
          'red': self.cancel}, -2)
         t = None
-        if os_path.exists(filename):
+        if isfile(filename):
             settings = open(filename)
             while True:
                 s = settings.readline().strip()
