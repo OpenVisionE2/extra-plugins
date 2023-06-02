@@ -409,12 +409,10 @@ class StreamsThumb(StreamsThumbCommon):
             # No DNS set in Settings, exit.NOCONNECT
             if (xml == "NODNS"):
                 return (streamURI, auth, "Non-UK User!!\n\nYou need to specify a DNS in the OnDemand Settings!!")
-                break
 
             # No DNS set in Settings, exit.
             if (xml == "NOCONNECT"):
                 return (streamURI, auth, "Non-UK User!!\n\nCould not connect to your specified DNS!\n\n Check the DNS in the OnDemand Settings!!")
-                break
 
             # Only check stream data if data has been returned.
             if xml:

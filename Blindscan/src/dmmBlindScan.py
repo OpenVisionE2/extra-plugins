@@ -872,16 +872,13 @@ class DmmBlindscan(ConfigListScreen, Screen, SatelliteTransponderSearchSupport, 
 				self.startScan()
 			else:
 				msg = _("Search completed. %d transponders found.\n\nDetails saved in:\n%s") % (len(self.tlist), xml_location)
-				self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=300)
+				self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=300)
 		else:
 			if user_aborted_scan:
 				msg = _("The blindscan run was cancelled by the user.")
 			else:
 				msg = _("No transponders were found for those search parameters!")
-			self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
-
-	def callbackNone(self, *retval):
-		None
+			self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
 
 	def runFilters(self, tplist, orig_tplist=None):
 		# tplist should only contain one tp

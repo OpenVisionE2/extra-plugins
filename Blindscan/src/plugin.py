@@ -261,7 +261,7 @@ class Blindscan(ConfigListScreen, Screen):
 		self.bsTimer = eTimer()
 		self.bsTimer.callback.append(self.asyncBlindScan)
 
-		ConfigListScreen.__init__(self, self.list, session=session)
+		ConfigListScreen.__init__(self, self.list, session=session, on_change=self.changedEntry)
 		self["footnote"] = Label("")
 
 		self["actions"] = ActionMap(["SetupActions"],
@@ -390,9 +390,6 @@ class Blindscan(ConfigListScreen, Screen):
 
 	def getNimSocket(self, slot_number):
 		return self.i2c_mapping_table.get(slot_number, -1)
-
-	def callbackNone(self, *retval):
-		None
 
 	def openFrontend(self):
 		res_mgr = eDVBResourceManager.getInstance()
@@ -1267,13 +1264,13 @@ class Blindscan(ConfigListScreen, Screen):
 					self.session.openWithCallback(self.startScan, BlindscanState, _("Search completed\n%d transponders found in %d:%02d minutes.\nDetails saved in: %s") % (len(self.tmp_tplist), self.runtime / 60, self.runtime % 60, xml_location), "", blindscanStateList, True)
 			else:
 				msg = _("No new transponders found! \n\nOnly transponders already listed in satellites.xml \nhave been found for those search parameters!")
-				self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
+				self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
 
 		else:
 			msg = _("No transponders were found for those search parameters!")
 			if val[0] == False:
 				msg = _("The blindscan run was cancelled by the user.")
-			self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
+			self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
 			self.tmp_tplist = []
 
 	def startScan(self, *retval):
@@ -1562,7 +1559,7 @@ class Blindscan(ConfigListScreen, Screen):
 	def setBlueText(self):
 		for key in defaults.keys():
 			if getattr(config.blindscan, key).value != defaults[key]:
-				self["key_blue"].setText("Restore defaults")
+				self["key_blue"].setText(_("Restore defaults"))
 				return
 		if self.blindscan_Ku_band_start_frequency.value != self.Ku_band_freq_limits["low"] or \
 			self.blindscan_Ku_band_stop_frequency.value != self.Ku_band_freq_limits["high"] or \
@@ -1572,7 +1569,7 @@ class Blindscan(ConfigListScreen, Screen):
 			self.user_defined_lnb_scan and self.blindscan_user_defined_lnb_stop_frequency.value != self.user_defined_lnb_lo_freq + self.tunerIfLimits["high"] or \
 			self.user_defined_lnb_scan and self.blindscan_user_defined_lnb_inverted_start_frequency.value != self.user_defined_lnb_lo_freq - self.tunerIfLimits["high"] or \
 			self.user_defined_lnb_scan and self.blindscan_user_defined_lnb_inverted_stop_frequency.value != self.user_defined_lnb_lo_freq - self.tunerIfLimits["low"]:
-			self["key_blue"].setText("Restore defaults")
+			self["key_blue"].setText(_("Restore defaults"))
 		else:
 			self["key_blue"].setText("")
 

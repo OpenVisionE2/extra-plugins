@@ -669,8 +669,8 @@ class FUFilebrowser(Screen):
         self.resetGUI()
         self["file_list"].pageDown()
 
-    def keyNone(self):
-        None
+#    def keyNone(self):
+#        None
 
 
 class FirmwareUpgrade(Screen, ConfigListScreen):
@@ -869,8 +869,8 @@ class FirmwareUpgrade(Screen, ConfigListScreen):
         self.logmode.callback.append(self.cbLogMode)
         self.logmode.start(1000)
 
-    def keyNone(self):
-        None
+#    def keyNone(self):
+#        None
 
 
 def main(session, **kwargs):

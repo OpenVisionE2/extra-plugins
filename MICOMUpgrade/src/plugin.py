@@ -367,8 +367,8 @@ class Filebrowser(Screen):
         self.resetGUI()
         self["file_list"].pageDown()
 
-    def keyNone(self):
-        None
+#    def keyNone(self):
+#        None
 
 
 class FirmwareUpgrade(Screen):
@@ -521,8 +521,8 @@ class FirmwareUpgrade(Screen):
             return
         self.close()
 
-    def keyNone(self):
-        None
+#    def keyNone(self):
+#        None
 
 
 def main(session, **kwargs):

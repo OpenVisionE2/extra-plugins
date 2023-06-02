@@ -383,9 +383,6 @@ class Blindscan(ConfigListScreen, Screen):
 	def keyNone(self):
 		None
 
-	def callbackNone(self, *retval):
-		None
-
 	def openFrontend(self):
 		res_mgr = eDVBResourceManager.getInstance()
 		if res_mgr:
@@ -1224,12 +1221,12 @@ class Blindscan(ConfigListScreen, Screen):
 					self.session.openWithCallback(self.startScan, BlindscanState, _("Search completed\n%d transponders found in %d:%02d minutes.\nDetails saved in: %s") % (len(self.tmp_tplist), runtime / 60, runtime % 60, xml_location), "", blindscanStateList, True)
 			else:
 				msg = _("No new transponders found! \n\nOnly transponders already listed in satellites.xml \nhave been found for those search parameters!")
-				self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
+				self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
 		else:
 			msg = _("No transponders were found for those search parameters!")
 			if val[0] == False:
 				msg = _("The blindscan run was cancelled by the user.")
-			self.session.openWithCallback(self.callbackNone, MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
+			self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
 			self.tmp_tplist = []
 
 	def startScan(self, *retval):
