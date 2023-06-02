@@ -292,6 +292,13 @@ StreamTV/meta/Makefile
 StreamTV/po/Makefile
 StreamTV/icons/Makefile
 
+tmdb/Makefile
+tmdb/src/Makefile
+tmdb/src/pic/Makefile
+tmdb/src/tmdbsimple/Makefile
+tmdb/meta/Makefile
+tmdb/po/Makefile
+
 TVSpielfilm/Makefile
 TVSpielfilm/meta/Makefile
 TVSpielfilm/src/Makefile
