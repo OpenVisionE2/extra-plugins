@@ -1,4 +1,4 @@
 PLUGIN = TransCodingSetup
-CATEGORY ?= "SystemPlugins"
+CATEGORY = "SystemPlugins"
 
 include $(top_srcdir)/Rules-po.mak
