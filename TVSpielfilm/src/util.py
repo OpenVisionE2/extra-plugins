@@ -1,46 +1,56 @@
 # -*- coding: utf-8 -*-
-from re import sub, findall, S as RES
+from six import ensure_str
+from xml.etree.ElementTree import fromstring, tostring, parse
+from os.path import join, isfile
+from enigma import eListboxPythonMultiContent, gFont, getDesktop
 from Components.config import config
 from Components.ConditionalWidget import BlinkingWidget
-from Components.ScrollLabel import ScrollLabel
 from Components.Label import Label
 from Components.MenuList import MenuList
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
-from enigma import eListboxPythonMultiContent, gFont, getDesktop
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE
 
-from xml.etree.ElementTree import fromstring, tostring, parse
-from six import ensure_str
-
-PLUGINPATH = resolveFilename(SCOPE_PLUGINS) + 'Extensions/TVSpielfilm/'
-PICPATH = PLUGINPATH + "pics/"
+PLUGINPATH = join(resolveFilename(SCOPE_PLUGINS), 'Extensions/TVSpielfilm/')
+PICONPATH = join(resolveFilename(SCOPE_SKIN_IMAGE), 'picon/')
+PICPATH = join(PLUGINPATH, "pics/")
 DESKTOP_WIDTH = getDesktop(0).size().width()
 DESKTOP_HEIGHT = getDesktop(0).size().height()
 
 if DESKTOP_HEIGHT > 720:
 	SCALE = 1.5
-	ICONPATH = PICPATH + "FHD/icons/"
-	SKINFILE = PLUGINPATH + "skin_FHD.xml"
+	ICONPATH = join(PICPATH, "FHD/icons/")
+	SKINFILE = join(PLUGINPATH, "skin_FHD.xml")
 else:
 	SCALE = 1.0
-	ICONPATH = PICPATH + "HD/icons/"
-	SKINFILE = PLUGINPATH + "skin_HD.xml"
+	ICONPATH = join(PICPATH, "HD/icons/")
+	SKINFILE = join(PLUGINPATH, "skin_HD.xml")
 
 
 class channelDB():
 
-	def __init__(self, servicefile):
+	def __init__(self, servicefile, dupesfile=None):
 		self.servicefile = servicefile
+		self.dupesfile = dupesfile
 		self.d = dict()
-		try:
-			for x in open(self.servicefile):
-				val, key = x.split()
+		if isfile(servicefile):
+			for x in open(servicefile):
+				key = x[x.find(' '):].strip()
+				val = x[:x.find(' ')].strip()
 				self.d[key] = val
-		except:
-			pass
+		if dupesfile is not None:
+			if isfile(dupesfile):
+				for x in open(dupesfile):
+					key = x[x.find(' '):].strip()
+					val = x[:x.find(' ')].strip()
+					self.d[key] = val
 
 	def lookup(self, key):
-		if key in self.d:
-			return self.d[key]
+		str_d = str(self.d)
+		if key in str_d:
+			start = str_d.find(key)
+			stop = str_d[start:].find("':")
+			fullkey = str_d[start:start + stop]
+			if fullkey in self.d:
+				return self.d[fullkey]
 		return 'nope'
 
 	def close(self):
@@ -52,12 +62,11 @@ class serviceDB():
 	def __init__(self, servicefile):
 		self.servicefile = servicefile
 		self.d = dict()
-		try:
-			for x in open(self.servicefile):
-				key, val = x.split()
+		if isfile(servicefile):
+			for x in open(servicefile):
+				key = x[:x.find(' ')].strip()
+				val = x[x.find(' '):].strip()
 				self.d[key] = val
-		except:
-			pass
 
 	def lookup(self, key):
 		if key in self.d:
@@ -80,11 +89,11 @@ class ItemList(MenuList):
 	def __init__(self, items, enableWrapAround=True):
 		MenuList.__init__(self, items, enableWrapAround, eListboxPythonMultiContent)
 		if config.plugins.tvspielfilm.font_size.value == "large":
-			basesize = 18
+			basesize = 20
 		elif config.plugins.tvspielfilm.font_size.value == "small":
-			basesize = 14
-		else:
 			basesize = 16
+		else:
+			basesize = 18
 		self.l.setFont(-2, gFont('Regular', int(16 * SCALE)))
 		self.l.setFont(-1, gFont('Regular', int((basesize - 2) * SCALE)))
 		self.l.setFont(0, gFont('Regular', int(basesize * SCALE)))
@@ -95,9 +104,9 @@ class ItemList(MenuList):
 def applySkinVars(skin, dict):
 	for key in dict.keys():
 		try:
-			skin = skin.replace('{' + key + '}', dict[key])
+			skin = skin.replace('{%s}' % key, dict[key])
 		except Exception as e:
-			print(e, '@key=', key)
+			print("%s@key=%s" % (str(e), key))
 	return skin
 
 
@@ -160,7 +169,7 @@ def readSkin(skin):
 			except Exception as err:
 				print("[Skin] Error: Unable to parse skin data in '%s' - '%s'!" % (SKINFILE, err))
 
-	except Exception as err:
+	except OSError as err:
 		print("[Skin] Error: Unexpected error opening skin file '%s'! (%s)" % (SKINFILE, err))
 	return skintext
 
