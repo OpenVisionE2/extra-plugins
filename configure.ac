@@ -88,6 +88,14 @@ ChannelsImporter/meta/Makefile
 ChannelsImporter/po/Makefile
 ChannelsImporter/src/Makefile
 
+Chefkoch/Makefile
+Chefkoch/meta/Makefile
+Chefkoch/src/Makefile
+Chefkoch/src/db/Makefile
+Chefkoch/src/pic/Makefile
+Chefkoch/src/pic/FHD/Makefile
+Chefkoch/src/pic/HD/Makefile
+
 DLNABrowser/Makefile
 DLNABrowser/src/Makefile
 DLNABrowser/icons/Makefile
