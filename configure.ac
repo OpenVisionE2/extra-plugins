@@ -70,6 +70,13 @@ AudioEffect/src/Makefile
 AudioEffect/meta/Makefile
 AudioEffect/po/Makefile
 
+autoBLchanger/Makefile
+autoBLchanger/meta/Makefile
+autoBLchanger/po/Makefile
+autoBLchanger/src/Makefile
+autoBLchanger/src/images/Makefile
+autoBLchanger/src/logos/Makefile
+
 Blindscan/Makefile
 Blindscan/src/Makefile
 Blindscan/meta/Makefile
