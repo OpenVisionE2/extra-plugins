@@ -809,8 +809,8 @@ class pm_conf(Screen, ConfigListScreen, HelpableScreen):
 	skin = """
 		<screen position="center,center" size="600,480" title="Select Color" >
 		<widget name="config" position="10,5" size="580,430" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="skin_default/buttons/red.png" position="10,440" size="140,40" alphaTest="on" />
-		<ePixmap pixmap="skin_default/buttons/green.png" position="155,440" size="140,40" alphaTest="on" />
+		<ePixmap pixmap="buttons/red.png" position="10,440" size="140,40" alphaTest="on" />
+		<ePixmap pixmap="buttons/green.png" position="155,440" size="140,40" alphaTest="on" />
 		<widget name="key_red" position="10,443" zPosition="1" size="140,35" verticalAlignment="center" horizontalAlignment="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
 		<widget name="key_green" position="155,443" zPosition="1" size="140,35" verticalAlignment="center" horizontalAlignment="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" noWrap="1" shadowOffset="-1,-1" />
 		</screen>"""

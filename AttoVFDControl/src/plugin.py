@@ -154,7 +154,7 @@ def initVFD():
 
 
 class VFD_ATTOSetup(ConfigListScreen, Screen):
-    skin = '<screen position="100,100" size="500,210" title="LED Display Setup" >\n\t\t\t\t<widget name="config" position="20,15" size="460,150" scrollbarMode="showOnDemand" />\n\t\t\t\t<ePixmap position="40,165" size="140,40" pixmap="skin_default/buttons/green.png" alphaTest="on" />\n\t\t\t\t<ePixmap position="180,165" size="140,40" pixmap="skin_default/buttons/red.png" alphaTest="on" />\n\t\t\t\t<widget name="key_green" position="40,165" size="140,40" font="Regular;20" backgroundColor="#1f771f" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />\n\t\t\t\t<widget name="key_red" position="180,165" size="140,40" font="Regular;20" backgroundColor="#9f1313" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />\n\t\t\t</screen>'
+    skin = '<screen position="100,100" size="500,210" title="LED Display Setup" >\n\t\t\t\t<widget name="config" position="20,15" size="460,150" scrollbarMode="showOnDemand" />\n\t\t\t\t<ePixmap position="40,165" size="140,40" pixmap="buttons/green.png" alphaTest="on" />\n\t\t\t\t<ePixmap position="180,165" size="140,40" pixmap="buttons/red.png" alphaTest="on" />\n\t\t\t\t<widget name="key_green" position="40,165" size="140,40" font="Regular;20" backgroundColor="#1f771f" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />\n\t\t\t\t<widget name="key_red" position="180,165" size="140,40" font="Regular;20" backgroundColor="#9f1313" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />\n\t\t\t</screen>'
 
     def __init__(self, session, args=None):
         Screen.__init__(self, session)

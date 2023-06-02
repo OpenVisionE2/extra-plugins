@@ -68,7 +68,7 @@ class BrcmFRQ(ConfigListScreen, Screen):
 			<widget name="voltc" position="20,300" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" verticalAlignment="center" horizontalAlignment="left" transparent="1" />
 			<widget name="frqc" position="20,380" size="580,50" zPosition="2" backgroundColor="key_back" font="Regular; 20" verticalAlignment="center" horizontalAlignment="left" transparent="1" />
 			<eLabel name="" text="OK" position="580,e-50" size="180,40" font="Regular; 20" zPosition="2" verticalAlignment="center" horizontalAlignment="center" backgroundColor="key_green" transparent="0" />
-			<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="780,e-50" size="1,1" transparent="1" zPosition="2" alphaTest="on"/>
+			<widget name="HelpWindow" pixmap="vkey_icon.png" position="780,e-50" size="1,1" transparent="1" zPosition="2" alphaTest="on"/>
 		</screen>"""
         Screen.__init__(self, session)
         self.onClose.append(self.abort)
