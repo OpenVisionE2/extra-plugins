@@ -217,6 +217,9 @@ LEDBrightnessSetup/Makefile
 LEDBrightnessSetup/src/Makefile
 LEDBrightnessSetup/meta/Makefile
 
+LottoExtended/Makefile
+LottoExtended/src/Makefile
+
 MICOMUpgrade/Makefile
 MICOMUpgrade/src/Makefile
 MICOMUpgrade/src/bin/Makefile
