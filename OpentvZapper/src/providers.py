@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 providers = {
 	"Astra 28.2": {
 		"transponder": {
