@@ -28,7 +28,7 @@ from Screens.HelpMenu import HelpableScreen
 from Screens.Screen import Screen
 from Screens.Setup import Setup
 from Screens.MessageBox import MessageBox
-from Tools.Directories import fileExists
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
 from Tools.BoundFunction import boundFunction
 from twisted.internet.reactor import callInThread
 from enigma import RT_HALIGN_LEFT, eListboxPythonMultiContent, eServiceCenter, gFont
@@ -44,7 +44,7 @@ pdate = "20221212"
 
 config.plugins.tmdb = ConfigSubsection()
 config.plugins.tmdb.themoviedb_coversize = ConfigSelection(default="w185", choices=["w92", "w185", "w500", "original"])
-config.plugins.tmdb.lang = ConfigSelection(default="de", choices=["de", "en"])
+config.plugins.tmdb.lang = ConfigSelection(default="en", choices=["de", "en"])
 config.plugins.tmdb.firsthit = ConfigYesNo(default=True)
 
 
@@ -147,7 +147,7 @@ class createList(GUIComponent, object):
 
 class tmdbConfigScreen(Setup):
 	def __init__(self, session):
-		Setup.__init__(self, session, "TMDB", plugin="Extensions/tmdb", PluginLanguageDomain="tmdb")
+		Setup.__init__(self, session, "TMDB", plugin="Extensions/TMDb", PluginLanguageDomain="TMDb")
 		self.setTitle("TMDb - The Movie Database v" + pversion)
 
 
@@ -161,10 +161,10 @@ class tmdbScreen(Screen, HelpableScreen):
 			<widget name="key_green" position="395,570" size="260,25"  transparent="1" font="Regular;20"/>
 			<widget name="key_yellow" position="690,570" size="260,25" transparent="1" font="Regular;20"/>
 			<widget name="key_blue" position="985,570" size="260,25" transparent="1" font="Regular;20"/>
-			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_red.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_green.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_yellow.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_blue.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="~/pic/button_red.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="~/pic/button_green.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="~/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="~/pic/button_blue.png" transparent="1" alphaTest="on"/>
 		</screen>"""
 
 	def __init__(self, session, service, mode):
@@ -301,7 +301,7 @@ class tmdbScreen(Screen, HelpableScreen):
 		url_cover = self['list'].getCurrent()[1]
 		id = self['list'].getCurrent()[3]
 		if url_cover[-4:] == "None":
-			self.showCover("/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png")
+			self.showCover(resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png"))
 		else:
 			coverFile = "%s%s.jpg" % (self.tempDir, id)
 			if not fileExists(coverFile):
@@ -322,7 +322,7 @@ class tmdbScreen(Screen, HelpableScreen):
 	def showCover(self, coverName):
 		self.picload = ePicLoad()
 		if not fileExists(coverName):
-			coverName = "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png"
+			coverName = resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png")
 		if fileExists(coverName):
 			self['cover'].instance.setPixmap(gPixmapPtr())
 			scale = AVSwitch().getFramebufferScale()
@@ -418,7 +418,7 @@ class tmdbScreenMovie(Screen, HelpableScreen):
 			<widget name="searchinfo" position="10,10" size="930,30" font="Regular;24" foregroundColor="#00fff000" transparent="1"/>
 			<widget name="fulldescription" position="10,60" size="620,490" font="Regular;22" transparent="1"/>
 			<widget name="cover" position="950,30" size="200,300" alphaTest="blend"/>
-			<ePixmap position="705,45" size="100,100" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png" transparent="1" alphaTest="blend"/>
+			<ePixmap position="705,45" size="100,100" zPosition="0" pixmap="~/pic/star.png" transparent="1" alphaTest="blend"/>
 			<widget name="rating" position="600,85" size="150,25" zPosition="2" font="Regular;22" horizontalAlignment="center" foregroundColor="black" backgroundColor="#00ffba00" transparent="1"/>
 			<widget name="votes_brackets" position="680,145" size="150,25" zPosition="2" font="Regular;22" horizontalAlignment="center" transparent="1"/>
 			<widget name="fsk" position="0,0" size="0,0" zPosition="2" font="Regular;22" horizontalAlignment="center" transparent="1"/>
@@ -447,10 +447,10 @@ class tmdbScreenMovie(Screen, HelpableScreen):
 			<widget name="key_green" position="395,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_yellow" position="690,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_blue" position="985,570" size="260,25" font="Regular;20" transparent="1"/>
-			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_red.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_green.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_yellow.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_blue.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="~/pic/button_red.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="~/pic/button_green.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="~/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="~/pic/button_blue.png" transparent="1" alphaTest="on"/>
 		</screen>"""
 
 	def __init__(self, session, mname, media, coverName, id, saveFilename):
@@ -734,7 +734,7 @@ class tmdbScreenMovie(Screen, HelpableScreen):
 	def showCover(self, coverName):
 		self.picload = ePicLoad()
 		if not fileExists(coverName):
-			coverName = "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png"
+			coverName = resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png")
 		if fileExists(coverName):
 			self['cover'].instance.setPixmap(gPixmapPtr())
 			scale = AVSwitch().getFramebufferScale()
@@ -748,7 +748,7 @@ class tmdbScreenMovie(Screen, HelpableScreen):
 			del self.picload
 
 	def showFSK(self, fsk):
-		self.fsklogo = "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/fsk_" + fsk + ".png"
+		self.fsklogo = resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/fsk_" + fsk + ".png")
 		self.picload = ePicLoad()
 		self['fsklogo'].instance.setPixmap(gPixmapPtr())
 		scale = AVSwitch().getFramebufferScale()
@@ -809,10 +809,10 @@ class tmdbScreenPeople(Screen, HelpableScreen):
 			<widget name="key_red" position="100,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_green" position="395,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_blue" position="985,570" size="260,25" font="Regular;20" transparent="1"/>
-			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_red.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_green.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_yellow.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_blue.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="~/pic/button_red.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="~/pic/button_green.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="~/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="~/pic/button_blue.png" transparent="1" alphaTest="on"/>
 		</screen>"""
 
 	def __init__(self, session, mname, id, media):
@@ -886,7 +886,7 @@ class tmdbScreenPeople(Screen, HelpableScreen):
 		url_cover = self['list'].getCurrent()[1]
 		id = self['list'].getCurrent()[3]
 		if url_cover[-4:] == "None":
-			self.showCover("/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png")
+			self.showCover(resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png"))
 		else:
 			coverFile = "%s%s.jpg" % (self.tempDir, id)
 			if not fileExists(coverFile):
@@ -907,7 +907,7 @@ class tmdbScreenPeople(Screen, HelpableScreen):
 	def showCover(self, coverName):
 		self.picload = ePicLoad()
 		if not fileExists(coverName):
-			coverName = "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png"
+			coverName = resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png")
 
 		if fileExists(coverName):
 			self['cover'].instance.setPixmap(gPixmapPtr())
@@ -1017,10 +1017,10 @@ class tmdbScreenSeason(Screen, HelpableScreen):
 			<widget name="key_red" position="100,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_green" position="395,570" size="260,25" font="Regular;20" transparent="1"/>
 			<widget name="key_blue" position="985,570" size="260,25" font="Regular;20" transparent="1"/>
-			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_red.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_green.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_yellow.png" transparent="1" alphaTest="on"/>
-			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/button_blue.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="70,570" size="260,25" zPosition="0" pixmap="~/pic/button_red.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="365,570" size="260,25" zPosition="0" pixmap="~/pic/button_green.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="660,570" size="260,25" zPosition="0" pixmap="~/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+			<ePixmap position="955,570" size="260,25" zPosition="0" pixmap="~/pic/button_blue.png" transparent="1" alphaTest="on"/>
 		</screen>"""
 
 	def __init__(self, session, mname, id, media):
@@ -1109,7 +1109,7 @@ class tmdbScreenSeason(Screen, HelpableScreen):
 		url_cover = self['list'].getCurrent()[1]
 		id = self['list'].getCurrent()[3]
 		if url_cover[-4:] == "None":
-			self.showCover("/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png")
+			self.showCover(resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png"))
 		else:
 			coverFile = "%s%s.jpg" % (self.tempDir, id)
 			if not fileExists(coverFile):
@@ -1130,7 +1130,7 @@ class tmdbScreenSeason(Screen, HelpableScreen):
 	def showCover(self, coverName):
 		self.picload = ePicLoad()
 		if not fileExists(coverName):
-			coverName = "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/no_cover.png"
+			coverName = resolveFilename(SCOPE_PLUGINS, "Extensions/TMDb/pic/no_cover.png")
 		if fileExists(coverName):
 			self['cover'].instance.setPixmap(gPixmapPtr())
 			scale = AVSwitch().getFramebufferScale()

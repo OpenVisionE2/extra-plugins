@@ -5,8 +5,8 @@ from Components.Language import language
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 import gettext
 
-PluginLanguageDomain = "tmdb"
-PluginLanguagePath = "Extensions/tmdb/locale"
+PluginLanguageDomain = "TMDb"
+PluginLanguagePath = "Extensions/TMDb/locale"
 
 
 def localeInit():

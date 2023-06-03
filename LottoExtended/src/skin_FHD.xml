@@ -9,7 +9,7 @@
     <widget name="key_green" position="384,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#001f771f" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_yellow" position="684,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#00a08500" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_blue" position="984,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#0018188b" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
-    <ePixmap position="1340,30" size="100,40" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LottoExtended/plugin.png" alphaTest="on" />
+    <ePixmap position="1340,30" size="100,40" zPosition="0" pixmap="~/plugin.png" alphaTest="on" />
     <eLabel backgroundColor="#00f2f2f9" position="15,75" size="1425,1" zPosition="0" />
     <eLabel backgroundColor="#00f2f2f9" position="15,220" size="1425,3" zPosition="0" />
     <widget name="auslosung" position="15,90" size="946,39" font="Regular;36" horizontalAlignment="left" verticalAlignment="center" />
@@ -75,7 +75,7 @@
     <widget name="key_green" position="84,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#001f771f" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_yellow" position="384,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#00a08500" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_blue" position="684,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#0018188b" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
-    <ePixmap position="1115,30" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LottoExtended/plugin.png" alphaTest="on" />
+    <ePixmap position="1115,30" size="100,40" pixmap="~/plugin.png" alphaTest="on" />
     <eLabel backgroundColor="#00f2f2f9" position="15,75" size="1200,1" />
     <widget name="auslosung" position="15,90" size="976,36" font="Regular;33" zPosition="1" horizontalAlignment="left" verticalAlignment="center" />
     <eLabel name="text0" text=" Gewinnzahlen:" position="15,135" size="225,36" foregroundColor="#00E5B243" font="Regular;30" zPosition="1" horizontalAlignment="left" verticalAlignment="center" />
@@ -127,7 +127,7 @@
     <widget name="key_green" position="384,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#001f771f" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_yellow" position="684,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#00a08500" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
     <widget name="key_blue" position="984,7" size="246,60" zPosition="1" font="Regular;30" horizontalAlignment="left" verticalAlignment="center" backgroundColor="#0018188b" transparent="1" foregroundColor="#00fdfdfd" shadowColor="#000E0A01" shadowOffset="-2,-2" />
-    <ePixmap position="1340,30" size="100,40" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/LottoExtended/plugin.png" alphaTest="on" />
+    <ePixmap position="1340,30" size="100,40" zPosition="0" pixmap="~/plugin.png" alphaTest="on" />
     <widget name="version" position="1260,75" size="180,22" zPosition="0" font="Regular;19" foregroundColor="#E5B243" horizontalAlignment="right" verticalAlignment="center" />
     <eLabel backgroundColor="#00f2f2f9" position="15,75" size="1425,1" zPosition="0" />
     <widget name="auslosung" position="142,90" size="877,39" zPosition="0" font="Regular;36" horizontalAlignment="center" verticalAlignment="center" />

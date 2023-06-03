@@ -153,14 +153,14 @@ class PiconManagerScreen(Screen, HelpableScreen):
 		<widget name="key_green" position="285,615" size="300,25" transparent="1" font="Regular;20"/>
 		<widget name="key_yellow" position="451,615" size="300,25" transparent="1" font="Regular;20"/>
 		<widget name="key_blue" position="734,615" size="300,25" transparent="1" font="Regular;20"/>
-		<ePixmap position="10,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="257,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="421,615" size="260,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_yellow.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="701,615" size="263,25" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_blue.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="916,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_info.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="977,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_menu.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="1038,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_channel.png" transparent="1" alphaTest="on"/>
-		<ePixmap position="1095,610" size="260,35" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_help.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="10,615" size="260,25" zPosition="0" pixmap="~/pic/button_red.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="257,615" size="260,25" zPosition="0" pixmap="~/pic/button_green.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="421,615" size="260,25" zPosition="0" pixmap="~/pic/button_yellow.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="701,615" size="263,25" zPosition="0" pixmap="~/pic/button_blue.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="916,610" size="260,35" zPosition="0" pixmap="~/pic/button_info.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="977,610" size="260,35" zPosition="0" pixmap="~/pic/button_menu.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="1038,610" size="260,35" zPosition="0" pixmap="~/pic/button_channel.png" transparent="1" alphaTest="on"/>
+		<ePixmap position="1095,610" size="260,35" zPosition="0" pixmap="~/pic/button_help.png" transparent="1" alphaTest="on"/>
 	</screen>"""
 
 	def __init__(self, session):
@@ -803,8 +803,8 @@ class PiconManagerFolderScreen(Screen):
 		<screen position="center,center" size="650,400" title=" ">
 			<widget name="media" position="10,10" size="540,30" verticalAlignment="top" font="Regular;22" />
 			<widget name="folderlist" position="10,45" zPosition="1" size="540,300" scrollbarMode="showOnDemand"/>
-			<ePixmap position="10,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_red.png" alphaTest="on" />
-			<ePixmap position="210,370" size="260,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PiconManager/pic/button_green.png" alphaTest="on" />
+			<ePixmap position="10,370" size="260,25" pixmap="~/pic/button_red.png" alphaTest="on" />
+			<ePixmap position="210,370" size="260,25" pixmap="~/pic/button_green.png" alphaTest="on" />
 			<widget render="Label" source="key_red" position="40,372" size="100,20" verticalAlignment="center" horizontalAlignment="left" zPosition="2" font="Regular;18" foregroundColor="white" />
 			<widget render="Label" source="key_green" position="240,372" size="70,20" verticalAlignment="center" horizontalAlignment="left" zPosition="2" font="Regular;18" foregroundColor="white" />
 		</screen>

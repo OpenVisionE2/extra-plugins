@@ -252,11 +252,11 @@ class BluetoothDevicesManager(Screen):
         self["devicelist"].setList(self.devicelist)
 
         if platform == "gbmv200":
-		iBluetoothctl.start_scan()
-		time.sleep(0.5)
-		cmd = 'bluetoothctl devices'
-	else:
-		cmd = 'hcitool scan'
+            iBluetoothctl.start_scan()
+            time.sleep(0.5)
+            cmd = 'bluetoothctl devices'
+        else:
+            cmd = 'hcitool scan'
         # add background task for scanning
         self.taskManager.append(cmd, self.cbPrintAvailDevices, self.cbRunNextTask)
         self.taskManager.next()
@@ -270,9 +270,9 @@ class BluetoothDevicesManager(Screen):
         data = data.splitlines()
         i = 1
         if platform == "gbmv200":
-		delimiter = " "
-	else:
-		delimiter = "\t"
+            delimiter = " "
+        else:
+            delimiter = "\t"
         for x in data:
             y = x.split(delimiter)
             if not y[0] == "Scanning ...": ## We do not need to put this to the list
@@ -476,10 +476,10 @@ def autostart(reason, **kwargs):
         if brand in ("xcore", "edision"):
             if config.btdevicesmanager.audioconnect.getValue():
                 Console().ePopen("%s %s" % (commandconnect, config.btdevicesmanager.audioaddress.getValue()))
-	if platform == "gbmv200":
-		Console().ePopen("hciattach_sprd /dev/ttyBT0 sprd")
-		if config.btdevicesmanager.audioconnect.getValue():
-			Console().ePopen("%s %s" % (commandconnect, config.btdevicesmanager.audioaddress.getValue()))
+        if platform == "gbmv200":
+            Console().ePopen("hciattach_sprd /dev/ttyBT0 sprd")
+            if config.btdevicesmanager.audioconnect.getValue():
+                Console().ePopen("%s %s" % (commandconnect, config.btdevicesmanager.audioaddress.getValue()))
 
 
 iBluetoothDevicesTask = None
