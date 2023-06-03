@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:36+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, python-format
+msgid "%-20s %-20s %-22s %9s"
+msgstr ""
+
+msgid "Cannot unmonut device. Please check whether recording is in progress, timeshit or some external tools (like samba, nfsd) that disable safe removal. Try to disable those actions/applications."
+msgstr ""
+
+msgid "Safely remove USB storage"
+msgstr ""
+
+msgid "Select device and press OK to unmount or EXIT to quit"
+msgstr ""
+
+msgid "Unmount and remove USB device at: "
+msgstr ""
+
+msgid "umount return code"
+msgstr ""

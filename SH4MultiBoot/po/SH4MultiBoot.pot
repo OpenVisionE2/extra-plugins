@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:36+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+" is already installed.\n"
+" Please try another name."
+msgstr ""
+
+msgid "ATV"
+msgstr ""
+
+msgid "Are you sure you want to boot:\n"
+msgstr ""
+
+msgid ""
+"Are you sure you want to delete:\n"
+" "
+msgstr ""
+
+msgid "Available:"
+msgstr ""
+
+msgid "Boot Confirmation"
+msgstr ""
+
+msgid "Boot Image"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Copy current settings to the new image?"
+msgstr ""
+
+msgid "Delete Confirmation"
+msgstr ""
+
+msgid "Delete downloaded zip file after install?"
+msgstr ""
+
+msgid "Devices Panel"
+msgstr ""
+
+msgid ""
+"Do You really want to install SH4MultiBoot on:\n"
+" "
+msgstr ""
+
+msgid "Do you want to install this image now?"
+msgstr ""
+
+msgid "Download failed!"
+msgstr ""
+
+msgid "Download latest ATV images"
+msgstr ""
+
+msgid "Download latest OpenAR-P images"
+msgstr ""
+
+msgid "Downloading"
+msgstr ""
+
+#, python-format
+msgid "Downloading %s"
+msgstr ""
+
+msgid "E2 light MultiBoot for SH4"
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "Here is the list of installed images on your receiver. Please choose an image to boot."
+msgstr ""
+
+msgid ""
+"Here is the list of mounted devices on your receiver.\n"
+"\n"
+"Please choose a device where you would like to install SH4MultiBoot:"
+msgstr ""
+
+msgid "Image name"
+msgstr ""
+
+msgid "Image will be booted after the next receiver reboot."
+msgstr ""
+
+msgid "Install"
+msgstr ""
+
+msgid "Install Confirmation"
+msgstr ""
+
+msgid "Install Image"
+msgstr ""
+
+msgid "Install from /media/sh4multiboot/SH4MultiBootUpload"
+msgstr ""
+
+msgid "Install from internet"
+msgstr ""
+
+msgid "Installation aborted !"
+msgstr ""
+
+msgid "Keyboard"
+msgstr ""
+
+msgid "Mount Manager"
+msgstr ""
+
+msgid ""
+"Not enough free space on /media/sh4multiboot/ !!\n"
+"You need at least 500MB free space.\n"
+"\n"
+"Exit plugin."
+msgstr ""
+
+msgid "Number of installed images in SH4MultiBoot (100 allowed):"
+msgstr ""
+
+msgid "OPENAR"
+msgstr ""
+
+msgid "Remove Image "
+msgstr ""
+
+msgid "Remove SH4MultiBoot"
+msgstr ""
+
+msgid "Remove all installed images"
+msgstr ""
+
+msgid "Removing canceled!"
+msgstr ""
+
+msgid "SH4MultiBoot"
+msgstr ""
+
+msgid "SH4MultiBoot - Download Image"
+msgstr ""
+
+msgid "SH4MultiBoot Client"
+msgstr ""
+
+msgid "SH4MultiBoot has been installed succesfully!"
+msgstr ""
+
+msgid "SH4MultiBoot is removing ..."
+msgstr ""
+
+msgid "SH4MultiBoot is running from:"
+msgstr ""
+
+msgid "SH4MultiBoot is running image:"
+msgstr ""
+
+msgid ""
+"SH4MultiBoot will install the new image.\n"
+"\n"
+msgstr ""
+
+msgid "SH4MultiBoot: Deleting all images"
+msgstr ""
+
+msgid "SH4MultiBoot: Deleting image"
+msgstr ""
+
+msgid "SH4MultiBoot: Install new image"
+msgstr ""
+
+msgid "Sorry Flash name is reserved. Choose another name for the new image."
+msgstr ""
+
+msgid "Sorry it seems there are not Linux formatted devices mounted on your receiver. To install SH4MultiBoot you need a Linux formatted part1 device. Click on the blue button to open Devices panel"
+msgstr ""
+
+msgid "Sorry the name of the new image is too long."
+msgstr ""
+
+msgid "Sorry you can install a max of 100 images."
+msgstr ""
+
+msgid "Sorry you cannot delete Flash image"
+msgstr ""
+
+msgid "Sorry you cannot delete the image currently booted from."
+msgstr ""
+
+msgid "Sorry, an image with the name "
+msgstr ""
+
+msgid ""
+"Sorry, there is not any connected devices on your receiver.\n"
+"Please connect HDD or USB to install SH4MultiBoot!"
+msgstr ""
+
+msgid "Sorry: Wrong image in Flash found. You have to install the correct image in Flash"
+msgstr ""
+
+msgid "Source image"
+msgstr ""
+
+msgid ""
+"The /media/sh4multiboot/SH4MultiBootUpload directory is empty!\n"
+"\n"
+"Please upload one image file first.\n"
+"Zip format for example.\n"
+"\n"
+msgstr ""
+
+msgid "The URL to this image is not correct!"
+msgstr ""
+
+#, python-format
+msgid ""
+"The directory %s is not a EXT2, EXT3, EXT4 or NFS partition.\n"
+"Make sure you select a valid partition type."
+msgstr ""
+
+#, python-format
+msgid ""
+"The directory %s is not writable.\n"
+"Make sure you select a writable directory instead."
+msgstr ""
+
+msgid ""
+"The new image will be installed and auto booted in few minutes.\n"
+"\n"
+msgstr ""
+
+msgid "Uninstall"
+msgstr ""
+
+msgid "Used:"
+msgstr ""
+
+msgid ""
+"WARNING: Do not reboot your receiver and turn off the power!\n"
+"\n"
+msgstr ""
+
+#, python-format
+msgid "Welcome to SH4MultiBoot %s-%s plugin installation for %s %s"
+msgstr ""
+
+msgid "What would you like to do?"
+msgstr ""
+
+msgid "You are not running a proper open source image. You must mount devices yourself."
+msgstr ""
+
+msgid "You have to provide a name for the new image."
+msgstr ""
+
+msgid ""
+"You have to select one image to install.\n"
+"Please upload your zip file in this path: /media/sh4multiboot/SH4MultiBootUpload and select the image to install."
+msgstr ""
+
+msgid "You need to install vision-core plugin first."
+msgstr ""

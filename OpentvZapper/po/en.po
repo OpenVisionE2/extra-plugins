@@ -1,0 +1,155 @@
+# English translations for Enigma2.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:36+0330\n"
+"PO-Revision-Date: 2023-06-03 15:27+0330\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "%a %e %b  %-H:%M"
+msgstr ""
+
+#, python-format
+msgid "%s scheduled update"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s update is about to start.\n"
+"Do you want to allow this?"
+msgstr ""
+
+msgid "Allows you to set a schedule to perform an EPG update."
+msgstr ""
+
+msgid "At least one day of the week must be selected"
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Automatic update interval"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Enable OpenTV download"
+msgstr ""
+
+msgid "Enable automated downloading of OpenTV EPG data. If only one tuner is available the download will be done when the reciever is in standby."
+msgstr ""
+
+msgid "Enough Retries, delaying till next schedule."
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "If enabled and PiP is available, PiP will be used for the download. If disabled or Pip is unavailable the download will be done as a fake recording."
+msgstr ""
+
+msgid "If the receiver was woken from 'Deep Standby' and is currently in 'Standby' and no recordings are in progress return it to 'Deep Standby' once the EPG download has completed."
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+#, python-format
+msgid ""
+"OpenTV EPG download completed.\n"
+"Next download: %s"
+msgstr ""
+
+msgid "OpenTV EPG download starting."
+msgstr ""
+
+msgid "OpenTV EPG downloader"
+msgstr ""
+
+msgid "OpenTV EPG forced download"
+msgstr ""
+
+msgid "OpentvZapper"
+msgstr ""
+
+msgid "Press OK"
+msgstr ""
+
+msgid "Press OK to select which days to perform an EPG download."
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Schedule days of the week"
+msgstr ""
+
+msgid "Schedule return to deep standby"
+msgstr ""
+
+msgid "Schedule scan"
+msgstr ""
+
+msgid "Schedule time of day"
+msgstr ""
+
+msgid "Schedule wake from deep standby"
+msgstr ""
+
+msgid "Select 'yes' to wake up the receiver from deep standby, or select 'no' to skip the import."
+msgstr ""
+
+msgid "Select days"
+msgstr ""
+
+msgid "Select provider"
+msgstr ""
+
+msgid "Set automatic update interval (in hours)."
+msgstr ""
+
+msgid "Set the time of day to perform an EPG download."
+msgstr ""
+
+msgid "Show in extensions"
+msgstr ""
+
+msgid "Show notifications"
+msgstr ""
+
+msgid "Show on-screen notifications (pop up) to warn the OpenTV download is in progress."
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Use PiP for download"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "When enabled a forced download will be possible from the extensions menu (blue button). Shows after next restart."
+msgstr ""
+
+msgid "Zaps to EPG download transponder for EPG fetch."
+msgstr ""

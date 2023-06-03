@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:36+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1.08GHz"
+msgstr ""
+
+msgid "1.104GHz"
+msgstr ""
+
+msgid "1.104GHz (default)"
+msgstr ""
+
+msgid "1.296GHz"
+msgstr ""
+
+msgid "1.2GHz"
+msgstr ""
+
+msgid "1.416GHz"
+msgstr ""
+
+msgid "1.512GHz"
+msgstr ""
+
+msgid "1024"
+msgstr ""
+
+msgid "128"
+msgstr ""
+
+msgid "192MHz"
+msgstr ""
+
+msgid "2048 (default)"
+msgstr ""
+
+msgid "256"
+msgstr ""
+
+msgid "3072"
+msgstr ""
+
+msgid "312MHz"
+msgstr ""
+
+msgid "384"
+msgstr ""
+
+msgid "408MHz"
+msgstr ""
+
+msgid "504MHz"
+msgstr ""
+
+msgid "512"
+msgstr ""
+
+msgid "600MHz"
+msgstr ""
+
+msgid "600MHz (default)"
+msgstr ""
+
+msgid "696MHz"
+msgstr ""
+
+msgid "816MHz"
+msgstr ""
+
+msgid "912MHz"
+msgstr ""
+
+msgid "96MHz"
+msgstr ""
+
+msgid "CFQ (default)"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Conservative"
+msgstr ""
+
+msgid "Deadline"
+msgstr ""
+
+msgid "Enigma2 Max CPU frequency"
+msgstr ""
+
+msgid "I/O Read ahead"
+msgstr ""
+
+msgid "I/O Scheduler"
+msgstr ""
+
+msgid "Interactive (default)"
+msgstr ""
+
+msgid "NOP"
+msgstr ""
+
+msgid "Ondemand"
+msgstr ""
+
+msgid "Performance"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Scaling Governor"
+msgstr ""
+
+msgid "Standby Max CPU frequency"
+msgstr ""
+
+msgid "Start Boot Frequency"
+msgstr ""
+
+msgid "Test"
+msgstr ""
+
+msgid "Wetek CPU Control"
+msgstr ""

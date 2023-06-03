@@ -1,0 +1,37 @@
+# English translations for Enigma2.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:35+0330\n"
+"PO-Revision-Date: 2023-06-03 15:27+0330\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "Blinking time"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Deep Standby"
+msgstr ""
+
+msgid "Defalut"
+msgstr ""
+
+msgid "LED Brightness Setup"
+msgstr ""
+
+msgid "Normal state"
+msgstr ""
+
+msgid "Ok"
+msgstr ""

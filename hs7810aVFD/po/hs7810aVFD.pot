@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:35+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Center text"
+msgstr ""
+
+msgid "Deepstandby LED brightness"
+msgstr ""
+
+msgid "LED control for Fortis HS7810A"
+msgstr ""
+
+msgid "LED display"
+msgstr ""
+
+msgid "LED display configuration"
+msgstr ""
+
+msgid "LED display configuration for Fortis HS7810A"
+msgstr ""
+
+msgid "Logo brightness"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Rec LED brightness"
+msgstr ""
+
+msgid "Scroll text"
+msgstr ""
+
+msgid "Show on LED display"
+msgstr ""
+
+msgid "Show on LED display in standby"
+msgstr ""
+
+msgid "Show this plugin in plugin menu"
+msgstr ""
+
+msgid "Standby LED brightness"
+msgstr ""
+
+msgid "Uppercase letters only"
+msgstr ""
+
+msgid "blank"
+msgstr ""
+
+msgid "channel name"
+msgstr ""
+
+msgid "channel number"
+msgstr ""
+
+msgid "channel number and name"
+msgstr ""
+
+msgid "continuous"
+msgstr ""
+
+msgid "date"
+msgstr ""
+
+msgid "day and date"
+msgstr ""
+
+msgid "hs7810aVFD"
+msgstr ""
+
+msgid "no"
+msgstr ""
+
+msgid "nothing"
+msgstr ""
+
+msgid "once"
+msgstr ""
+
+msgid "time"
+msgstr ""
+
+msgid "yes"
+msgstr ""

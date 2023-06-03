@@ -60,6 +60,7 @@ Makefile
 
 AmlFRQ/Makefile
 AmlFRQ/src/Makefile
+AmlFRQ/po/Makefile
 
 AttoVFDControl/Makefile
 AttoVFDControl/src/Makefile
@@ -84,6 +85,7 @@ Blindscan/po/Makefile
 
 BrcmFRQ/Makefile
 BrcmFRQ/src/Makefile
+BrcmFRQ/po/Makefile
 
 BTDevicesManager/Makefile
 BTDevicesManager/src/Makefile
@@ -170,6 +172,7 @@ GigaBlueVFDControl/po/Makefile
 
 IceTV/Makefile
 IceTV/src/Makefile
+IceTV/po/Makefile
 
 INIVFDControl/Makefile
 INIVFDControl/src/Makefile
@@ -213,13 +216,16 @@ LCD4linux/po/Makefile
 
 LCNScanner/Makefile
 LCNScanner/src/Makefile
+LCNScanner/po/Makefile
 
 LEDBrightnessSetup/Makefile
 LEDBrightnessSetup/src/Makefile
 LEDBrightnessSetup/meta/Makefile
+LEDBrightnessSetup/po/Makefile
 
 LottoExtended/Makefile
 LottoExtended/src/Makefile
+LottoExtended/po/Makefile
 
 MICOMUpgrade/Makefile
 MICOMUpgrade/src/Makefile
@@ -230,6 +236,7 @@ MICOMUpgrade/buttons/Makefile
 
 MiniTV/Makefile
 MiniTV/src/Makefile
+MiniTV/po/Makefile
 
 MultiTransCodingSetup/Makefile
 MultiTransCodingSetup/src/Makefile
@@ -249,9 +256,16 @@ OnDemand/po/Makefile
 
 OpentvZapper/Makefile
 OpentvZapper/src/Makefile
+OpentvZapper/po/Makefile
+
+opt9600VFD/Makefile
+opt9600VFD/src/Makefile
+opt9600VFD/meta/Makefile
+opt9600VFD/po/Makefile
 
 ProgrammlistenUpdater/Makefile
 ProgrammlistenUpdater/src/Makefile
+ProgrammlistenUpdater/po/Makefile
 
 TransCodingSetup/Makefile
 TransCodingSetup/meta/Makefile
@@ -275,6 +289,7 @@ RCUSelect/meta/Makefile
 
 SABnzbdSetup/Makefile
 SABnzbdSetup/src/Makefile
+SABnzbdSetup/po/Makefile
 
 SatipClient/Makefile
 SatipClient/src/Makefile
@@ -296,6 +311,7 @@ SH4MultiBoot/src/Makefile
 SH4MultiBoot/src/bin/Makefile
 SH4MultiBoot/src/images/Makefile
 SH4MultiBoot/src/SH4MultiBootClient/Makefile
+SH4MultiBoot/po/Makefile
 
 StreamTV/Makefile
 StreamTV/src/Makefile
@@ -331,9 +347,11 @@ TVSpielfilm/src/pics/HD/selectors/Makefile
 UFSVFD/Makefile
 UFSVFD/src/Makefile
 UFSVFD/meta/Makefile
+UFSVFD/po/Makefile
 
 USBsafe/Makefile
 USBsafe/src/Makefile
+USBsafe/po/Makefile
 
 VentonFanControl/Makefile
 VentonFanControl/src/Makefile
@@ -352,9 +370,11 @@ VuDuoFanControl/po/Makefile
 
 WetekAudio/Makefile
 WetekAudio/src/Makefile
+WetekAudio/po/Makefile
 
 WetekFRQ/Makefile
 WetekFRQ/src/Makefile
+WetekFRQ/po/Makefile
 
 WetekSync/Makefile
 WetekSync/src/Makefile
@@ -382,46 +402,52 @@ XtrendRemote/po/Makefile
 ADBVFD/Makefile
 ADBVFD/src/Makefile
 ADBVFD/meta/Makefile
+ADBVFD/po/Makefile
 
 CuberevoVFD/Makefile
 CuberevoVFD/src/Makefile
 CuberevoVFD/meta/Makefile
+CuberevoVFD/po/Makefile
 
 fs9000VFD/Makefile
 fs9000VFD/src/Makefile
 fs9000VFD/meta/Makefile
+fs9000VFD/po/Makefile
 
 hchsxx00VFD/Makefile
 hchsxx00VFD/src/Makefile
 hchsxx00VFD/meta/Makefile
+hchsxx00VFD/po/Makefile
 
 hs742xVFD/Makefile
 hs742xVFD/src/Makefile
 hs742xVFD/meta/Makefile
+hs742xVFD/po/Makefile
 
 hs7110VFD/Makefile
 hs7110VFD/src/Makefile
 hs7110VFD/meta/Makefile
+hs7110VFD/po/Makefile
 
 hs7810aVFD/Makefile
 hs7810aVFD/src/Makefile
 hs7810aVFD/meta/Makefile
+hs7810aVFD/po/Makefile
 
 hs8200VFD/Makefile
 hs8200VFD/src/Makefile
 hs8200VFD/meta/Makefile
+hs8200VFD/po/Makefile
 
 hs9510VFD/Makefile
 hs9510VFD/src/Makefile
 hs9510VFD/meta/Makefile
-
-opt9600VFD/Makefile
-opt9600VFD/src/Makefile
-opt9600VFD/meta/Makefile
+hs9510VFD/po/Makefile
 
 pace7241VFD/Makefile
 pace7241VFD/src/Makefile
 pace7241VFD/meta/Makefile
+pace7241VFD/po/Makefile
 
 PiconManager/Makefile
 PiconManager/meta/Makefile
@@ -437,6 +463,7 @@ PiconsUpdater/po/Makefile
 spark7162VFD/Makefile
 spark7162VFD/src/Makefile
 spark7162VFD/meta/Makefile
+spark7162VFD/po/Makefile
 
 SparkUnionTunerType/Makefile
 SparkUnionTunerType/src/Makefile
@@ -446,10 +473,12 @@ SparkUnionTunerType/meta/Makefile
 sparkVFD/Makefile
 sparkVFD/src/Makefile
 sparkVFD/meta/Makefile
+sparkVFD/po/Makefile
 
 TopfieldVFD/Makefile
 TopfieldVFD/src/Makefile
 TopfieldVFD/meta/Makefile
+TopfieldVFD/po/Makefile
 
 ])
 AC_OUTPUT

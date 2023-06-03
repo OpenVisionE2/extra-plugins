@@ -1,0 +1,82 @@
+# English translations for Enigma2.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 16:36+0330\n"
+"PO-Revision-Date: 2023-06-03 15:27+0330\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "2CH PCM (default)"
+msgstr ""
+
+msgid "8CH PCM"
+msgstr ""
+
+msgid "Audio mask :"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "DD+"
+msgstr ""
+
+msgid "DTS"
+msgstr ""
+
+msgid "DTS raw"
+msgstr ""
+
+msgid "DTSHD"
+msgstr ""
+
+msgid "Dolby Digital"
+msgstr ""
+
+msgid "Left mono - PCM only "
+msgstr ""
+
+msgid "PCM (default)"
+msgstr ""
+
+msgid "PCM or Raw type :"
+msgstr ""
+
+msgid "Raw - normal"
+msgstr ""
+
+msgid "Raw - overclocked"
+msgstr ""
+
+msgid "Right mono - PCM only"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Set Digital Codec :"
+msgstr ""
+
+msgid "Stereo-Multi (default)"
+msgstr ""
+
+msgid "Swap Left and Right"
+msgstr ""
+
+msgid "Test"
+msgstr ""
+
+msgid "TrueHD"
+msgstr ""
+
+msgid "WeTek Audio Setup"
+msgstr ""
