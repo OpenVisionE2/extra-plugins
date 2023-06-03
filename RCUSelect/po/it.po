@@ -1,0 +1,154 @@
+# Italian translations for PACKAGE package
+# Traduzioni italiane per il pacchetto PACKAGE..
+# Copyright (C) 2022 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Massimo Pissarello <mapi68@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
+"PO-Revision-Date: 2022-11-04 18:58+0100\n"
+"Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
+"Language-Team: Italian <>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.08.2\n"
+
+msgid "A400 NEC remote"
+msgstr ""
+
+#, fuzzy
+msgid "AB IPBox 9900/99/55HD remote"
+msgstr "AB IPBox 9900/99/55 HD RCU"
+
+msgid "Alien 1 Old HOF54B1-4 remote"
+msgstr ""
+
+msgid "Alien 2 New HOF55D remote"
+msgstr ""
+
+msgid "Alien 5 amlogic NEC remote"
+msgstr ""
+
+msgid "Apply"
+msgstr "Applica"
+
+msgid "Are you sure?"
+msgstr "Sei sicuro?"
+
+msgid "CVT RC5 remote"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Factory amlogic NEC remote"
+msgstr ""
+
+#, fuzzy
+msgid "GigaBlue 800 UE Plus remote"
+msgstr "Gigablue 800 UE Plus RCU"
+
+msgid "Golden Interstar LX3 remote"
+msgstr ""
+
+msgid "K1 Plus amlogic NEC remote"
+msgstr ""
+
+msgid "K1 Pro amlogic NEC remote"
+msgstr ""
+
+msgid "M8S Plus amlogic NEC remote"
+msgstr ""
+
+msgid "M8S ZAP-A10 NEC remote"
+msgstr ""
+
+msgid "MB2 amlogic M8B remote"
+msgstr ""
+
+msgid "MX Pro 2 amlogic MXproII remote"
+msgstr ""
+
+msgid "MX3G amlogic MXIII-G remote"
+msgstr ""
+
+msgid "MXQV20 ZAP-A10 NEC remote"
+msgstr ""
+
+msgid "MXQV31 amlogic NEC remote"
+msgstr ""
+
+#, fuzzy
+msgid "Mutant HD2400 remote"
+msgstr "Mutant HD2400 RCU"
+
+#, fuzzy
+msgid "Octagon SF8 remote"
+msgstr "Octagon SF8 RCU"
+
+msgid "Qintex Q812 remote"
+msgstr ""
+
+msgid "RCMM amlogic NEC remote"
+msgstr ""
+
+msgid "RCU Select"
+msgstr "Seleziona RCU"
+
+msgid "TX1 amlogic NEC remote"
+msgstr ""
+
+msgid "TX3 Pro amlogic NEC remote"
+msgstr ""
+
+msgid "TX5 Pro amlogic NEC remote"
+msgstr ""
+
+#, fuzzy
+msgid "Technomate Nano remote"
+msgstr "Technomate Nano RCU"
+
+msgid "Vander amlogic remote"
+msgstr ""
+
+msgid "WeTek OpenELEC NEC remote"
+msgstr ""
+
+#, fuzzy
+msgid "WeTek Play (Classic) remote"
+msgstr "WeTek Play (Classico) RCU"
+
+#, fuzzy
+msgid "WeTek Play 2 NEC remote"
+msgstr "WeTek Play2 RCU"
+
+#, fuzzy
+msgid "WeTek Play Enigma2 remote"
+msgstr "WeTek Play Enigma2 RCU"
+
+#, fuzzy
+msgid "WeTek Play NEC remote"
+msgstr "WeTek Play2 RCU"
+
+msgid "Wechip V5 amlogic remote"
+msgstr ""
+
+msgid "X96 amlogic remote"
+msgstr ""
+
+msgid "X98 amlogic remote"
+msgstr ""
+
+#, fuzzy
+msgid "Xtrend ET10000 remote"
+msgstr "xtrend ET10000 RCU"
+
+#, fuzzy
+msgid "Zgemma Star remote"
+msgstr "Zgemma Star RCU"

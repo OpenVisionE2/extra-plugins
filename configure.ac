@@ -1,4 +1,7 @@
-AC_INIT([enigma2-extra-plugins],[1.0])
+AC_INIT([enigma2-extra-plugins],[1.0])SparkUnionTunerType/Makefile
+SparkUnionTunerType/src/Makefile
+SparkUnionTunerType/po/Makefile
+SparkUnionTunerType/meta/Makefile
 AM_INIT_AUTOMAKE([dist-bzip2 foreign no-define tar-pax])
 AC_CONFIG_HEADERS([enigma2-plugins-config.h])
 
@@ -32,9 +35,7 @@ AC_ARG_WITH(arch,
 AC_SUBST(ARCH)
 AC_DEFINE_UNQUOTED(ARCH,"$ARCH",[box architecture])
 
-AM_CONDITIONAL(SH4, test `echo "$ARCH" | cut -b 1-3` == "sh4")
 AM_CONDITIONAL(MIPSEL, test `echo "$ARCH" | cut -b 1-6` == "mipsel")
-AM_CONDITIONAL(ARM, test `echo "$ARCH" | cut -b 1-3` == "arm")
 
 AC_ARG_WITH(boxtype,
 	AS_HELP_STRING([--with-boxtype],[build for BOXTYPE, $withval]),
@@ -135,6 +136,7 @@ ABMCustomMixImporter/mixes/Makefile
 
 AboutBoxBranding/Makefile
 AboutBoxBranding/meta/Makefile
+AboutBoxBranding/po/Makefile
 AboutBoxBranding/src/Makefile
 
 Fempa/Makefile
@@ -438,6 +440,7 @@ spark7162VFD/meta/Makefile
 
 SparkUnionTunerType/Makefile
 SparkUnionTunerType/src/Makefile
+SparkUnionTunerType/po/Makefile
 SparkUnionTunerType/meta/Makefile
 
 sparkVFD/Makefile

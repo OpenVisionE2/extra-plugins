@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:41+0330\n"
+"POT-Creation-Date: 2018-07-30 19:14+0200\n"
 "PO-Revision-Date: 2016-05-07 14:04+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: spanish <openspa.info>\n"
@@ -102,87 +102,72 @@ msgstr "Predefinits"
 msgid "Encoder"
 msgstr "Codificador"
 
-#, fuzzy
+# setup.xml
 msgid "Encoder 0: Aspect Ratio"
-msgstr "Relació d'aspecte"
+msgstr "Codificador 0: Relació d'aspecte"
 
-#, fuzzy
 msgid "Encoder 0: Audio codec"
-msgstr "Codec d'àudio"
+msgstr "Codificador 0: Codec d'àudio"
 
 msgid "Encoder 0: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Codificador 0: Mode auto (Bitrate/Framerate)"
 
 msgid "Encoder 0: Bitrate"
-msgstr ""
+msgstr "Codificador 0: Bitrate"
 
-#, fuzzy
 msgid "Encoder 0: Framerate"
-msgstr "Framerate"
+msgstr "Codificador 0: Framerate"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame B"
-msgstr "GOP Frame B"
+msgstr "Codificador 0: GOP Frame B"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame P"
-msgstr "GOP Frame P"
+msgstr "Codificador 0: GOP Frame P"
 
-#, fuzzy
 msgid "Encoder 0: Level"
-msgstr "Codificador"
+msgstr "Codificador 0: Nivel"
 
 msgid "Encoder 0: Profile"
-msgstr ""
+msgstr "Codificador 0: Perfil"
 
-#, fuzzy
 msgid "Encoder 0: Resolution"
-msgstr "Resolució"
+msgstr "Codificador 0: Resolució"
 
-#, fuzzy
 msgid "Encoder 0: Video codec"
-msgstr "Codec de video"
+msgstr "Codificador 0: Codec de video"
 
-#, fuzzy
 msgid "Encoder 1: Aspect Ratio"
-msgstr "Relació d'aspecte"
+msgstr "Codificador 1: Relació d'aspecte"
 
-#, fuzzy
 msgid "Encoder 1: Audio codec"
-msgstr "Codec d'àudio"
+msgstr "Codificador 1: Codec d'àudio"
 
 msgid "Encoder 1: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Codificador 1: Mode auto (Bitrate/Framerate)"
 
 msgid "Encoder 1: Bitrate"
-msgstr ""
+msgstr "Codificador 1: Bitrate"
 
-#, fuzzy
 msgid "Encoder 1: Framerate"
-msgstr "Framerate"
+msgstr "Codificador 1: Framerate"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame B"
-msgstr "GOP Frame B"
+msgstr "Codificador 1: GOP Frame B"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame P"
-msgstr "GOP Frame P"
+msgstr "Codificador 1: GOP Frame P"
 
-#, fuzzy
 msgid "Encoder 1: Level"
-msgstr "Codificador"
+msgstr "Codificador 1: Nivell"
 
 msgid "Encoder 1: Profile"
-msgstr ""
+msgstr "Codificador 1: Perfil"
 
-#, fuzzy
 msgid "Encoder 1: Resolution"
-msgstr "Resolució"
+msgstr "Codificador 1: Resolució"
 
-#, fuzzy
 msgid "Encoder 1: Video codec"
-msgstr "Codec de video"
+msgstr "Codificador 1: Codec de video"
 
 msgid "Framerate"
 msgstr "Framerate"

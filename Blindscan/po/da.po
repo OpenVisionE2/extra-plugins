@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2020-06-07 16:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Danskholdet <dk-translation@pm.me>\n"
@@ -61,6 +61,9 @@ msgstr "%dMHz gennemsøgt"
 
 msgid "Accuracy (higher is better)"
 msgstr "Præcision (højere er bedre)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Blind søgning"

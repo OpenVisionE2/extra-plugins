@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2019-07-23 15:32+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: french-EGAMI\n"
@@ -64,6 +64,9 @@ msgstr "%dMHz scanné"
 
 msgid "Accuracy (higher is better)"
 msgstr "Précision (plus c’est mieux)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Analyse exhaustive"

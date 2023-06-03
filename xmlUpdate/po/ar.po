@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XML update\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 19:32+0330\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2020-03-06 12:15+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -37,8 +37,9 @@ msgstr ""
 msgid "Atlantic (0°W-61°W)"
 msgstr ""
 
+#, fuzzy
 msgid "Cables"
-msgstr ""
+msgstr "كيبل"
 
 msgid "Choose where you live."
 msgstr ""
@@ -72,8 +73,9 @@ msgstr ""
 msgid "Region"
 msgstr ""
 
+#, fuzzy
 msgid "Satellites"
-msgstr ""
+msgstr "قمر صناعي"
 
 #, fuzzy
 msgid "Save"
@@ -86,8 +88,9 @@ msgstr "حفظ إلى"
 msgid "Saving the %s.xml file failed"
 msgstr "فشل حفظ ملف %s.xml"
 
+#, fuzzy
 msgid "Terrestrial"
-msgstr ""
+msgstr "بث أرضي"
 
 #, python-format
 msgid "The %s.xml download was corrupt."
@@ -97,8 +100,9 @@ msgstr "تحميل %s.xml تألف."
 msgid "The %s.xml file could not be fetched"
 msgstr "لا يمكن جلب ملف %s.xml"
 
+#, fuzzy
 msgid "Unicable"
-msgstr ""
+msgstr "كيبل"
 
 msgid "XML update"
 msgstr "تحديث ملف معلومات الترددات"

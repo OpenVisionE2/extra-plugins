@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TransCodingSetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:41+0330\n"
+"POT-Creation-Date: 2018-07-30 19:14+0200\n"
 "PO-Revision-Date: 2018-07-31 10:39+0200\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Andy Blackburn/Rob van der Does\n"
@@ -108,87 +108,71 @@ msgstr "Default"
 msgid "Encoder"
 msgstr "Encoder"
 
-#, fuzzy
 msgid "Encoder 0: Aspect Ratio"
-msgstr "Aspectratio"
+msgstr "Encoder 0: Aspectratio"
 
-#, fuzzy
 msgid "Encoder 0: Audio codec"
-msgstr "Audiocodec"
+msgstr "Encoder 0: Audiocodec"
 
 msgid "Encoder 0: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Encoder 0: Auto mode (Bitrate/Framerate)"
 
 msgid "Encoder 0: Bitrate"
-msgstr ""
+msgstr "Encoder 0: Bitrate"
 
-#, fuzzy
 msgid "Encoder 0: Framerate"
-msgstr "Framerate"
+msgstr "Encoder 0: Framerate"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame B"
-msgstr "GOP Frame B"
+msgstr "Encoder 0: GOP Frame B"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame P"
-msgstr "GOP Frame P"
+msgstr "Encoder 0: GOP Frame P"
 
-#, fuzzy
 msgid "Encoder 0: Level"
-msgstr "Encoder"
+msgstr "Encoder 0: Level"
 
 msgid "Encoder 0: Profile"
-msgstr ""
+msgstr "Encoder 0: Profiel"
 
-#, fuzzy
 msgid "Encoder 0: Resolution"
-msgstr "Resolutie"
+msgstr "Encoder 0: Resolutie"
 
-#, fuzzy
 msgid "Encoder 0: Video codec"
-msgstr "Videocodec"
+msgstr "Encoder 0: Videocodec"
 
-#, fuzzy
 msgid "Encoder 1: Aspect Ratio"
-msgstr "Aspectratio"
+msgstr "Encoder 1: Aspectratio"
 
-#, fuzzy
 msgid "Encoder 1: Audio codec"
-msgstr "Audiocodec"
+msgstr "Encoder 1: Audiocodec"
 
 msgid "Encoder 1: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Encoder 1: Auto mode (Bitrate/Framerate)"
 
 msgid "Encoder 1: Bitrate"
-msgstr ""
+msgstr "Encoder 1: Bitrate"
 
-#, fuzzy
 msgid "Encoder 1: Framerate"
-msgstr "Framerate"
+msgstr "Encoder 1: Framerate"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame B"
-msgstr "GOP Frame B"
+msgstr "Encoder 1: GOP Frame B"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame P"
-msgstr "GOP Frame P"
+msgstr "Encoder 1: GOP Frame P"
 
-#, fuzzy
 msgid "Encoder 1: Level"
-msgstr "Encoder"
+msgstr "Encoder 1: Level"
 
 msgid "Encoder 1: Profile"
-msgstr ""
+msgstr "Encoder 1: Profiel"
 
-#, fuzzy
 msgid "Encoder 1: Resolution"
-msgstr "Resolutie"
+msgstr "Encoder 1: Resolutie"
 
-#, fuzzy
 msgid "Encoder 1: Video codec"
-msgstr "Videocodec"
+msgstr "Encoder 1: Videocodec"
 
 msgid "Framerate"
 msgstr "Framerate"

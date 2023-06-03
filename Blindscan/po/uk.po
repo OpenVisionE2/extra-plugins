@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2019-06-27 11:55+0300\n"
 "Last-Translator: kvinto <badsystem@ukr.net>\n"
 "Language-Team: <sat-ukraine.info>\n"
@@ -69,6 +69,9 @@ msgstr "%dМГЦ сканувати"
 
 msgid "Accuracy (higher is better)"
 msgstr "Точність (чим більше, тим краще)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Сліпий пошук"

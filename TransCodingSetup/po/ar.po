@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-oe-alliance-plugins 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:41+0330\n"
+"POT-Creation-Date: 2021-04-16 19:01+0430\n"
 "PO-Revision-Date: 2018-12-08 11:51+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -101,87 +101,71 @@ msgstr "الإفتراضي"
 msgid "Encoder"
 msgstr "مشفر"
 
-#, fuzzy
 msgid "Encoder 0: Aspect Ratio"
-msgstr "أبعاد الشاشة"
+msgstr "التشفير 0: أبعاد الشاشة"
 
-#, fuzzy
 msgid "Encoder 0: Audio codec"
-msgstr "ترميز الصوت"
+msgstr "التشفير 0: ترميز الصوت"
 
 msgid "Encoder 0: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "التشفير 0: وضع تلقائي (معدل البت/معدل الإطارات)"
 
 msgid "Encoder 0: Bitrate"
-msgstr ""
+msgstr "التشفير 0: معدل البت"
 
-#, fuzzy
 msgid "Encoder 0: Framerate"
-msgstr "معدل الإطار"
+msgstr "التشفير 0: معدل الإطارات"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame B"
-msgstr "إطار ب"
+msgstr "التشفير 0: الإطار ب"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame P"
-msgstr "إطار ب"
+msgstr "التشفير 0: الإطار ب"
 
-#, fuzzy
 msgid "Encoder 0: Level"
-msgstr "مشفر"
+msgstr "التشفير 0: مستوى"
 
 msgid "Encoder 0: Profile"
-msgstr ""
+msgstr "التشفير 0: ملف التعريف"
 
-#, fuzzy
 msgid "Encoder 0: Resolution"
-msgstr "الدقة"
+msgstr "التشفير 0: دقة الفديو"
 
-#, fuzzy
 msgid "Encoder 0: Video codec"
-msgstr "ترميز الفيديو"
+msgstr "التشفير 0:ترميز الفيديو"
 
-#, fuzzy
 msgid "Encoder 1: Aspect Ratio"
-msgstr "أبعاد الشاشة"
+msgstr "التشفير 1: أبعاد الشاشة"
 
-#, fuzzy
 msgid "Encoder 1: Audio codec"
-msgstr "ترميز الصوت"
+msgstr "التشفير 1: ترميز الصوت"
 
 msgid "Encoder 1: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "التشفير 1: وضع تلقائي (معدل البت/معدل الإطارات)"
 
 msgid "Encoder 1: Bitrate"
-msgstr ""
+msgstr "التشفير 1: معدل البت"
 
-#, fuzzy
 msgid "Encoder 1: Framerate"
-msgstr "معدل الإطار"
+msgstr "التشفير 1: معدل الإطارات"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame B"
-msgstr "إطار ب"
+msgstr "التشفير 1: الإطار ب"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame P"
-msgstr "إطار ب"
+msgstr "التشفير 1: الإطار ب"
 
-#, fuzzy
 msgid "Encoder 1: Level"
-msgstr "مشفر"
+msgstr "التشفير 1:المستوى"
 
 msgid "Encoder 1: Profile"
-msgstr ""
+msgstr "التشفير 1: ملف التعريف"
 
-#, fuzzy
 msgid "Encoder 1: Resolution"
-msgstr "الدقة"
+msgstr "التشفير 1: دقة الفديو"
 
-#, fuzzy
 msgid "Encoder 1: Video codec"
-msgstr "ترميز الفيديو"
+msgstr "التشفير 1: ترميز الفيديو"
 
 msgid "Framerate"
 msgstr "معدل الإطار"

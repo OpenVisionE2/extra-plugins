@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blindscan Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2018-11-26 04:37+0200\n"
 "Last-Translator: MCelliot_g <mcelliot_g@hotmail.com>\n"
 "Language-Team: MCelliot_g <mcelliot_g@hotmail.com>\n"
@@ -63,6 +63,9 @@ msgid "%dMHz scanned"
 msgstr ""
 
 msgid "Accuracy (higher is better)"
+msgstr ""
+
+msgid "Auto / Manual"
 msgstr ""
 
 msgid "Blind scan"

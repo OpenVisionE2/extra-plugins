@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TransCodingSetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:41+0330\n"
+"POT-Creation-Date: 2018-07-30 19:14+0200\n"
 "PO-Revision-Date: 2018-07-31 11:13+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: french-EGAMI\n"
@@ -102,87 +102,71 @@ msgstr "Standard"
 msgid "Encoder"
 msgstr "Encoder"
 
-#, fuzzy
 msgid "Encoder 0: Aspect Ratio"
-msgstr "Aspect Ratio"
+msgstr "Encodeur 0: Aspectratio"
 
-#, fuzzy
 msgid "Encoder 0: Audio codec"
-msgstr "Codec audio"
+msgstr "Encodeur 0: Codec audio"
 
 msgid "Encoder 0: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Encodeur 0: Mode auto (Débit/Cadence)"
 
 msgid "Encoder 0: Bitrate"
-msgstr ""
+msgstr "Encodeur 0: Débit binaire"
 
-#, fuzzy
 msgid "Encoder 0: Framerate"
-msgstr "Cadence trame"
+msgstr "Encodeur 0: Cadence trame"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame B"
-msgstr "GOP Trame B"
+msgstr "Encodeur 0: GOP Trame B"
 
-#, fuzzy
 msgid "Encoder 0: GOP Frame P"
-msgstr "GOP Trame P"
+msgstr "Encodeur 0: GOP Trame P"
 
-#, fuzzy
 msgid "Encoder 0: Level"
-msgstr "Encoder"
+msgstr "Encodeur 0: Level"
 
 msgid "Encoder 0: Profile"
-msgstr ""
+msgstr "Encodeur 0: Profil"
 
-#, fuzzy
 msgid "Encoder 0: Resolution"
-msgstr "Résolution"
+msgstr "Encodeur 0: Résolution"
 
-#, fuzzy
 msgid "Encoder 0: Video codec"
-msgstr "Codec vidéo"
+msgstr "Encodeur 0: Codec vidéo"
 
-#, fuzzy
 msgid "Encoder 1: Aspect Ratio"
-msgstr "Aspect Ratio"
+msgstr "Encodeur 1: Aspect Ratio"
 
-#, fuzzy
 msgid "Encoder 1: Audio codec"
-msgstr "Codec audio"
+msgstr "Encodeur 1: Codec audio"
 
 msgid "Encoder 1: Auto mode (Bitrate/Framerate)"
-msgstr ""
+msgstr "Encodeur 1: Mode auto (Débit/Cadence)"
 
 msgid "Encoder 1: Bitrate"
-msgstr ""
+msgstr "Encodeur 1: Débit binaire"
 
-#, fuzzy
 msgid "Encoder 1: Framerate"
-msgstr "Cadence trame"
+msgstr "Encodeur 1: Cadence trame"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame B"
-msgstr "GOP Trame B"
+msgstr "Encodeur 1: GOP Trame B"
 
-#, fuzzy
 msgid "Encoder 1: GOP Frame P"
-msgstr "GOP Trame P"
+msgstr "Encodeur 1: GOP Trame P"
 
-#, fuzzy
 msgid "Encoder 1: Level"
-msgstr "Encoder"
+msgstr "Encodeur 1: Level"
 
 msgid "Encoder 1: Profile"
-msgstr ""
+msgstr "Encodeur 1: Profil"
 
-#, fuzzy
 msgid "Encoder 1: Resolution"
-msgstr "Résolution"
+msgstr "Encodeur 1: Résolution"
 
-#, fuzzy
 msgid "Encoder 1: Video codec"
-msgstr "Codec vidéo"
+msgstr "Encodeur 1: Codec vidéo"
 
 msgid "Framerate"
 msgstr "Cadence trame"

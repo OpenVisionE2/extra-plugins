@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 19:32+0330\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-04-10 11:56+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -41,8 +41,9 @@ msgstr ""
 msgid "Atlantic (0°W-61°W)"
 msgstr ""
 
+#, fuzzy
 msgid "Cables"
-msgstr ""
+msgstr "cable"
 
 msgid "Choose where you live."
 msgstr ""
@@ -72,8 +73,9 @@ msgstr "Folder where the downloaded file will be saved. \"/etc/tuxbox\" is the d
 msgid "Region"
 msgstr ""
 
+#, fuzzy
 msgid "Satellites"
-msgstr ""
+msgstr "satellite"
 
 #, fuzzy
 msgid "Save"
@@ -86,8 +88,9 @@ msgstr "Save to"
 msgid "Saving the %s.xml file failed"
 msgstr "Saving the %s.xml file failed"
 
+#, fuzzy
 msgid "Terrestrial"
-msgstr ""
+msgstr "terrestrial"
 
 #, python-format
 msgid "The %s.xml download was corrupt."
@@ -97,8 +100,9 @@ msgstr ""
 msgid "The %s.xml file could not be fetched"
 msgstr "The %s.xml file could not be fetched"
 
+#, fuzzy
 msgid "Unicable"
-msgstr ""
+msgstr "cable"
 
 msgid "XML update"
 msgstr "XML update"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blindscan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2018-12-29 23:13+0100\n"
 "Last-Translator: JR <openspateam@gmail.com>\n"
 "Language-Team: OpenSPA <openspa.info>\n"
@@ -60,6 +60,9 @@ msgstr "%dMhz escaneado"
 
 msgid "Accuracy (higher is better)"
 msgstr "Precisión (más alto es mejor)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Búsqueda ciega"

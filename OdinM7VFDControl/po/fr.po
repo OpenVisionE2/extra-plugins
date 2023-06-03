@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-07-30 22:12+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: french\n"
@@ -22,6 +22,9 @@ msgstr "Toujours éteinte"
 
 msgid "Cancel"
 msgstr "Annuler"
+
+msgid "Change VFD display settings"
+msgstr ""
 
 msgid "Channelnumber in Standby Clock"
 msgstr "Numéro de canal dans l'horloge de veille"

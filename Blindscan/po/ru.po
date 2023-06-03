@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blindscan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2016-05-07 13:07+0200\n"
 "Last-Translator: neoatomic <neoatomic@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -66,6 +66,9 @@ msgstr "Сканируется %dМГц"
 
 msgid "Accuracy (higher is better)"
 msgstr "Точность (чем выше, тем лучше)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Слепой поиск"

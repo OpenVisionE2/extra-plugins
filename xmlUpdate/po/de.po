@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 19:32+0330\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-10-14 23:19+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: none\n"
@@ -42,8 +42,9 @@ msgstr ""
 msgid "Atlantic (0°W-61°W)"
 msgstr ""
 
+#, fuzzy
 msgid "Cables"
-msgstr ""
+msgstr "Kabel"
 
 msgid "Choose where you live."
 msgstr ""
@@ -75,8 +76,9 @@ msgstr "Ordner, in dem die heruntergeladene Datei gespeichert wird. \"/etc/tuxbo
 msgid "Region"
 msgstr ""
 
+#, fuzzy
 msgid "Satellites"
-msgstr ""
+msgstr "Satellit"
 
 #, fuzzy
 msgid "Save"
@@ -89,8 +91,9 @@ msgstr "Speichern als"
 msgid "Saving the %s.xml file failed"
 msgstr "Das Speichern der %s.xml Datei scheiterte"
 
+#, fuzzy
 msgid "Terrestrial"
-msgstr ""
+msgstr "Terrestrisch"
 
 #, python-format
 msgid "The %s.xml download was corrupt."
@@ -100,8 +103,9 @@ msgstr "Die %s.xml Download war korrupt."
 msgid "The %s.xml file could not be fetched"
 msgstr "Die %s.xml Datei konnte nicht abgeholt werden"
 
+#, fuzzy
 msgid "Unicable"
-msgstr ""
+msgstr "Kabel"
 
 msgid "XML update"
 msgstr "XML Update"

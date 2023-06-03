@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-18 13:43+0330\n"
+"POT-Creation-Date: 2021-04-16 19:01+0430\n"
 "PO-Revision-Date: 2010-09-19 21:07+0100\n"
 "Last-Translator: JR <openspateM@gmail.com>\n"
 "Language-Team: openspa <LL@li.org>\n"
@@ -97,24 +97,20 @@ msgstr ""
 msgid "Bitrate in bits"
 msgstr "Bitrate en bits"
 
-#, fuzzy
 msgid "Encoder Aspect Ratio"
-msgstr "Relación de aspecto"
+msgstr "Relación de aspecto del codificador"
 
 msgid "Encoder Bitrate"
-msgstr ""
+msgstr "Bitrate del codificador"
 
-#, fuzzy
 msgid "Encoder Framerate"
-msgstr "Framerate"
+msgstr "Framerate del codificador"
 
-#, fuzzy
 msgid "Encoder Interlaced"
-msgstr "Entrelazado"
+msgstr "Entrelazado codificador"
 
-#, fuzzy
 msgid "Encoder Resolution"
-msgstr "Resolución"
+msgstr "Resolución codificador"
 
 #, fuzzy
 msgid "Encoder Video Codec"
@@ -181,7 +177,7 @@ msgid "Save"
 msgstr "Guardar"
 
 msgid "Setup your timezone."
-msgstr ""
+msgstr "Configurar zona horaria"
 
 msgid "This model does not support transcoding."
 msgstr "Este modelo no soporta transcoding."

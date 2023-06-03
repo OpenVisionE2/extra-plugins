@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3GModemManager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:37+0430\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: openATV\n"
@@ -48,13 +48,13 @@ msgid "ABMCustomMixImporter"
 msgstr "ABM CustomMix Importer"
 
 msgid "Allows you automatically fetch the CustomMix file."
-msgstr ""
+msgstr "Maakt het mogelijk het Custommix-bestand automatisch binnen te halen."
 
 msgid "Delete file"
 msgstr "Verwijder bestand"
 
 msgid "Enable autofetch"
-msgstr ""
+msgstr "Schakel autofetch in"
 
 msgid "Exit"
 msgstr "Afsluiten"
@@ -69,13 +69,13 @@ msgid "File fetched and saved OK"
 msgstr "Bestand opgehaald en correct opgeslagen"
 
 msgid "Import"
-msgstr ""
+msgstr "Importeer"
 
 msgid "Lead time"
 msgstr ""
 
 msgid "Number of minutes prior to the ABM scan that the CustomMix file should be fetched"
-msgstr ""
+msgstr "Aantal minuten voor de ABM-scan dat het Custommix-bestand binnengehaald moet worden."
 
 msgid "Really close without saving settings?"
 msgstr "Echt afsluiten zonder opslaan?"
@@ -87,7 +87,7 @@ msgid "Saving CustomMix file"
 msgstr "Slaan CustomMix-bestand op"
 
 msgid "Select the CustomMix you want to import"
-msgstr ""
+msgstr "Selecteer het CustomMix-bestand dat u wilt importeren"
 
 msgid "Starting importer..."
 msgstr "Start importeren..."

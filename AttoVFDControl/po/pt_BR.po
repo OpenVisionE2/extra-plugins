@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-22 01:26+0430\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-09-11 17:07+0200\n"
 "Last-Translator: leandrotsampa <leandrotsampa@yahoo.com.br>\n"
 "Language-Team: \n"
@@ -24,6 +24,9 @@ msgstr "Desligado"
 #
 msgid "Cancel"
 msgstr "Cancelar"
+
+msgid "Change VFD display settings"
+msgstr ""
 
 msgid "Channelnumber in Standby Clock"
 msgstr "Número do Canal e em Standby Hora"

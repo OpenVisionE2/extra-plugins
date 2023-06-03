@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 19:32+0330\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2020-03-31 19:10+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -41,8 +41,9 @@ msgstr ""
 msgid "Atlantic (0°W-61°W)"
 msgstr ""
 
+#, fuzzy
 msgid "Cables"
-msgstr ""
+msgstr "Kablo TV"
 
 msgid "Choose where you live."
 msgstr ""
@@ -74,8 +75,9 @@ msgstr "İndirilen dosyanın kaydedileceği klasör. \"/etc/tuxbox\" varsayılan
 msgid "Region"
 msgstr ""
 
+#, fuzzy
 msgid "Satellites"
-msgstr ""
+msgstr "Uydu"
 
 #, fuzzy
 msgid "Save"
@@ -88,8 +90,9 @@ msgstr "Şuraya kaydet"
 msgid "Saving the %s.xml file failed"
 msgstr "%s.xml dosyası kaydedilemedi"
 
+#, fuzzy
 msgid "Terrestrial"
-msgstr ""
+msgstr "Karasal"
 
 #, python-format
 msgid "The %s.xml download was corrupt."
@@ -99,8 +102,9 @@ msgstr "%s.xml indirmesi bozuk."
 msgid "The %s.xml file could not be fetched"
 msgstr "%s.xml dosyası getirilemedi"
 
+#, fuzzy
 msgid "Unicable"
-msgstr ""
+msgstr "Kablo TV"
 
 msgid "XML update"
 msgstr "XML güncellemesi"

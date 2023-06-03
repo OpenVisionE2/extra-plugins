@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 19:32+0330\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-07-31 11:36+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -42,8 +42,9 @@ msgstr ""
 msgid "Atlantic (0°W-61°W)"
 msgstr ""
 
+#, fuzzy
 msgid "Cables"
-msgstr ""
+msgstr "câble"
 
 msgid "Choose where you live."
 msgstr ""
@@ -75,8 +76,9 @@ msgstr "Dossier dans lequel le fichier téléchargé sera sauvegardé. \"/etc/tu
 msgid "Region"
 msgstr ""
 
+#, fuzzy
 msgid "Satellites"
-msgstr ""
+msgstr "satellite"
 
 #, fuzzy
 msgid "Save"
@@ -89,8 +91,9 @@ msgstr "Enregistrer sous"
 msgid "Saving the %s.xml file failed"
 msgstr "L'enregistrement du fichier %s.xml a échoué"
 
+#, fuzzy
 msgid "Terrestrial"
-msgstr ""
+msgstr "terrestre"
 
 #, python-format
 msgid "The %s.xml download was corrupt."
@@ -100,8 +103,9 @@ msgstr "Le téléchargement de %s.xml était corrompu."
 msgid "The %s.xml file could not be fetched"
 msgstr "Le fichier %s.xml n'a pas pu être récupéré"
 
+#, fuzzy
 msgid "Unicable"
-msgstr ""
+msgstr "câble"
 
 msgid "XML update"
 msgstr "Mise à jour XML"

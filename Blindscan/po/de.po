@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2018-11-08 17:01+0100\n"
 "Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
 "Language-Team: Deutsch <> j-ot&Trial\n"
@@ -45,7 +45,7 @@ msgstr "\"Sender Suche\" sucht nach Sendern und speichert sie auf dem Receiver; 
 
 #, fuzzy
 msgid "\"scan for channels\" searches for channels and saves them to your receiver; \"Save to XML\" does a transponder search and saves the results in satellites.xml format and stores it in /tmp"
-msgstr "\"Channel Scan\" sucht nach Kanälen und speichert Sie in Ihrem Empfänger; Beide Optionen führen eine Transponder-Suche durch und speichern das Ergebnis im /tmp Verzeichnis als XML Datei"
+msgstr "\"Sender Suche\" sucht nach Sendern und speichert sie auf dem Receiver; \"Transponder Suche\" sucht nach Transpondern und zeigt das Resultat zur Auswahl an. Bei beiden Optionen werden die Ergebnisse in der satellites.xml unter /tmp gespeichert."
 
 #, python-format
 msgid "%d transponder(s) found"
@@ -65,6 +65,9 @@ msgstr "%dMHz gescannt"
 
 msgid "Accuracy (higher is better)"
 msgstr "Genauigkeit (höher ist besser)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Blindscan"

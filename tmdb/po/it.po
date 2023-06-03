@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 07:55+0100\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2022-11-04 19:50+0100\n"
+"Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "X-Generator: Lokalize 22.08.2\n"
 
 msgid " "
@@ -24,9 +24,6 @@ msgstr " "
 
 msgid "Author:"
 msgstr "Autore:"
-
-msgid "Cancel"
-msgstr "Annulla"
 
 msgid "Countries:"
 msgstr "Paesi:"
@@ -80,9 +77,6 @@ msgstr "Film"
 msgid "No Movie information found for %s"
 msgstr "Nessuna informazione trovata sul film %s"
 
-msgid "OK"
-msgstr "OK"
-
 msgid "Page down"
 msgstr "Pagina giù"
 
@@ -124,6 +118,9 @@ msgstr "Mostra dettagli se singolo risultato:"
 
 msgid "Studio:"
 msgstr "Studio:"
+
+msgid "TMDB Settings"
+msgstr ""
 
 #, python-format
 msgid "TMDB: Results for %s"

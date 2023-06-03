@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:37+0430\n"
+"POT-Creation-Date: 2023-06-03 13:26+0330\n"
 "PO-Revision-Date: 2018-07-30 21:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,13 +50,13 @@ msgid "ABMCustomMixImporter"
 msgstr "ABM CustomMix Importateur"
 
 msgid "Allows you automatically fetch the CustomMix file."
-msgstr ""
+msgstr "Permet de récupérer automatiquement le fichier CustomMix."
 
 msgid "Delete file"
 msgstr "Effacer fichier"
 
 msgid "Enable autofetch"
-msgstr ""
+msgstr "Activer l'autorécupération"
 
 msgid "Exit"
 msgstr "Quitter"
@@ -71,13 +71,13 @@ msgid "File fetched and saved OK"
 msgstr "Fichier récupéré et sauvegardé OK"
 
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 msgid "Lead time"
-msgstr ""
+msgstr "Délai de mise en œuvre"
 
 msgid "Number of minutes prior to the ABM scan that the CustomMix file should be fetched"
-msgstr ""
+msgstr "Nombre de minutes avant que l'analyse ABM que le fichier CustomMix doit être récupéré."
 
 msgid "Really close without saving settings?"
 msgstr "Vraiment fermer sans sauver les paramètres?"
@@ -89,7 +89,7 @@ msgid "Saving CustomMix file"
 msgstr "Enregistrement du fichier CustomMix"
 
 msgid "Select the CustomMix you want to import"
-msgstr ""
+msgstr "Sélectionnez le CustomMix que vous voulez importer"
 
 msgid "Starting importer..."
 msgstr "Importateur démarre….."

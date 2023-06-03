@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-18 13:43+0330\n"
+"POT-Creation-Date: 2021-04-16 19:01+0430\n"
 "PO-Revision-Date: 2019-07-24 11:51+0300\n"
 "Last-Translator: kvinto <badsystem@ukr.net>\n"
 "Language-Team: <sat-ukraine.info>\n"
@@ -100,24 +100,20 @@ msgstr "Авто"
 msgid "Bitrate in bits"
 msgstr "Бітрейт в бітах"
 
-#, fuzzy
 msgid "Encoder Aspect Ratio"
-msgstr "Співвідношення Сторін"
+msgstr "Кодер співвідношення сторін"
 
 msgid "Encoder Bitrate"
-msgstr ""
+msgstr "Бітрейт кодера"
 
-#, fuzzy
 msgid "Encoder Framerate"
-msgstr "Частота кадрів"
+msgstr "Частота кадрів кодера"
 
-#, fuzzy
 msgid "Encoder Interlaced"
-msgstr "Черезстрочна"
+msgstr "Черезстрочне кодування"
 
-#, fuzzy
 msgid "Encoder Resolution"
-msgstr "Роздільна здатність"
+msgstr "Роздільна здатність кодера"
 
 #, fuzzy
 msgid "Encoder Video Codec"
@@ -184,7 +180,7 @@ msgid "Save"
 msgstr "Зберегти"
 
 msgid "Setup your timezone."
-msgstr ""
+msgstr "Налаштування Вашого часового поясу."
 
 msgid "This model does not support transcoding."
 msgstr "Ця модель не підтримує транскодування."

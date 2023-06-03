@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChannelsImporter -  oe-alliance\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:41+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2017-10-09 20:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: BH Team\n"
@@ -24,13 +24,13 @@ msgid "%d/%d"
 msgstr "%d/%d"
 
 msgid "'yes' and remote fallback tuner will be automatically configured to stream from the remote receiver. 'no' and fallback will not be edited."
-msgstr ""
+msgstr "'sim' e o tuner fallback remoto será automaticamente configurado para transmitir do recetor remoto. 'não' e o fallback não será editado."
 
 msgid "Allows you to set a schedule to perform an import."
-msgstr ""
+msgstr "Permite-lhe definir um agendamento para iniciar a importação."
 
 msgid "Auto configure remote fallback tuner"
-msgstr ""
+msgstr "Auto configurar o tuner fallback remoto"
 
 msgid "Channels importer"
 msgstr "Importador de Canais"
@@ -103,26 +103,23 @@ msgstr "A cada 6 horas"
 msgid "Every hour"
 msgstr "Hora a hora"
 
-msgid "Exit"
-msgstr "Sair"
-
 msgid "FTP Password"
-msgstr ""
+msgstr "Palavra-passe FTP"
 
 msgid "FTP Port"
-msgstr ""
+msgstr "Porta FTP"
 
 msgid "FTP Username"
-msgstr ""
+msgstr "Nome de Utilizador FTP"
 
 msgid "FTP password of the remote receiver the channel list is being imported from."
-msgstr ""
+msgstr "Senha FTP do recetor remoto de onde a lista de canais está a ser importada."
 
 msgid "FTP port of the remote receiver the channel list is being imported from."
-msgstr ""
+msgstr "Porta FTP do recetor remoto de onde a lista de canais está a ser importada."
 
 msgid "FTP username of the remote receiver the channel list is being imported from."
-msgstr ""
+msgstr "Nome de utilizador FTP do recetor remoto de onde a lista de canais está a ser importada."
 
 msgid "Fetch channels from the server."
 msgstr "Ir buscar canais ao servidor."
@@ -134,20 +131,19 @@ msgid "Force EPG save on remote receiver"
 msgstr "Forçar salvar EPG no recetor remoto"
 
 msgid "IP address of the remote receiver the channel list is  being imported from."
-msgstr ""
+msgstr "Endereço IP do recetor remoto da lista de canais está sendo importado."
 
 msgid "If 'yes' the importer will automatically import and load EPG data from the remote receiver if the file exists."
-msgstr ""
+msgstr "Se 'sim' o importador importará automaticamente e carregará o EPG do recetor remoto se o ficheiro existir."
 
 msgid "If 'yes' the importer will automatically run at startup or reboot."
-msgstr ""
+msgstr "Se 'Sim' o importador irá executar na inicialização ou reiniciar automaticamente."
 
 msgid "Import"
 msgstr "Importar"
 
-#, fuzzy
 msgid "Import EPG"
-msgstr "Importar"
+msgstr "Importar o EPG"
 
 msgid "Loading epg.dat..."
 msgstr "A carregar epg.dat..."
@@ -156,50 +152,43 @@ msgid "Loading new channel list..."
 msgstr "A carregar a nova lista de canais..."
 
 msgid "Passive mode"
-msgstr ""
+msgstr "Modo Passivo"
 
 msgid "Push error messages to the screen. Switch on for debugging only."
-msgstr ""
-
-msgid "Really close without saving settings?"
-msgstr "Deseja sair sem gravar as definições?"
+msgstr "Exibir mensagens de erro no ecrã. Ligue sómente para depuração."
 
 msgid "Remote receiver IP"
-msgstr ""
+msgstr "IP do recetor remoto"
 
 msgid "Removing current channel list..."
 msgstr "A remover a lista de canais atual..."
 
 msgid "Repeat how often"
-msgstr ""
+msgstr "Repetir quantas vezes"
 
 msgid "Run at restart"
-msgstr ""
+msgstr "Executar ao reiniciar"
 
-msgid "Save"
-msgstr "Guardar"
-
-#, fuzzy
 msgid "Schedule import"
-msgstr "Importador de Canais"
+msgstr "Importar agendamento"
 
 msgid "Searching for epg.dat"
 msgstr "À procura de epg.dat"
 
 msgid "Set the repeat interval of the schedule."
-msgstr ""
+msgstr "Defina o intervalo de repetição do agendamento."
 
 msgid "Set the time of day to perform the scan."
-msgstr ""
+msgstr "Defina a hora do dia para realizar a busca."
 
 msgid "Should the FTP connection to the remote receiver be established in passive mode?"
-msgstr ""
+msgstr "Poderá a conexão de FTP para o recetor remoto pode ser estabelecida em modo passivo?"
 
 msgid "Show error messages"
-msgstr ""
+msgstr "Mostrar mensagens de erro"
 
 msgid "Show in extensions"
-msgstr ""
+msgstr "Mostrar em extensões"
 
 msgid "Starting importer"
 msgstr "A iniciar importação"
@@ -208,10 +197,10 @@ msgid "Starting importer..."
 msgstr "A iniciar importação..."
 
 msgid "Time import should start"
-msgstr ""
+msgstr "Hora a que a importação deverá iniciar"
 
 msgid "When enabled, allows you start an import from the extensions list."
-msgstr ""
+msgstr "Quando ativado, pemite-lhe iniciar a importação da lista de extensões."
 
 msgid "epg.dat not found"
 msgstr "epg.dat não encontrado"

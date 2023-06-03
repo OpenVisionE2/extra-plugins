@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TransCodingSetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-18 13:43+0330\n"
+"POT-Creation-Date: 2021-04-16 19:01+0430\n"
 "PO-Revision-Date: 2018-07-31 09:21+0200\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Andy Blackburn/Rob van der Does\n"
@@ -101,24 +101,20 @@ msgstr "Auto"
 msgid "Bitrate in bits"
 msgstr "Bitrate in bits"
 
-#, fuzzy
 msgid "Encoder Aspect Ratio"
-msgstr "Aspectratio"
+msgstr "Encoder Aspect Ratio"
 
 msgid "Encoder Bitrate"
-msgstr ""
+msgstr "Encoder Bitrate"
 
-#, fuzzy
 msgid "Encoder Framerate"
-msgstr "Framerate"
+msgstr "Encoder Framerate"
 
-#, fuzzy
 msgid "Encoder Interlaced"
-msgstr "Interlaced"
+msgstr "Encoder Interlaced"
 
-#, fuzzy
 msgid "Encoder Resolution"
-msgstr "Resolutie"
+msgstr "Encoder Resolution"
 
 #, fuzzy
 msgid "Encoder Video Codec"
@@ -185,7 +181,7 @@ msgid "Save"
 msgstr "Sla op"
 
 msgid "Setup your timezone."
-msgstr ""
+msgstr "Stel uw tijdzone in."
 
 msgid "This model does not support transcoding."
 msgstr "Dit model ondersteunt geen transcoding."

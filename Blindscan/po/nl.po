@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 13:30+0330\n"
+"POT-Creation-Date: 2022-11-03 07:54+0100\n"
 "PO-Revision-Date: 2019-03-08 14:29+0100\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Andy Blackburn, Rob van der Does\n"
@@ -48,7 +48,7 @@ msgstr "'zoek zenders' zoekt naar kanalen en slaat deze op in uw ontvanger; 'zoe
 
 #, fuzzy
 msgid "\"scan for channels\" searches for channels and saves them to your receiver; \"Save to XML\" does a transponder search and saves the results in satellites.xml format and stores it in /tmp"
-msgstr "\"zenders zoeken\" zoekt naar zenders en slaat deze op in uw ontvanger; beide opties doen een transponder scan en slaan de resultaten daarvan op in /tmp in een XML bestand in satellites.xml formaat"
+msgstr "'zoek zenders' zoekt naar kanalen en slaat deze op in uw ontvanger; 'zoek transponders' zoekt naar transponders en vertoont het resultaat, waarna u één of meerdere transponders kunt selecteren om kanalen te zoeken. Beide opties laten het resultaat opslaan in het satellites.xml-formaat in /tmp"
 
 #, python-format
 msgid "%d transponder(s) found"
@@ -68,6 +68,9 @@ msgstr "%dMHz gescanned"
 
 msgid "Accuracy (higher is better)"
 msgstr "Nauwkeurigheid (hoger is beter)"
+
+msgid "Auto / Manual"
+msgstr ""
 
 msgid "Blind scan"
 msgstr "Blindscan"
