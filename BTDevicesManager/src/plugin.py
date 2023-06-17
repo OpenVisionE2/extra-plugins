@@ -216,6 +216,8 @@ class BluetoothDevicesManager(Screen):
 
         self.refreshStatusTimer = eTimer()
         self.refreshStatusTimer.callback.append(self.cbRefreshStatus)
+        self.refreshScanedTimer = eTimer()
+        self.refreshScanedTimer.callback.append(self.cbRefreshScanStatus)
         self.cb_mac_address = None
         self.cb_name = None
 
@@ -237,12 +239,15 @@ class BluetoothDevicesManager(Screen):
 
     def keyGreen(self):
         print("[BluetoothManager] keyGreen")
-        if config.btdevicesmanager.autostart.getValue() or brand in ("xcore", "edision") or platform == "gbmv200":
-            self["ConnStatus"].setText(_("No connected to any device"))
-            self.initDevice()
+        if platform == "gbmv200":
+            self.refreshScanedTimer.start(5000, False)
         else:
-            self["devicelist"].setList([])
-            self["ConnStatus"].setText(_("Please load BT driver by pressing BLUE button."))
+            if config.btdevicesmanager.autostart.getValue() or brand in ("xcore", "edision"):
+                self["ConnStatus"].setText(_("No connected to any device"))
+                self.initDevice()
+            else:
+                self["devicelist"].setList([])
+                self["ConnStatus"].setText(_("Please load BT driver by pressing BLUE button."))
 
     def scanForDevices(self):
         print("[BluetoothManager] scanForDevices")
@@ -253,13 +258,12 @@ class BluetoothDevicesManager(Screen):
 
         if platform == "gbmv200":
             iBluetoothctl.start_scan()
-            time.sleep(0.5)
-            cmd = 'bluetoothctl devices'
+            self.refreshScanedTimer.start(5000, False)
         else:
             cmd = 'hcitool scan'
-        # add background task for scanning
-        self.taskManager.append(cmd, self.cbPrintAvailDevices, self.cbRunNextTask)
-        self.taskManager.next()
+            # add background task for scanning
+            self.taskManager.append(cmd, self.cbPrintAvailDevices, self.cbRunNextTask)
+            self.taskManager.next()
 
     def cbPrintAvailDevices(self, data):
         print("[BluetoothManager] cbPrintAvailDevices")
@@ -330,6 +334,19 @@ class BluetoothDevicesManager(Screen):
             msg = _("Can't not pair with selected device!")
             self["ConnStatus"].setText(msg)
 
+    def cbRefreshScanStatus(self):
+        available_devices = iBluetoothctl.get_available_devices()
+        if available_devices is not None:
+            self.devicelist = []
+            self.devicelist.append((_("MAC:\t\tDevice name:"), _("entry")))
+            for d in available_devices:
+                if d['mac_address'] != d['name'].replace('-',':'):
+                    self.devicelist.append((d['mac_address'] + "\t" + d['name'], d['mac_address']))
+
+            self["devicelist"].setList(self.devicelist)
+
+        self.showConnections()
+
     def keyYellow(self):
         if self["key_yellow"].getText() == _('Disconnect'):
             print("[BluetoothManager] Disconnecting")
@@ -360,6 +377,8 @@ class BluetoothDevicesManager(Screen):
                             self["key_yellow"].setText(_("Connect"))
         else:
             print("[BluetoothManager] Connecting")
+            if platform == "gbmv200":
+                self.refreshScanedTimer.stop()
             selectedItem = self["devicelist"].getCurrent()
             if selectedItem is None or selectedItem[0] == "Scanning for devices...": ## If list is empty somehow or somebody pressed button while scanning
                 return
@@ -428,7 +447,8 @@ class BluetoothDevicesManager(Screen):
 
     def keyBlue(self):
         print("[BluetoothManager] keyBlue")
-        self.session.openWithCallback(self.keyGreen, BluetoothDevicesManagerSetup)
+        if platform != "gbmv200":
+            self.session.openWithCallback(self.keyGreen, BluetoothDevicesManagerSetup)
 
     def showMessage(self, msg):
         self.session.open(MessageBox, msg, MessageBox.TYPE_INFO, 3)
@@ -478,8 +498,6 @@ def autostart(reason, **kwargs):
                 Console().ePopen("%s %s" % (commandconnect, config.btdevicesmanager.audioaddress.getValue()))
         if platform == "gbmv200":
             Console().ePopen("hciattach_sprd /dev/ttyBT0 sprd")
-            if config.btdevicesmanager.audioconnect.getValue():
-                Console().ePopen("%s %s" % (commandconnect, config.btdevicesmanager.audioaddress.getValue()))
 
 
 iBluetoothDevicesTask = None
@@ -522,7 +540,7 @@ def sessionstart(session, reason, **kwargs):
     global iBluetoothDevicesTask
 
     if reason == 0:
-        if brand in ("xcore", "edision") or platform == "gbmv200":
+        if brand in ("xcore", "edision"):
             if iBluetoothDevicesTask is None:
                 iBluetoothDevicesTask = BluetoothDevicesTask(session)
 
